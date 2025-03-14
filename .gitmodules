@@ -1,3 +1,5 @@
 [submodule "src/essentials"]
 	path = src/essentials
 	url = git@github.com:AspiringArtificer/pokemon-essentials-pet.git
+[submodule "tools/eevee"]
+	path = tools/eevee
