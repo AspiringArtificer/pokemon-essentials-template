@@ -13,5 +13,12 @@ The project has following goals:
 ## Repo Setup
 TBD
 
+### Submodules
+src/essentials -- This points to a fork of the pokemon-essentials Github project. It contains the core scripts used by the game engine to run the game.
+
+src/assets -- This points to a private repo containing the various assets from Pokemon Essentials v21.1 that can't be stored in the public pokemon-essentials repo
+
+tools/eevee -- This points to a fork of the eevee Github project. This tool is used to extract rxdata files into .rb files that can be version controlled and are human readable.
+
 ## Development
 TBD
