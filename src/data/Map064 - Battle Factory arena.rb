@@ -1,0 +1,200 @@
+# Battle Frontier (52)
+#   Battle Factory (62)
+#     Battle Factory arena (64)
+map(
+  tileset_id: 3,
+  autoplay_bgm: true,
+  bgm: audio(name: "Battle Frontier", volume: 80),
+  events: [
+
+    event(
+      id: 1,
+      name: "Guide",
+      x: 2,
+      y: 8,
+      page_0: page(
+        graphic: graphic(
+          name: "trainer_SCIENTIST",
+          direction: :up,
+        ),
+        trigger: :autorun,
+        commands: [
+          *move_route(
+            this,
+            move_up,
+            move_up,
+            move_up,
+            turn_right,
+            through_off,
+          ),
+          *move_route(
+            player,
+            change_speed(3),
+            change_opacity(0),
+            through_on,
+            move_up,
+            change_opacity(255),
+            move_up,
+            move_up,
+            move_right,
+            move_up,
+            move_right,
+            move_right,
+            through_off,
+          ),
+          wait_completion,
+          *script(
+            <<~'CODE'
+            pbSet(1,
+              pbBattleChallenge.battleNumber
+            )
+            CODE
+          ),
+          event_location(character(2), x: 12, y: 1, direction: :down),
+          script("pbBattleChallengeGraphic(get_character(2))"),
+          *move_route(
+            character(2),
+            through_on,
+            move_down,
+            move_down,
+            move_down,
+            move_down,
+            move_left,
+            move_left,
+            move_left,
+            through_off,
+          ),
+          wait_completion,
+          *script(
+            <<~'CODE'
+            pbSet(1,
+              pbBattleChallengeBeginSpeech
+            )
+            CODE
+          ),
+          text("\\v[1]"),
+          *condition(
+            script: "pbBattleChallengeBattle",
+            then: [
+              script("pbBattleChallenge.pbAddWin"),
+              *move_route(
+                character(2),
+                through_on,
+                move_right,
+                move_right,
+                move_right,
+                move_up,
+                move_up,
+                move_up,
+                move_up,
+                remove_graphic,
+                through_off,
+              ),
+              wait_completion,
+              *move_route(
+                player,
+                change_speed(3),
+                through_on,
+                move_left,
+                move_left,
+                through_off,
+              ),
+              wait_completion,
+              *condition(
+                script: "pbBattleChallenge.pbMatchOver?",
+                then: [
+                  script("pbBattleChallenge.setDecision(1)"),
+                  play_se(audio(name: "Door exit", volume: 80)),
+                  change_tone(red: -255, green: -255, blue: -255, frames: 6),
+                  wait(8),
+                  script("pbBattleChallenge.pbGoToStart"),
+                  change_tone(red: 0, green: 0, blue: 0, frames: 6),
+                  exit_event_processing,
+                ],
+                else: [
+                  play_se(audio(name: "Door exit", volume: 80)),
+                  change_tone(red: -255, green: -255, blue: -255, frames: 6),
+                  wait(8),
+                  transfer_player(map: 65, x: 4, y: 5, direction: :up, fading: false),
+                  change_tone(red: 0, green: 0, blue: 0, frames: 6),
+                  exit_event_processing,
+                ],
+              ),
+            ],
+            else: [
+              script("pbBattleChallenge.setDecision(2)"),
+              play_se(audio(name: "Door exit", volume: 80)),
+              change_tone(red: -255, green: -255, blue: -255, frames: 6),
+              wait(8),
+              script("pbBattleChallenge.pbGoToStart"),
+              change_tone(red: 0, green: 0, blue: 0, frames: 6),
+              exit_event_processing,
+            ],
+          ),
+        ],
+      ),
+    ),
+
+    event(
+      id: 2,
+      name: "Opponent",
+      x: 12,
+      y: 1,
+    ),
+
+  ],
+  data: table(
+    x: 20,
+    y: 15,
+    z: 3,
+    data: [
+       520,  521,  521,  521,  521,  521,  521,  521,  521,  521,  521,  521,  521,  521,  523,  542,  542,  542,  542,  542,
+       528,  529,  529,  529,  529,  529,  529,  529,  529,  529,  529,  529,  529,  529,  531,  542,  542,  542,  542,  542,
+       633,  641,  641,  641,  641,  641,  641,  641,  641,  641,  641,  641,  641,  641,  650,  542,  542,  542,  542,  542,
+       634,  624,  624,  624, 1081, 1106, 1106, 1106, 1106, 1106, 1083,  635,  624,  624,  624,  542,  542,  542,  542,  542,
+       634,  624,  624,  624, 1096,  651,  641,  641,  641,  641, 1096,  634,  624,  624,  624,  542,  542,  542,  542,  542,
+       634,  624,  624,  624,  649,  642,  624,  624,  624,  624,  649,  642,  624,  624,  624,  542,  542,  542,  542,  542,
+       634,  624,  624,  624, 1080,  635,  624,  624,  624,  624, 1080,  635,  624,  624,  624,  542,  542,  542,  542,  542,
+       634,  624,  624,  624, 1097, 1106, 1106, 1106, 1106, 1106, 1099,  634,  624,  624,  624,  542,  542,  542,  542,  542,
+       634,  624,  624,  624,  649,  641,  641,  641,  641,  641,  641,  642,  624,  633,  633,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+       542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,  542,
+
+         0,    0,    0, 1788,    0,    0,    0,    0,    0,    0, 1788,  389,  390,  391,    0,    0,    0,    0,    0,    0,
+         0, 1794, 1795, 1796,    0, 1795,    0, 1794, 1795,    0, 1796,  397,  398,  399, 1794,    0,    0,    0,    0,    0,
+       536, 1802, 1803, 1804,    0, 1803,    0, 1802, 1803,    0, 1804,    0,    0,    0, 1802,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, 1784, 1785,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0, 1792, 1793,    0,    0,    0,    0,    0,
+         0, 1245, 1246, 1247,    0,    0,    0,    0,    0,    0,    0,    0,    0, 1800, 1801,    0,    0,    0,    0,    0,
+         0, 1253, 1254, 1255,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+         0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,    0,
+    ],
+  ),
+)

@@ -8,10 +8,10 @@
 data_dir: src/essentials/Data
 
 # Modify this path to specify where you want the game data emitted in YAML
-ruby_dir: src/assets/DataExport
+ruby_dir: src/data
 
 # Modify this path to specify where to back up .rxdata files
-backup_dir: src/assets/DataBackup
+backup_dir: DataBackup
 
 #-------------------------------------------------------------------------------
 #  Miscellaneous Parameters
@@ -20,19 +20,19 @@ backup_dir: src/assets/DataBackup
 # This array specifies all .rxdata files which are to be processed by the data
 # exporter script.
 file_list:
-  - "Map*.rxdata"
-  - "Animations.rxdata"
-  - "CommonEvents.rxdata"
-  - "MapInfos.rxdata"
-  - "System.rxdata"
-  - "Tilesets.rxdata"
   - "Actors.rxdata"
+  - "Animations.rxdata"
   - "Armors.rxdata"
   - "Classes.rxdata"
+  - "CommonEvents.rxdata"
   - "Enemies.rxdata"
   - "Items.rxdata"
+  - "MapInfos.rxdata"
+  - "Map*.rxdata"
   - "Skills.rxdata"
   - "States.rxdata"
+  - "System.rxdata"
+  - "Tilesets.rxdata"
   - "Troops.rxdata"
   - "Weapons.rxdata"
 
