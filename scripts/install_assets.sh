@@ -15,7 +15,7 @@ DIR=$( cd -P "$( dirname "$SCRIPT_SOURCE" )" >/dev/null 2>&1 && pwd )
 # Copy in the asset files
 pushd $DIR/$SOURCE
 readarray -t asset_files < <(git ls-files --others --ignored --exclude-standard)
-asset_files=("Audio" "Graphics" "Plugins" "Game.ini" "Game.rxproj")
+asset_files=("Audio" "Graphics" "Plugins" "Game.ini" "Game.rxproj" "Data" )
 for item in "${asset_files[@]}"; do
     if [ -e "$item" ]; then
         echo "installing $item..."

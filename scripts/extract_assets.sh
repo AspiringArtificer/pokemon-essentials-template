@@ -30,5 +30,8 @@ for item in "${asset_files[@]}"; do
       echo "$item failed to copy"
     fi
   fi
+  # FIXME Shouldn't have to do this, but the battle animation import/export is broken
+  cp  --update --parents "Data/move2anim.dat" "$DIR/$TARGET"
+  cp  --update --parents "Data/PkmnAnimations.rxdata" "$DIR/$TARGET"
 done
 popd
