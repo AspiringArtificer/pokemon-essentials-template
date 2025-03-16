@@ -1,3 +1,4 @@
 DataBackup/
 .venv/
 .vscode/
+.gem/

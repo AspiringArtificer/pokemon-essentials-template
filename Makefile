@@ -1,6 +1,10 @@
-.PHONY: all compile decompile install backup clean dist_clean
+.PHONY: all setup compile decompile install backup clean dist_clean
 
 all: compile install
+
+setup:
+	bundle config set --local path './.gem'
+	bundle install
 
 compile:
 	docker run -v ${PWD}:/app eevee ruby /eevee/eevee.rb import
