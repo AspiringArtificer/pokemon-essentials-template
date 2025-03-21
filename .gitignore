@@ -3,3 +3,5 @@ DataBackup/
 .vscode/
 .gem/
 .bundle/
+
+*.tiled-session
