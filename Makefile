@@ -15,8 +15,9 @@ install:
 	./scripts/install_assets.sh
 
 decompile:
-	docker run -v ${PWD}:/app eevee ruby /eevee/eevee.rb export
-	python scripts/mapParser.py decompile -i "src/data/" -o "src/maps/"
+	cp eevee.yaml tools/eevee/eevee.yaml
+	ruby tools/eevee/eevee.rb export
+	rm tools/eevee/eevee.yaml
 
 backup: decompile
 	./scripts/extract_assets.sh
