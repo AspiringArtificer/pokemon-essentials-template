@@ -2,3 +2,4 @@ DataBackup/
 .venv/
 .vscode/
 .gem/
+.bundle/
