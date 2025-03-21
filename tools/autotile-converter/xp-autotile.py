@@ -7,6 +7,8 @@ TILE_SIZE = 32
 
 SUBTILE_SIZE = TILE_SIZE // 2
 
+# reverse engineered from the rmxp rxdata files
+# only holds true for 3x4 "blob" multi-tile sets
 blob_subtile_indices = [26, 27, 4, 27, 26, 5, 4, 5, 26, 27, 4, 27,
                         32, 33, 32, 33, 32, 33, 32, 33, 32, 11, 32, 11,
                         26, 5, 4, 5, 26, 27, 4, 27, 26, 5, 4, 5,
@@ -34,7 +36,6 @@ def copy_tile(
 ):
     subtile = source.crop(
         (src_offset_px[0], src_offset_px[1], src_offset_px[0]+size, src_offset_px[1]+size))
-    subtile.save("test.png")
     target.paste(subtile, (tar_offset_px[0], tar_offset_px[1]))
 
 
@@ -46,7 +47,12 @@ def copy_subtile(
     copy_tile(source, target, src_offset_px, tar_offset_px, SUBTILE_SIZE)
 
 
-def main(command: str, filepath: str):
+def main(command: str, filepath: str, output: str):
+    # make sure the output directory exists
+    directory_path = os.path.dirname(output)
+    if not os.path.exists(directory_path):
+        os.makedirs(directory_path)
+
     if command == "to_tiled":
         source = Image.open(filepath)
         px_width = 3*TILE_SIZE
@@ -65,10 +71,11 @@ def main(command: str, filepath: str):
                 copy_subtile(source, target, src_index, tar_index)
         # animated single tile
         else:
+            # rmxp just repeats the first tile
             for index in range(48):
                 tar_index = (index % 6*TILE_SIZE, index//6*TILE_SIZE)
                 copy_tile(source, target, (0, 0), tar_index, TILE_SIZE)
-        target.save("output.png")
+        target.save(output)
     elif command == "to_rmxp":
         source = Image.open(filepath)
         px_width = 6*TILE_SIZE
@@ -82,12 +89,12 @@ def main(command: str, filepath: str):
             tar_index = (subtile % 6*SUBTILE_SIZE, subtile//6*SUBTILE_SIZE)
             src_index = (index % 12*SUBTILE_SIZE, index//12*SUBTILE_SIZE)
             copy_subtile(source, target, src_index, tar_index)
-        target.save("output.png")
+        target.save(output)
     return
 
 
 if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        print("Usage: {} command input_file".format(sys.argv[0]))
+    if len(sys.argv) < 4:
+        print("Usage: {} command input_file output_file".format(sys.argv[0]))
         exit(1)
-    main(sys.argv[1], sys.argv[2])
+    main(sys.argv[1], sys.argv[2], sys.argv[3])
