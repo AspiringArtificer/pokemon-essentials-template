@@ -13,6 +13,10 @@ The project has following goals:
 ## Repo Setup
 TBD
 
+Ruby setup:
+bundle config set --local path .gem
+bundle install
+
 ### Submodules
 src/essentials -- This points to a fork of the pokemon-essentials Github project. It contains the core scripts used by the game engine to run the game.
 
