@@ -6,6 +6,53 @@ from os.path import isfile, join
 import yaml
 
 
+class RMXPMapTable:
+    def __init__(self):
+        self.data = [[]]
+        self.autotilesets = []
+        self.autotiles = []
+        self.x = 0
+        self.y = 0
+        self.z = 0
+
+    def __init__(self, sizeVector, dataMatrix):
+        self.data = [[]]
+        self.autotilesets = []
+        self.autotiles = []
+        self.x = sizeVector[0]
+        self.y = sizeVector[1]
+        self.z = sizeVector[2]
+        self.organizeData(dataMatrix)
+        self.findAutoTiles()
+
+    def organizeData(self, dataMatrix):
+        self.data = [[]]
+        zIndex = 0
+        for index, row in enumerate(dataMatrix):
+            if index > 0 and index % self.y == 0:
+                zIndex += 1
+                self.data.append([])
+            self.data[zIndex].append(row)
+
+    def findAutoTiles(self):
+        for layer in self.data:
+            for row in layer:
+                for tile in row:
+                    if 0 < tile < 383:
+                        set = tile // 48
+                        tile_index = tile % 48
+                        if tile_index not in self.autotiles:
+                            self.autotiles.append(tile_index)
+                        if set not in self.autotilesets:
+                            self.autotilesets.append(set)
+
+
+class RMXPMap:
+    def __init__(self):
+        self.table = RMXPMapTable()
+        self.tileset_id = 1
+
+
 def getMapName(filename):
     pattern = r"\-\s\w.*\.rb"
     match = re.search(pattern, filename)
@@ -107,30 +154,39 @@ def extractMapInfo(inputFile, outputPath):
 
 
 def parseMapData(filename, offset):
+    dataArray = []
+    sizeVector = [0, 0, 0]
     with open(filename, 'r') as file:
-        with open("test.rb", 'w') as out:
-            lines = file.readlines()
-            dataBlock = False
-            for line in lines:
-                if dataBlock:
-                    if re.search(r"\],", line):
-                        dataBlock = False
-                        out.write(line)
-                        continue
-                    numArray = [int(x)
-                                for x in line.split(',') if x.strip().isdigit()]
-                    if numArray:
-                        for x in numArray[:-1]:
-                            out.write(str(max(0, x-offset)) + ",")
-                        out.write(str(max(0, numArray[-1]-offset)) + ",\n")
-                    else:
-                        out.write("\n")
-
-                else:
-                    out.write(line)
-                    # look for start of data
-                    if re.search(r"data: \[", line):
-                        dataBlock = True
+        lines = file.readlines()
+        dataBlock = False
+        for line in lines:
+            if dataBlock:
+                # extract data
+                if re.search(r"\],", line):
+                    dataBlock = False
+                    continue
+                temp = [int(x)
+                        for x in line.split(',') if x.strip().isdigit()]
+                if temp:
+                    dataArray.append(temp)
+            else:
+                # look for map sizes
+                match = re.search(r"x: \d+,", line)
+                if match:
+                    sizeVector[0] = int(
+                        re.search(r"\d+", match.group(0)).group(0))
+                match = re.search(r"y: \d+,", line)
+                if match:
+                    sizeVector[1] = int(
+                        re.search(r"\d+", match.group(0)).group(0))
+                match = re.search(r"z: \d+,", line)
+                if match:
+                    sizeVector[2] = int(
+                        re.search(r"\d+", match.group(0)).group(0))
+                # look for start of data
+                if re.search(r"data: \[", line):
+                    dataBlock = True
+    return RMXPMapTable(sizeVector, dataArray)
 
 
 def main():
@@ -162,7 +218,15 @@ def main():
         return
 
     if args.action == "test":
-        parseMapData("src/maps/Lappet Town-data.rb", 383)
+        town = "src/maps/Lappet Town-data.rb"
+        house = "src/maps/Players house-data.rb"
+        at = "src/maps/AutoTile-data.rb"
+        mapData = parseMapData(at, 0)
+        print(mapData.x, mapData.y, mapData.z)
+        print(mapData.autotilesets)
+        mapData.autotiles.sort()
+        print(mapData.autotiles)
+        # print(mapData.data[2])
         return
 
 
