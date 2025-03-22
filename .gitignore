@@ -5,3 +5,5 @@ DataBackup/
 .bundle/
 
 *.tiled-session
+# tilesets are auto-generated from pngs
+src/tiled/tilesets/
