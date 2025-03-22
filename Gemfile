@@ -2,4 +2,5 @@ source "https://rubygems.org"
 gem "fastimage"
 gem "nokogiri"
 
-eval File.read("tools/eevee/Gemfile"), nil, "tools/eevee/Gemfile" if File.exist?("tools/eevee/Gemfile")
+eevee_gemfile = File.expand_path(File.dirname(__FILE__)) + "/tools/eevee/Gemfile"
+eval File.read(eevee_gemfile), nil, eevee_gemfile if File.exist?(eevee_gemfile)
