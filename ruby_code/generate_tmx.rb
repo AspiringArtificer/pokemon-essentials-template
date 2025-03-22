@@ -2,19 +2,20 @@ require "fileutils" # needed for file operations
 require "nokogiri" # needed to parse/edit xml
 require "nokogiri-pretty" # needed to print file with clean formatting
 
-require_relative "../tools/eevee/rmxp/rgss" # needed to load ruby data files
-
-RUBY_DIR = File.expand_path(File.dirname(__FILE__)) + "/"
+RUBY_DIR = __dir__ + "/"
 TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
 
 ROOT_DIR = RUBY_DIR + "../"
+require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to load ruby data files
+require_relative ROOT_DIR + "tools/eevee/src/common"
+
 TILESETS_DATA = ROOT_DIR + "src/data/Tilesets.rb"
 MAPINFOS = ROOT_DIR + "src/data/MapInfos.Local.rb"
 
 # load a ruby file exported from rxdata by eevee
-def load_ruby(export_file)
-  return (RPGFactory.new).evaluate(File.read(export_file))
-end
+# def load_ruby(export_file)
+#   return (RPGFactory.new).evaluate(File.read(export_file))
+# end
 
 # generate a Tiled tmx map file based on the ruby map data files
 def generate_tmx(data_file, tilesets, mapinfos, output_dir)

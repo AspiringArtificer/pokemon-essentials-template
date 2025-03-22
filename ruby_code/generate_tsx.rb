@@ -3,7 +3,7 @@ require "nokogiri" # needed to parse/edit xml
 require "fastimage" # needed to determine image dimensions
 
 TILE_SIZE = 32
-RUBY_DIR = File.expand_path(File.dirname(__FILE__)) + "/"
+RUBY_DIR = __dir__ + "/"
 TSX_TEMPLATE = RUBY_DIR + "tileset_template.tsx"
 
 ROOT_DIR = RUBY_DIR + "../"
