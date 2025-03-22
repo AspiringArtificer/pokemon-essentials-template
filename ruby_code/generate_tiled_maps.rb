@@ -1,17 +1,22 @@
-require "fileutils"
-require "nokogiri"
-require "nokogiri-pretty"
+require "fileutils" # needed for file operations
+require "nokogiri" # needed to parse/edit xml
+require "nokogiri-pretty" # needed to print file with clean formatting
 
-require_relative "../tools/eevee/rmxp/rgss"
+require_relative "../tools/eevee/rmxp/rgss" # needed to load ruby data files
 
-TILESETS_DATA = "../src/data/Tilesets.rb"
-MAPINFOS = "../src/data/MapInfos.Local.rb"
-TMS_TEMPLATE = "map_template.tmx"
+RUBY_DIR = File.expand_path(File.dirname(__FILE__)) + "/"
+TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
 
+ROOT_DIR = RUBY_DIR + "../"
+TILESETS_DATA = ROOT_DIR + "src/data/Tilesets.rb"
+MAPINFOS = ROOT_DIR + "src/data/MapInfos.Local.rb"
+
+# load a ruby file exported from rxdata by eevee
 def load_ruby(export_file)
   return (RPGFactory.new).evaluate(File.read(export_file))
 end
 
+# generate a Tiled tmx map file based on the ruby map data files
 def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   # extract data
   map_data = load_ruby(data_file)
@@ -81,19 +86,24 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   File.write(output_file, map_file.human)
 end
 
-def generate_maps(source_dir)
+# generate Tiled map files for all the Map data files in a directory
+def generate_maps(source_dir, output_dir)
   tileset = load_ruby(TILESETS_DATA)
   mapinfo = load_ruby(MAPINFOS)
+  # FileUtils doesn't properly handle relative paths
+  # source_dir = File.expand_path(source_dir) + "/"
+  # output_dir = File.expand_path(output_dir) + "/"
 
   data_dir = Dir.new(source_dir)
   data_dir.each_child do |data_file|
     if data_file.include? "Map" and data_file.include? "-"
       puts "Processing #{data_file}..."
-      generate_tmx(source_dir + data_file, tileset, mapinfo, "../src/tiled/maps/")
+      generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir)
     end
   end
 end
 
-src_data = "../src/data/"
-
-generate_maps(src_data)
+#generate maps for default dirs
+src_data = ROOT_DIR + "src/data/"
+target_dir = ROOT_DIR + "src/tiled/maps/"
+generate_maps(src_data, target_dir)
