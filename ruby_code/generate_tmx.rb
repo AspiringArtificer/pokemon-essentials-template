@@ -12,11 +12,6 @@ require_relative ROOT_DIR + "tools/eevee/src/common"
 TILESETS_DATA = ROOT_DIR + "src/data/Tilesets.rb"
 MAPINFOS = ROOT_DIR + "src/data/MapInfos.Local.rb"
 
-# load a ruby file exported from rxdata by eevee
-# def load_ruby(export_file)
-#   return (RPGFactory.new).evaluate(File.read(export_file))
-# end
-
 # generate a Tiled tmx map file based on the ruby map data files
 def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   # extract data
@@ -37,22 +32,44 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
     map.add_child "<properties/>"
   end
   properties = map.at_xpath("properties")
+
+  # mapinfos properties
   properties.add_child "<property name=\"full_tileset_name\" value=\"#{tilesets[id].name}\"/>"
   properties.add_child "<property name=\"map_name\" value=\"#{mapinfos[map_index].name}\"/>"
-  properties.add_child "<property name=\"map_index\" value=\"#{map_index}\"/>"
+  properties.add_child "<property name=\"map_index\" type=\"int\" value=\"#{map_index}\"/>"
   if mapinfos[map_index].parent_id != 0
-    properties.add_child "<property name=\"parent_id\" value=\"#{mapinfos[map_index].parent_id}\"/>"
+    properties.add_child "<property name=\"parent_id\" type=\"int\" value=\"#{mapinfos[map_index].parent_id}\"/>"
   end
   properties.add_child "<property name=\"order\" value=\"#{mapinfos[map_index].order}\"/>"
   if mapinfos[map_index].expanded
-    properties.add_child "<property name=\"expanded\" value=\"#{mapinfos[map_index].expanded}\"/>"
+    properties.add_child "<property name=\"expanded\" type=\"bool\" value=\"#{mapinfos[map_index].expanded}\"/>"
   end
   if mapinfos[map_index].scroll_x != 0
-    properties.add_child "<property name=\"scroll_x\" value=\"#{mapinfos[map_index].scroll_x}\"/>"
+    properties.add_child "<property name=\"scroll_x\" type=\"int\" value=\"#{mapinfos[map_index].scroll_x}\"/>"
   end
   if mapinfos[map_index].scroll_y != 0
-    properties.add_child "<property name=\"scroll_y\" value=\"#{mapinfos[map_index].scroll_y}\"/>"
+    properties.add_child "<property name=\"scroll_y\" type=\"int\" value=\"#{mapinfos[map_index].scroll_y}\"/>"
   end
+
+  # map_data properties
+  # eevee exporter doesn't currently support encounter_list
+  if map_data.encounter_step != 30
+    properties.add_child "<property name=\"encounter_step\" type=\"int\" value=\"#{map_data.encounter_step}\"/>"
+  end
+  properties.add_child "<property name=\"autoplay_bgm\" type=\"bool\" value=\"#{map_data.autoplay_bgm}\"/>"
+  properties.add_child "<property name=\"bgm\" type=\"class\" propertytype=\"bga\">
+    <properties>
+     <property name=\"name\" value=\"#{map_data.bgm.name}\"/>
+     <property name=\"volume\" type=\"int\" value=\"#{map_data.bgm.volume}\"/>
+    </properties>
+   </property>"
+  properties.add_child "<property name=\"autoplay_bgs\" type=\"bool\" value=\"#{map_data.autoplay_bgs}\"/>"
+  properties.add_child "<property name=\"bgs\" type=\"class\" propertytype=\"bga\">
+   <properties>
+    <property name=\"name\" value=\"#{map_data.bgs.name}\"/>
+    <property name=\"volume\" type=\"int\" value=\"#{map_data.bgs.volume}\"/>
+   </properties>
+  </property>"
 
   # global tileset index, used for index offset inside layers
   gid_index = 0
@@ -80,6 +97,8 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
     map.add_child "<layer #{layer_info} > #{data_base} #{tiles} </data></layer>"
     map["nextlayerid"] = map["nextlayerid"].to_i + 1
   end
+
+  # TODO integrate events info into tmx file
 
   # puts map_file.human
   output_file = output_dir + map_name + ".tmx"
