@@ -10,10 +10,8 @@ require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to load ruby data f
 require_relative ROOT_DIR + "tools/eevee/src/common"
 require_relative ROOT_DIR + "tools/eevee/rmxp/rpg_dumper"
 
-TILESETS_DATA = ROOT_DIR + "src/data/Tilesets.rb"
-MAPINFOS = ROOT_DIR + "src/data/MapInfos.Local.rb"
-
-DEFAULT_PAGE = RPG::Event::Page.new
+TILESETS_DATA = ROOT_DIR + "src/essentials/Data/Tilesets.rxdata"
+MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
 
 def extract_map_properties(map_data, properties)
   # eevee exporter doesn't currently support encounter_list
@@ -77,12 +75,18 @@ end
 # generate a Tiled tmx map file based on the ruby map data files
 def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   # extract data
-  map_data = load_ruby(data_file)
+  map_data = load_rxdata(data_file)
   map_file = Nokogiri::XML(File.open(TMS_TEMPLATE))
   map = map_file.root
   id = map_data.tileset_id
-  map_index = (File.basename(data_file, ".rb").split("-")[0].split("Map")[1]).rstrip.to_i
-  map_name = (File.basename(data_file, ".rb").split("-")[1]).lstrip
+  map_index = 0
+  map_name = File.basename(data_file, ".rxdata")
+
+  match = map_name.match(/^Map0*+(?<number>[0-9]++)$/)
+  unless match.nil?
+    map_index = match[:number].to_i
+    map_name = mapinfos.fetch(map_index).name.gsub(/[^0-9A-Za-z ]/, "")
+  end
 
   # add core map details
   map["width"] = map_data.data.xsize
@@ -136,15 +140,15 @@ end
 
 # generate Tiled map files for all the Map data files in a directory
 def generate_maps(source_dir, output_dir)
-  tileset = load_ruby(TILESETS_DATA)
-  mapinfo = load_ruby(MAPINFOS)
+  tileset = load_rxdata(TILESETS_DATA)
+  mapinfo = load_rxdata(MAPINFOS)
   # FileUtils doesn't properly handle relative paths
   # source_dir = File.expand_path(source_dir) + "/"
   # output_dir = File.expand_path(output_dir) + "/"
 
   data_dir = Dir.new(source_dir)
   data_dir.each_child do |data_file|
-    if data_file.include? "Map" and data_file.include? "-"
+    if data_file.include? "Map" and not(data_file.include? "Infos")
       puts "Processing #{data_file}..."
       generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir)
     end
@@ -152,6 +156,6 @@ def generate_maps(source_dir, output_dir)
 end
 
 # generate maps for default dirs
-src_data = ROOT_DIR + "src/data/"
+src_data = ROOT_DIR + "src/essentials/Data/"
 target_dir = ROOT_DIR + "src/tiled/maps/"
 generate_maps(src_data, target_dir)
