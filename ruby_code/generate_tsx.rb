@@ -33,11 +33,13 @@ def generate_tsx(image_file, tsx_to_image_path, output_dir)
 end
 
 def generate_tilesets(source_dir, image_rel, output_dir)
+  puts "Generating tilesets..."
   image_dir = Dir.new(source_dir)
   image_dir.each_child do |image|
-    puts "Processing #{image}..."
+    puts "Generating tsx from #{image}..."
     generate_tsx(source_dir + image, image_rel, output_dir)
   end
+  puts "Finished generating tilesets.\n\n"
 end
 
 generate_tilesets(TILESET_INPUT, TILESET_ASSET_DIR, TILESET_OUTPUT)

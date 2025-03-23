@@ -140,6 +140,7 @@ end
 
 # generate Tiled map files for all the Map data files in a directory
 def generate_maps(source_dir, output_dir)
+  puts "Generating maps..."
   tileset = load_rxdata(TILESETS_DATA)
   mapinfo = load_rxdata(MAPINFOS)
 
@@ -150,6 +151,7 @@ def generate_maps(source_dir, output_dir)
       generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir)
     end
   end
+  puts "Finished generating maps.\n\n"
 end
 
 # generate maps for default dirs

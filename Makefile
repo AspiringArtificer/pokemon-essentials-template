@@ -15,9 +15,11 @@ install:
 	./scripts/install_assets.sh
 
 decompile:
-	cp eevee.yaml tools/eevee/eevee.yaml
-	ruby tools/eevee/eevee.rb export
-	rm tools/eevee/eevee.yaml
+	./scripts/convert_autotiles.sh
+	bundle exec ruby tools/eevee/eevee.rb export
+	bundle exec ruby ruby_code/extract_events.rb
+	bundle exec ruby ruby_code/generate_tsx.rb
+	bundle exec ruby ruby_code/generate_tmx.rb
 
 backup: decompile
 	./scripts/extract_assets.sh

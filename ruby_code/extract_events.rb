@@ -35,6 +35,7 @@ end
 
 # generate event page files for all the Map data files in a directory
 def extract_events(source_dir, output_dir)
+  puts "Extracting events..."
   mapinfo = load_rxdata(MAPINFOS)
 
   data_dir = Dir.new(source_dir)
@@ -44,6 +45,7 @@ def extract_events(source_dir, output_dir)
       generate_event_file(source_dir + data_file, mapinfo, output_dir)
     end
   end
+  puts "Finished extracting events.\n\n"
 end
 
 # generate maps for default dirs
