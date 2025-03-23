@@ -112,7 +112,7 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
     end
     gid_index += 1
   end
-  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/#{tilesets[id].tileset_name}.tsx\" />"
+  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/#{tilesets[id].name.gsub(/[^0-9A-Za-z ]/, "")}.tsx\" />"
 
   # add layers
   layer_tiles = map_data.data.xsize * map_data.data.ysize
