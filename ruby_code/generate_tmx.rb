@@ -142,14 +142,11 @@ end
 def generate_maps(source_dir, output_dir)
   tileset = load_rxdata(TILESETS_DATA)
   mapinfo = load_rxdata(MAPINFOS)
-  # FileUtils doesn't properly handle relative paths
-  # source_dir = File.expand_path(source_dir) + "/"
-  # output_dir = File.expand_path(output_dir) + "/"
 
   data_dir = Dir.new(source_dir)
   data_dir.each_child do |data_file|
     if data_file.include? "Map" and not(data_file.include? "Infos")
-      puts "Processing #{data_file}..."
+      puts "Generating tmx from #{data_file}..."
       generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir)
     end
   end
