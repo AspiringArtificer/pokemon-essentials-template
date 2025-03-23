@@ -6,11 +6,11 @@ TARGET="../src/assets"
 # Find scripts directory
 SCRIPT_SOURCE=${BASH_SOURCE[0]}
 while [ -L "$SCRIPT_SOURCE" ]; do # resolve $SCRIPT_SOURCE until the file is no longer a symlink
-  DIR=$( cd -P "$( dirname "$SCRIPT_SOURCE" )" >/dev/null 2>&1 && pwd )
+  DIR=$(cd -P "$(dirname "$SCRIPT_SOURCE")" >/dev/null 2>&1 && pwd)
   SCRIPT_SOURCE=$(readlink "$SCRIPT_SOURCE")
   [[ $SCRIPT_SOURCE != /* ]] && SCRIPT_SOURCE=$DIR/$SCRIPT_SOURCE # if $SCRIPT_SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
 done
-DIR=$( cd -P "$( dirname "$SCRIPT_SOURCE" )" >/dev/null 2>&1 && pwd )
+DIR=$(cd -P "$(dirname "$SCRIPT_SOURCE")" >/dev/null 2>&1 && pwd)
 
 # Find and copy files ignored by essentials
 pushd $DIR/$SOURCE
@@ -21,7 +21,7 @@ for item in "${asset_files[@]}"; do
     #   cp --update --parents "$item" "$DIR/$TARGET"
     # fi
     echo "skipping $item"
-  elif  [[ "${item##*.}" == "dat" ]]; then
+  elif [[ "${item##*.}" == "dat" ]]; then
     echo "skipping $item"
   else
     cp --update --parents "$item" "$DIR/$TARGET"
@@ -31,7 +31,7 @@ for item in "${asset_files[@]}"; do
     fi
   fi
   # FIXME Shouldn't have to do this, but the battle animation import/export is broken
-  cp  --update --parents "Data/move2anim.dat" "$DIR/$TARGET"
-  cp  --update --parents "Data/PkmnAnimations.rxdata" "$DIR/$TARGET"
+  cp --update --parents "Data/move2anim.dat" "$DIR/$TARGET"
+  cp --update --parents "Data/PkmnAnimations.rxdata" "$DIR/$TARGET"
 done
 popd

@@ -40,7 +40,7 @@ def extract_events(source_dir, output_dir)
   data_dir = Dir.new(source_dir)
   data_dir.each_child do |data_file|
     if data_file.include? "Map" and not(data_file.include? "Infos")
-      puts "Extracting event pages from #{data_file}..."
+      puts "Extracting events from #{data_file}..."
       generate_event_file(source_dir + data_file, mapinfo, output_dir)
     end
   end
