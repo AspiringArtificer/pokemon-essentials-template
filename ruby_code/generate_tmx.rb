@@ -12,6 +12,29 @@ require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data
 TILESETS_DATA = ROOT_DIR + "src/essentials/Data/Tilesets.rxdata"
 MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
 
+def setup_core_info(map, data_file, map_data, mapinfos)
+  map_index = 0
+  map_name = File.basename(data_file, ".rxdata")
+
+  match = map_name.match(/^Map0*+(?<number>[0-9]++)$/)
+  unless match.nil?
+    map_index = match[:number].to_i
+    map_name = mapinfos.fetch(map_index).name.gsub(/[^0-9A-Za-z ]/, "")
+  end
+
+  map["width"] = map_data.data.xsize
+  map["height"] = map_data.data.ysize
+  map["nextlayerid"] = 1
+
+  # add custom properties
+  unless map.at_xpath("properties")
+    map.add_child "<properties/>"
+  end
+  map.at_xpath("properties").add_child "<property name=\"map_index\" type=\"int\" value=\"#{map_index}\"/>"
+
+  return map_name, map_index
+end
+
 def extract_map_properties(map_data, properties)
   # eevee exporter doesn't currently support encounter_list
   if map_data.encounter_step != 30
@@ -50,6 +73,31 @@ def extract_map_info_properties(mapinfo, properties)
   end
 end
 
+def extract_tilesets(map, tileset)
+  # global tileset index, used for index offset inside layers
+  gid_index = 0
+
+  # add tilesets
+  until gid_index == 7
+    unless tileset.autotile_names[gid_index].to_s.strip.empty?
+      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/autotiles/#{tileset.autotile_names[gid_index]}.tsx\" />"
+    end
+    gid_index += 1
+  end
+  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/#{tileset.name.gsub(/[^0-9A-Za-z ]/, "")}.tsx\" />"
+end
+
+def extract_layers(map, map_data)
+  # add layers
+  layer_tiles = map_data.data.xsize * map_data.data.ysize
+  for level in 1..map_data.data.zsize
+    layer_info = "id=\"#{map["nextlayerid"]}\" name=\"z#{level}\" width=\"#{map["width"]}\" height=\"#{map["height"]}\""
+    tiles = map_data.data.data.slice((layer_tiles * (level - 1)), layer_tiles).join(",")
+    map.add_child "<layer #{layer_info} > <data encoding=\"csv\"> #{tiles} </data></layer>"
+    map["nextlayerid"] = map["nextlayerid"].to_i + 1
+  end
+end
+
 def extract_events(map, map_data)
   #special tileset for events
   event_gid = 1 # using the unused id space from 1 - 47
@@ -77,58 +125,14 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   map_data = load_rxdata(data_file)
   map_file = Nokogiri::XML(File.open(TMS_TEMPLATE))
   map = map_file.root
-  id = map_data.tileset_id
-  map_index = 0
-  map_name = File.basename(data_file, ".rxdata")
-
-  match = map_name.match(/^Map0*+(?<number>[0-9]++)$/)
-  unless match.nil?
-    map_index = match[:number].to_i
-    map_name = mapinfos.fetch(map_index).name.gsub(/[^0-9A-Za-z ]/, "")
-  end
 
   # add core map details
-  map["width"] = map_data.data.xsize
-  map["height"] = map_data.data.ysize
-  map["nextlayerid"] = 1
+  map_name, map_index = setup_core_info(map, data_file, map_data, mapinfos)
 
-  # add custom properties
-  unless map.at_xpath("properties")
-    map.add_child "<properties/>"
-  end
-  properties = map.at_xpath("properties")
-  properties.add_child "<property name=\"map_index\" type=\"int\" value=\"#{map_index}\"/>"
-  properties.add_child "<property name=\"full_tileset_name\" value=\"#{tilesets[id].name}\"/>"
-  extract_map_info_properties(mapinfos[map_index], properties)
-  extract_map_properties(map_data, properties)
-
-  # global tileset index, used for index offset inside layers
-  gid_index = 0
-
-  # add tilesets
-  until gid_index == 7
-    unless tilesets[id].autotile_names[gid_index].to_s.strip.empty?
-      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/autotiles/#{tilesets[id].autotile_names[gid_index]}.tsx\" />"
-    end
-    gid_index += 1
-  end
-  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/#{tilesets[id].name.gsub(/[^0-9A-Za-z ]/, "")}.tsx\" />"
-
-  # add layers
-  layer_tiles = map_data.data.xsize * map_data.data.ysize
-  for level in 1..map_data.data.zsize
-    layer_info = "id=\"#{map["nextlayerid"]}\" name=\"z#{level}\" width=\"#{map["width"]}\" height=\"#{map["height"]}\""
-    data_base = "<data encoding=\"csv\">"
-    # gather tile data
-    tiles = ""
-    for index in (layer_tiles * (level - 1))..(layer_tiles * level - 2)
-      tiles += map_data.data.data[index].to_s + ","
-    end
-    tiles += map_data.data.data[layer_tiles * level - 1].to_s
-    map.add_child "<layer #{layer_info} > #{data_base} #{tiles} </data></layer>"
-    map["nextlayerid"] = map["nextlayerid"].to_i + 1
-  end
-
+  extract_map_info_properties(mapinfos[map_index], map.at_xpath("properties"))
+  extract_map_properties(map_data, map.at_xpath("properties"))
+  extract_tilesets(map, tilesets[map_data.tileset_id])
+  extract_layers(map, map_data)
   extract_events(map, map_data)
 
   output_file = output_dir + map_name + ".tmx"
