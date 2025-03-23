@@ -6,9 +6,8 @@ RUBY_DIR = __dir__ + "/"
 TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
 
 ROOT_DIR = RUBY_DIR + "../"
-require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to load ruby data files
-require_relative ROOT_DIR + "tools/eevee/src/common"
-require_relative ROOT_DIR + "tools/eevee/rmxp/rpg_dumper"
+require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to manipulate rpg data
+require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data files
 
 TILESETS_DATA = ROOT_DIR + "src/essentials/Data/Tilesets.rxdata"
 MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
@@ -132,7 +131,6 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
 
   extract_events(map, map_data)
 
-  # puts map_file.human
   output_file = output_dir + map_name + ".tmx"
   FileUtils.mkdir_p(output_dir)
   File.write(output_file, map_file.human)

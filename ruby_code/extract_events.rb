@@ -3,9 +3,8 @@ require "fileutils" # needed for file operations
 RUBY_DIR = __dir__ + "/"
 
 ROOT_DIR = RUBY_DIR + "../"
-require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to load ruby data files
-require_relative ROOT_DIR + "tools/eevee/src/common"
-require_relative ROOT_DIR + "tools/eevee/rmxp/rpg_dumper"
+require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to manipulate rpg data
+require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data files
 
 MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
 DEFAULT_PAGE = RPG::Event::Page.new
