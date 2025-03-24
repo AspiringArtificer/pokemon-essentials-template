@@ -57,19 +57,23 @@ def extract_map_properties(map_data, properties)
 end
 
 def extract_map_info_properties(mapinfo, properties)
-  properties.add_child "<property name=\"map_name\" value=\"#{mapinfo.name}\"/>"
+  properties.add_child "<property name=\"mapinfo\" type=\"class\" propertytype=\"rpg_mapinfo\"/>"
+  rpg_mapinfo = properties.xpath("//property")[-1]
+  rpg_mapinfo.add_child "<properties/>"
+
+  rpg_mapinfo.at_xpath("properties").add_child "<property name=\"name\" value=\"#{mapinfo.name}\"/>"
   if mapinfo.parent_id != 0
-    properties.add_child "<property name=\"parent_id\" type=\"int\" value=\"#{mapinfo.parent_id}\"/>"
+    rpg_mapinfo.at_xpath("properties").add_child "<property name=\"parent_id\" type=\"int\" value=\"#{mapinfo.parent_id}\"/>"
   end
-  properties.add_child "<property name=\"order\" value=\"#{mapinfo.order}\"/>"
+  rpg_mapinfo.at_xpath("properties").add_child "<property name=\"order\" type=\"int\" value=\"#{mapinfo.order}\"/>"
   if mapinfo.expanded
-    properties.add_child "<property name=\"expanded\" type=\"bool\" value=\"#{mapinfo.expanded}\"/>"
+    rpg_mapinfo.at_xpath("properties").add_child "<property name=\"expanded\" type=\"bool\" value=\"#{mapinfo.expanded}\"/>"
   end
   if mapinfo.scroll_x != 0
-    properties.add_child "<property name=\"scroll_x\" type=\"int\" value=\"#{mapinfo.scroll_x}\"/>"
+    rpg_mapinfo.at_xpath("properties").add_child "<property name=\"scroll_x\" type=\"int\" value=\"#{mapinfo.scroll_x}\"/>"
   end
   if mapinfo.scroll_y != 0
-    properties.add_child "<property name=\"scroll_y\" type=\"int\" value=\"#{mapinfo.scroll_y}\"/>"
+    rpg_mapinfo.at_xpath("properties").add_child "<property name=\"scroll_y\" type=\"int\" value=\"#{mapinfo.scroll_y}\"/>"
   end
 end
 

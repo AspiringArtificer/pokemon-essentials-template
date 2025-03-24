@@ -50,7 +50,7 @@
                 {
                     "name": "blend_type",
                     "type": "int",
-                    "value": "0"
+                    "value": 0
                 },
                 {
                     "name": "hue",
@@ -84,6 +84,56 @@
                 }
             ],
             "name": "rpg_fog",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
+            "id": 4,
+            "members": [
+                {
+                    "name": "expanded",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "name",
+                    "type": "string",
+                    "value": ""
+                },
+                {
+                    "name": "order",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "parent_id",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "scroll_x",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "scroll_y",
+                    "type": "int",
+                    "value": 0
+                }
+            ],
+            "name": "rpg_mapinfo",
             "type": "class",
             "useAs": [
                 "property",
