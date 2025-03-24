@@ -11,6 +11,7 @@ require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data
 
 TILESETS_DATA = ROOT_DIR + "src/essentials/Data/Tilesets.rxdata"
 MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
+EVENT_GID = 1
 
 def setup_core_info(map, data_file, map_data, mapinfos)
   map_index = 0
@@ -36,7 +37,7 @@ def setup_core_info(map, data_file, map_data, mapinfos)
 end
 
 def extract_map_properties(map_data, properties)
-  # eevee exporter doesn't currently support encounter_list
+  # TODO add encounter_list?
   if map_data.encounter_step != 30
     properties.add_child "<property name=\"encounter_step\" type=\"int\" value=\"#{map_data.encounter_step}\"/>"
   end
@@ -81,17 +82,28 @@ def extract_tilesets(map, tileset)
   # global tileset index, used for index offset inside layers
   gid_index = 0
 
+  #special tileset for events
+  map.add_child "<tileset firstgid=\"#{EVENT_GID}\" source=\"../events/events.tsx\" />"
+
   # add tilesets
   until gid_index == 7
     unless tileset.autotile_names[gid_index].to_s.strip.empty?
-      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/autotiles/#{tileset.autotile_names[gid_index]}.tsx\" />"
+      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../tilesets/autotiles/#{tileset.autotile_names[gid_index]}.tsx\" />"
+    else
+      # needed to force tileset alignment
+      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../blank_tileset/blank.tsx\" />"
     end
     gid_index += 1
   end
-  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48}\" source=\"../tilesets/#{tileset.name.gsub(/[^0-9A-Za-z ]/, "")}.tsx\" />"
+  map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../tilesets/#{tileset.name.gsub(/[^0-9A-Za-z ]/, "")}.tsx\" />"
 end
 
 def extract_layers(map, map_data)
+
+  # To play nice with Tiled, we need to align tileset gids with their size.
+  # Because of this, we need to increment every nonzero tile index
+  map_data.data.data = map_data.data.data.map { |x| x == 0 ? 0 : x + 1 }
+
   # add layers
   layer_tiles = map_data.data.xsize * map_data.data.ysize
   for level in 1..map_data.data.zsize
@@ -103,11 +115,6 @@ def extract_layers(map, map_data)
 end
 
 def extract_events(map, map_data)
-  #special tileset for events
-  event_gid = 1 # using the unused id space from 1 - 47
-  if map_data.events.length > 0
-    map.add_child "<tileset firstgid=\"#{event_gid}\" source=\"../events/events.tsx\" />"
-  end
 
   # add object layer for events
   events_info = "id=\"#{map["nextlayerid"]}\" name=\"events\""
@@ -117,7 +124,7 @@ def extract_events(map, map_data)
 
   map_data.events.each do |key, event|
     # Tiled places events by pixel and uses bottom-left index, rmpx places by tile with top-left index
-    obj_info = "id=\"#{event.id}\" gid=\"#{event_gid}\" x=\"#{event.x * 32}\" y=\"#{(event.y + 1) * 32}\" width=\"32\" height=\"32\""
+    obj_info = "id=\"#{event.id}\" gid=\"#{EVENT_GID}\" x=\"#{event.x * 32}\" y=\"#{(event.y + 1) * 32}\" width=\"32\" height=\"32\""
     properties = "<property name=\"name\" value=\"#{event.name}\"/>"
     object_group.add_child "<object #{obj_info}><properties>#{properties}</properties></object>"
   end
