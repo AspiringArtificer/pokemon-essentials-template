@@ -18,17 +18,6 @@ MAPINFOS_DATA = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
 AUTOTILES_DIR = ROOT_DIR + "src/tiled/tilesets/autotiles/"
 TILESETS_DIR = ROOT_DIR + "src/tiled/tilesets/"
 
-def get_tileset_id(tileset_path)
-  tileset = Nokogiri::XML(File.open(tileset_path))
-  for property in tileset.xpath("//property")
-    name = property["name"]
-    if name == "id"
-      return property["value"].to_i
-    end
-  end
-  return 0
-end
-
 def get_sorted_tilesets(source_dir)
   files = Dir.foreach(source_dir).select { |x| File.file?("#{source_dir}/#{x}") }
 
@@ -86,6 +75,7 @@ def convert_tsx_to_tileset(tsx_path)
 end
 
 def compile_tilesets(source_dir, output_dir)
+  puts "Compiling Tilesets..."
   new_tilesets = get_sorted_tilesets(source_dir)
 
   tilesets = []
@@ -100,27 +90,164 @@ def compile_tilesets(source_dir, output_dir)
   end
 
   FileUtils.mkdir_p(output_dir)
-  save_ruby(output_dir + "Tilesets.rb", tilesets)
+  # save_ruby(output_dir + "Tilesets.rb", tilesets)
+  puts "Saving " + output_dir + "Tilesets.rxdata..."
   save_rxdata(output_dir + "Tilesets.rxdata", tilesets)
+  puts "Tilesets compilation complete.\n\n"
 end
 
-def compile_maps(source_dir, output_dir)
+def get_maps_and_info(source_dir, events_dir)
+  files = Dir.foreach(source_dir).select { |x| File.file?("#{source_dir}/#{x}") }
+
+  maps = []
+  mapinfos = {}
+  for file in files
+    if File.extname(file) == ".tmx"
+      map, mapinfo, map_index = convert_tmx_to_map_data(source_dir + file, events_dir + File.basename(file, ".tmx") + "/")
+      maps.append(map)
+      mapinfos[map_index] = mapinfo
+    end
+  end
+
+  return maps, mapinfos
+end
+
+def generate_mapinfo(tmx)
   mapinfo = RPG::MapInfo.new
 
-  temp_map = RPG::Map.new(1, 1)
+  mapinfo_properties = tmx.xpath("//property").detect { |x| x["name"] == "mapinfo" }.at_xpath("properties").children
 
-  FileUtils.mkdir_p(output_dir)
-  # save_ruby(output_dir + "MapInfos.rb", mapinfo)
-  # save_ruby(output_dir + "Map001.rb", temp_map)
-  # save_rxdata(output_dir + "MapInfos.rxdata", mapinfo)
-  # save_rxdata(output_dir + "Map001.rxdata", temp_map)
+  mapinfo.name = (mapinfo_properties.detect { |x| x["name"] == "name" })["value"]
+  mapinfo.order = (mapinfo_properties.detect { |x| x["name"] == "order" })["value"].to_i
+  parent_id = mapinfo_properties.detect { |x| x["name"] == "parent_id" }
+  if parent_id
+    mapinfo.parent_id = parent_id["value"].to_i
+  end
+  expanded = mapinfo_properties.detect { |x| x["name"] == "expanded" }
+  if expanded
+    mapinfo.expanded = expanded["value"] == "true"
+  end
+  scroll_x = mapinfo_properties.detect { |x| x["name"] == "scroll_x" }
+  if scroll_x
+    mapinfo.scroll_x = scroll_x["value"].to_i
+  end
+  scroll_y = mapinfo_properties.detect { |x| x["name"] == "scroll_y" }
+  if scroll_y
+    mapinfo.scroll_y = scroll_y["value"].to_i
+  end
+  return mapinfo
 end
 
-def compile_all(source_dir, output_dir)
-  compile_tilesets(source_dir + "tilesets/", output_dir)
-  compile_maps(source_dir + "maps/", output_dir)
+def generate_map_table(tmx, width, height)
+  layers = tmx.xpath("//layer")
+
+  map_table = Table.new(width, height, layers.length())
+
+  data = []
+  for layer in layers
+    tiles = layer.at_xpath("data").text.split(",").map(&:to_i)
+    data.push(*(tiles.map { |x| x == 0 ? 0 : x - 1 }))
+  end
+
+  map_table.data = data
+
+  return map_table
+end
+
+def generate_map_events(tmx, events_dir)
+  events = {}
+
+  return events
+end
+
+def convert_tmx_to_map_data(tmx_path, events_dir)
+  tmx = Nokogiri::XML(File.open(tmx_path)).root
+  map = RPG::Map.new(tmx["width"].to_i, tmx["height"].to_i)
+  map_folder = File.dirname(tmx_path) + "/"
+
+  tileset_file = map_folder + tmx.xpath("//tileset")[-1]["source"]
+  tsx = Nokogiri::XML(File.open(tileset_file)).root
+
+  map.tileset_id = tsx.xpath("//property").detect { |x| x["name"] == "id" }["value"].to_i
+  map.autoplay_bgm = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgm" }["value"] == "true"
+  map.autoplay_bgs = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgs" }["value"] == "true"
+  # TODO add encounter_list?
+  encounter_step = tmx.xpath("//property").detect { |x| x["name"] == "encounter_step" }
+  if encounter_step
+    map.encounter_step = encounter_step["value"].to_i
+  end
+
+  bgm_object = tsx.xpath("//property").detect { |x| x["name"] == "bgm" }
+  if bgm_object
+    bgm_properties = bgm_object.at_xpath("properties").children
+    bgm_name = bgm_properties.detect { |x| x["name"] == "name" }
+    if bgm_name
+      map.bgm.name = bgm_name["value"]
+    end
+    bgm_volume = bgm_properties.detect { |x| x["name"] == "volume" }
+    if bgm_volume
+      map.bgm.volume = bgm_volume["value"].to_i
+    end
+    bgm_pitch = bgm_properties.detect { |x| x["name"] == "pitch" }
+    if bgm_pitch
+      map.bgm.pitch = bgm_pitch["value"].to_i
+    end
+  end
+
+  bgs_object = tsx.xpath("//property").detect { |x| x["name"] == "bgs" }
+  if bgs_object
+    bgs_properties = bgs_object.at_xpath("properties").children
+    bgs_name = bgs_properties.detect { |x| x["name"] == "name" }
+    if bgs_name
+      map.bgs.name = bgs_name["value"]
+    end
+    bgs_volume = bgs_properties.detect { |x| x["name"] == "volume" }
+    if bgs_volume
+      map.bgs.volume = bgs_volume["value"].to_i
+    end
+    bgs_pitch = bgs_properties.detect { |x| x["name"] == "pitch" }
+    if bgs_pitch
+      map.bgs.pitch = bgs_pitch["value"].to_i
+    end
+  end
+
+  map.data = generate_map_table(tmx, map.width, map.height)
+  map.events = generate_map_events(tmx, events_dir)
+
+  tmx_map_index = tmx.xpath("//property").detect { |x| x["name"] == "map_index" }
+  unless tmx_map_index
+    raise IndexError.new "#{File.basename(tmx)} doesn't contain a map_index!"
+  end
+  map_index = tmx_map_index["value"].to_i
+
+  return map, generate_mapinfo(tmx), map_index
+end
+
+def compile_maps(maps_dir, events_dir, output_dir)
+  puts "Compiling Maps..."
+  maps, mapinfos = get_maps_and_info(maps_dir, events_dir)
+
+  FileUtils.mkdir_p(output_dir)
+  puts "Saving " + output_dir + "MapInfos.rxdata..."
+  # save_ruby(output_dir + "MapInfos.rb", mapinfos.sort.to_h)
+  save_rxdata(output_dir + "MapInfos.rxdata", mapinfos.sort.to_h)
+
+  maps.each_with_index do |map, index|
+    map_index = mapinfos.keys[index]
+    puts mapinfos.values[index].name
+    puts "Saving " + output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rxdata..."
+    # save_ruby(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rb", map, name: "Map#{map_index.to_s.rjust(3, "0")}.rb", maps: mapinfos)
+    save_rxdata(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rxdata", map)
+  end
+  puts "Maps compilation complete.\n\n"
+end
+
+def compile_all(tiled_dir, events_dir, output_dir)
+  compile_tilesets(tiled_dir + "tilesets/", output_dir)
+  compile_maps(tiled_dir + "maps/", events_dir, output_dir)
 end
 
 tiled_dir = ROOT_DIR + "src/tiled/"
+events_dir = ROOT_DIR + "src/events/"
 target_dir = ROOT_DIR + "temp_build/"
-compile_all(tiled_dir, target_dir)
+compile_all(tiled_dir, events_dir, target_dir)
