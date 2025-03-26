@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="32" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+   <properties>
+      <property name="map_index" type="int" value="13"/>
+      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+         <properties>
+            <property name="name" value="Game Corner"/>
+            <property name="parent_id" type="int" value="7"/>
+            <property name="order" type="int" value="14"/>
+            <property name="scroll_x" type="int" value="320"/>
+            <property name="scroll_y" type="int" value="468"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgm" type="bool" value="true"/>
+      <property name="bgm" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="100"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgs" type="bool" value="false"/>
+      <property name="bgs" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="80"/>
+         </properties>
+      </property>
+   </properties>
+   <tileset firstgid="1" source="../events/events.tsx"/>
+   <tileset firstgid="49" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="385" source="../tilesets/Game Corner.tsx"/>
+   <layer id="1" name="z1" width="20" height="32">
+      <data encoding="csv"> 385,385,385,385,386,387,388,385,385,385,385,385,385,386,387,388,385,385,480,480,393,393,393,393,394,395,396,393,393,393,393,393,393,394,395,396,393,393,480,480,410,410,410,410,410,410,410,410,410,410,410,410,410,410,410,410,410,410,480,480,410,410,410,410,410,410,410,411,410,410,410,411,410,410,410,410,410,411,480,480,410,426,418,418,418,418,418,419,426,418,418,419,426,418,418,418,418,419,480,480,410,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,480,480,410,412,401,401,401,410,410,412,401,401,401,401,401,401,401,401,401,401,480,480,410,411,401,401,401,410,410,411,401,401,401,401,401,401,401,401,401,401,480,480,410,411,401,401,401,410,410,411,401,401,410,410,410,412,401,401,401,401,480,480,410,411,401,401,401,410,410,411,401,401,410,410,410,411,401,401,401,401,480,480,410,411,401,401,401,410,410,411,401,401,410,410,410,411,401,401,401,401,480,480,410,419,401,401,401,426,418,419,401,401,426,418,418,419,401,401,401,401,480,480,410,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,480,480,410,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,401,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,385,385,385,386,387,388,385,385,385,480,480,480,480,480,480,480,480,480,480,480,393,393,393,394,395,396,393,393,393,480,480,480,480,480,480,480,480,480,480,480,410,410,410,410,410,410,410,410,410,480,480,480,480,480,480,480,480,480,480,480,410,410,410,410,410,410,410,410,410,480,480,480,480,480,480,480,480,480,480,480,410,418,418,418,418,418,418,418,418,480,480,480,480,480,480,480,480,480,480,480,410,401,401,401,401,401,401,401,401,480,480,480,480,480,480,480,480,480,480,480,410,410,412,401,401,401,401,410,410,480,480,480,480,480,480,480,480,480,480,480,410,410,411,401,401,401,401,408,410,480,480,480,480,480,480,480,480,480,480,480,410,401,401,401,401,401,401,401,401,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480,480 </data>
+   </layer>
+   <layer id="2" name="z2" width="20" height="32">
+      <data encoding="csv"> 0,0,489,490,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500,605,497,498,0,0,605,0,605,0,605,0,605,0,0,0,605,500,0,0,508,598,505,506,572,614,600,0,598,599,600,0,598,615,599,615,600,508,0,0,0,606,624,578,580,622,608,0,606,607,608,0,606,623,607,623,608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,514,0,0,0,0,513,514,0,0,0,0,0,0,0,0,0,0,487,0,0,522,533,0,0,525,521,522,533,0,0,0,0,0,0,0,0,0,495,0,0,522,533,0,0,525,521,522,533,0,0,526,527,528,0,0,0,0,519,0,0,522,533,0,0,525,521,522,533,0,0,534,535,536,0,0,0,0,487,0,0,522,533,0,0,525,521,522,533,0,0,545,546,547,0,0,0,0,495,0,0,530,533,0,0,525,529,530,533,0,0,553,554,555,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,500,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,510,0,0,508,0,0,0,0,0,0,0,469,470,471,0,0,0,0,0,0,518,0,0,0,0,0,0,0,0,0,0,477,478,479,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,489,490,0,0,0,489,490,0,0,0,0,0,0,0,0,0,0,0,0,605,497,498,0,0,0,497,498,605,0,0,0,0,0,0,0,0,0,0,0,598,505,506,615,599,615,505,506,600,0,0,0,0,0,0,0,0,0,0,0,606,623,607,623,607,623,607,623,608,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,481,482,0,0,0,0,0,481,482,0,0,0,0,0,0,0,0,0,0,0,497,498,0,0,0,0,0,497,498,0,0,0,0,0,0,0,0,0,0,0,505,506,0,0,0,0,0,505,506,0,0,0,0,0,0,0,0,0,0,0,0,0,0,469,470,471,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,477,478,479,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <layer id="3" name="z3" width="20" height="32">
+      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,616,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,537,538,539,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,615,599,0,0,0,599,615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <objectgroup id="4" name="events">
+      <object id="1" gid="1" x="0" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 1"/>
+         </properties>
+      </object>
+      <object id="10" gid="1" x="160" y="352" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 10"/>
+         </properties>
+      </object>
+      <object id="11" gid="1" x="192" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 11"/>
+         </properties>
+      </object>
+      <object id="12" gid="1" x="192" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 12"/>
+         </properties>
+      </object>
+      <object id="13" gid="1" x="192" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 13"/>
+         </properties>
+      </object>
+      <object id="14" gid="1" x="192" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 14"/>
+         </properties>
+      </object>
+      <object id="15" gid="1" x="192" y="352" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 15"/>
+         </properties>
+      </object>
+      <object id="16" gid="1" x="352" y="352" width="32" height="32">
+         <properties>
+            <property name="name" value="Voltorb Flip"/>
+         </properties>
+      </object>
+      <object id="17" gid="1" x="288" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Lottery"/>
+         </properties>
+      </object>
+      <object id="18" gid="1" x="352" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Voltorb Flip man"/>
+         </properties>
+      </object>
+      <object id="19" gid="1" x="128" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Coin seller"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="0" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 2"/>
+         </properties>
+      </object>
+      <object id="20" gid="1" x="288" y="480" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit"/>
+         </properties>
+      </object>
+      <object id="21" gid="1" x="96" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Coin Case giver"/>
+         </properties>
+      </object>
+      <object id="22" gid="1" x="416" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad explainer"/>
+         </properties>
+      </object>
+      <object id="23" gid="1" x="448" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad card shop"/>
+         </properties>
+      </object>
+      <object id="24" gid="1" x="512" y="192" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad duel"/>
+         </properties>
+      </object>
+      <object id="25" gid="1" x="512" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad duel with rules"/>
+         </properties>
+      </object>
+      <object id="26" gid="1" x="512" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad duel with deck"/>
+         </properties>
+      </object>
+      <object id="27" gid="1" x="512" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Triple Triad duel with prize"/>
+         </properties>
+      </object>
+      <object id="28" gid="1" x="64" y="768" width="32" height="32">
+         <properties>
+            <property name="name" value="Prize vendor left"/>
+         </properties>
+      </object>
+      <object id="29" gid="1" x="128" y="768" width="32" height="32">
+         <properties>
+            <property name="name" value="Prize vendor middle"/>
+         </properties>
+      </object>
+      <object id="3" gid="1" x="0" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 3"/>
+         </properties>
+      </object>
+      <object id="30" gid="1" x="192" y="768" width="32" height="32">
+         <properties>
+            <property name="name" value="Prize vendor right"/>
+         </properties>
+      </object>
+      <object id="31" gid="1" x="128" y="992" width="32" height="32">
+         <properties>
+            <property name="name" value="Shop exit"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="0" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 4"/>
+         </properties>
+      </object>
+      <object id="5" gid="1" x="0" y="352" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 5"/>
+         </properties>
+      </object>
+      <object id="6" gid="1" x="160" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 6"/>
+         </properties>
+      </object>
+      <object id="7" gid="1" x="160" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 7"/>
+         </properties>
+      </object>
+      <object id="8" gid="1" x="160" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 8"/>
+         </properties>
+      </object>
+      <object id="9" gid="1" x="160" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Slot Machine 9"/>
+         </properties>
+      </object>
+   </objectgroup>
+</map>

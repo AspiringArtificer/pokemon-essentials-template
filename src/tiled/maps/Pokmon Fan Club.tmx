@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+   <properties>
+      <property name="map_index" type="int" value="26"/>
+      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+         <properties>
+            <property name="name" value="Pokémon Fan Club"/>
+            <property name="parent_id" type="int" value="23"/>
+            <property name="order" type="int" value="26"/>
+            <property name="scroll_x" type="int" value="320"/>
+            <property name="scroll_y" type="int" value="240"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgm" type="bool" value="true"/>
+      <property name="bgm" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="100"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgs" type="bool" value="false"/>
+      <property name="bgs" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="80"/>
+         </properties>
+      </property>
+   </properties>
+   <tileset firstgid="1" source="../events/events.tsx"/>
+   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+   <layer id="1" name="z1" width="20" height="15">
+      <data encoding="csv"> 438,439,439,439,439,439,439,439,439,439,439,440,543,543,543,543,543,543,543,543,446,447,447,447,447,447,447,447,447,447,447,448,543,543,543,543,543,543,543,543,1034,1042,1042,1042,1034,1034,1034,1034,1036,1042,1042,1028,543,543,543,543,543,543,543,543,1034,1025,1193,1194,1194,1194,1194,1194,1194,1195,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1201,1202,1202,1202,1202,1202,1202,1203,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1201,1202,1202,1202,1202,1202,1202,1203,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1201,1202,1202,1202,1202,1202,1202,1203,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1209,1210,1210,1210,1210,1210,1210,1211,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,543,543,543,543,543,543,543,543,1034,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,1025,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+   </layer>
+   <layer id="2" name="z2" width="20" height="15">
+      <data encoding="csv"> 0,0,1475,0,1505,1506,1505,1506,0,1475,0,0,0,0,0,0,0,0,0,0,0,0,1483,0,1513,1514,1513,1514,0,1483,0,0,0,0,0,0,0,0,0,0,454,0,0,0,1521,1522,1521,1522,0,0,0,456,0,0,0,0,0,0,0,0,1771,0,0,0,0,1661,1662,0,0,0,0,1771,0,0,0,0,0,0,0,0,1779,0,0,0,0,1669,1670,0,0,0,0,1779,0,0,0,0,0,0,0,0,1757,0,0,0,1659,2132,2134,1660,0,0,0,1757,0,0,0,0,0,0,0,0,1765,0,0,0,1667,2140,2142,1668,0,0,0,1765,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,1765,0,0,0,0,0,0,0,0,0,0,1765,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,0,1779,0,0,0,1246,1247,1248,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <layer id="3" name="z3" width="20" height="15">
+      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <objectgroup id="4" name="events">
+      <object id="1" gid="1" x="160" y="384" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="64" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Trader - Basic"/>
+         </properties>
+      </object>
+      <object id="3" gid="1" x="160" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Pokémon ball - Basic"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="288" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Gift Pokémon - Advanced"/>
+         </properties>
+      </object>
+      <object id="5" gid="1" x="96" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Trade - Advanced"/>
+         </properties>
+      </object>
+      <object id="6" gid="1" x="256" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Gift Pokémon - Basic"/>
+         </properties>
+      </object>
+      <object id="7" gid="1" x="224" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Gift egg"/>
+         </properties>
+      </object>
+      <object id="8" gid="1" x="192" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Pokémon ball - Advanced"/>
+         </properties>
+      </object>
+   </objectgroup>
+</map>

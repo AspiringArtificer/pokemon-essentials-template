@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+   <properties>
+      <property name="map_index" type="int" value="10"/>
+      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+         <properties>
+            <property name="name" value="Cedolan Gym"/>
+            <property name="parent_id" type="int" value="7"/>
+            <property name="order" type="int" value="11"/>
+            <property name="scroll_x" type="int" value="320"/>
+            <property name="scroll_y" type="int" value="272"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgm" type="bool" value="true"/>
+      <property name="bgm" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="100"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgs" type="bool" value="false"/>
+      <property name="bgs" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="80"/>
+         </properties>
+      </property>
+   </properties>
+   <tileset firstgid="1" source="../events/events.tsx"/>
+   <tileset firstgid="49" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="385" source="../tilesets/Gyms.tsx"/>
+   <layer id="1" name="z1" width="20" height="17">
+      <data encoding="csv"> 401,402,403,403,403,403,404,403,403,403,403,406,407,385,385,385,385,385,385,385,409,410,411,411,413,413,412,413,413,411,411,414,415,385,385,385,385,385,385,385,409,418,419,419,419,419,419,419,419,419,419,422,415,385,385,385,385,385,385,385,409,426,427,428,428,436,428,436,428,428,429,430,415,385,385,385,385,385,385,385,409,434,435,443,443,443,460,443,443,443,435,438,415,385,385,385,385,385,385,385,409,442,443,443,451,467,468,469,451,443,443,435,415,385,385,385,385,385,385,385,409,450,443,443,467,468,468,468,469,443,443,443,415,385,385,385,385,385,385,385,409,450,443,451,435,437,460,437,435,451,443,443,415,385,385,385,385,385,385,385,409,458,443,452,453,453,453,453,453,454,443,451,415,385,385,385,385,385,385,385,409,450,443,435,437,435,445,435,437,435,443,443,415,385,385,385,385,385,385,385,409,458,443,443,452,453,453,453,454,443,443,451,415,385,385,385,385,385,385,385,409,450,443,443,435,435,445,435,435,443,443,443,415,385,385,385,385,385,385,385,417,448,453,453,447,448,453,453,447,448,453,453,423,385,385,385,385,385,385,385,425,448,453,453,455,456,453,453,455,456,453,453,431,385,385,385,385,385,385,385,433,448,453,453,453,453,453,453,453,453,453,453,439,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385 </data>
+   </layer>
+   <layer id="2" name="z2" width="20" height="17">
+      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,462,463,464,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,470,471,472,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,386,0,0,0,386,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,394,0,0,0,394,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,387,388,389,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,395,396,397,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <layer id="3" name="z3" width="20" height="17">
+      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <objectgroup id="4" name="events">
+      <object id="1" gid="1" x="192" y="512" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="224" y="416" width="32" height="32">
+         <properties>
+            <property name="name" value="Gym Guy"/>
+         </properties>
+      </object>
+      <object id="3" gid="1" x="192" y="192" width="32" height="32">
+         <properties>
+            <property name="name" value="Brock"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="96" y="288" width="32" height="32">
+         <properties>
+            <property name="name" value="Trainer(3)"/>
+         </properties>
+      </object>
+   </objectgroup>
+</map>

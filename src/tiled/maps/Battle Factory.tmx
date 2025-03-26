@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+   <properties>
+      <property name="map_index" type="int" value="62"/>
+      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+         <properties>
+            <property name="name" value="Battle Factory"/>
+            <property name="parent_id" type="int" value="52"/>
+            <property name="order" type="int" value="58"/>
+            <property name="expanded" type="bool" value="true"/>
+            <property name="scroll_x" type="int" value="320"/>
+            <property name="scroll_y" type="int" value="240"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgm" type="bool" value="true"/>
+      <property name="bgm" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="100"/>
+         </properties>
+      </property>
+      <property name="autoplay_bgs" type="bool" value="false"/>
+      <property name="bgs" type="class" propertytype="bga">
+         <properties>
+            <property name="name" value=""/>
+            <property name="volume" type="int" value="80"/>
+         </properties>
+      </property>
+   </properties>
+   <tileset firstgid="1" source="../events/events.tsx"/>
+   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
+   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+   <layer id="1" name="z1" width="20" height="15">
+      <data encoding="csv"> 521,522,522,522,522,522,522,522,522,522,522,522,522,524,543,543,543,543,543,543,529,530,530,530,530,530,530,530,530,530,530,530,530,532,543,543,543,543,543,543,634,634,652,642,642,634,634,634,634,652,642,642,634,656,543,543,543,543,543,543,635,634,634,636,634,634,634,634,634,634,636,634,634,635,543,543,543,543,543,543,635,650,642,643,650,642,632,634,652,642,643,650,642,643,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,634,634,636,625,625,625,625,625,625,625,625,625,634,634,543,543,543,543,543,543,543,543,543,543,636,625,625,625,625,625,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+   </layer>
+   <layer id="2" name="z2" width="20" height="15">
+      <data encoding="csv"> 0,0,390,391,392,0,1785,1786,0,390,391,392,0,0,0,0,0,0,0,0,0,1969,398,399,400,1969,1793,1794,1969,398,399,400,1969,0,0,0,0,0,0,0,537,1978,1964,0,1962,1980,1801,1802,1978,1964,0,1962,1980,540,0,0,0,0,0,0,0,1986,1988,0,1986,1988,0,1726,1986,1988,0,1986,1988,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1734,0,0,0,0,0,0,0,0,0,0,0,0,1785,1786,0,0,0,0,0,0,0,0,0,0,1785,1786,0,0,0,0,0,0,1793,1794,0,0,0,0,0,0,0,0,0,0,1793,1794,0,0,0,0,0,0,1801,1802,0,0,0,0,0,0,0,0,0,0,1801,1802,0,0,0,0,0,0,0,0,0,0,0,1246,1247,1247,1248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <layer id="3" name="z3" width="20" height="15">
+      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1860,0,1694,1696,0,0,0,1860,0,0,0,0,0,0,0,0,0,0,0,0,1868,0,1702,1704,0,0,0,1868,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1710,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+   </layer>
+   <objectgroup id="4" name="events">
+      <object id="1" gid="1" x="192" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit left"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="224" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit right"/>
+         </properties>
+      </object>
+      <object id="3" gid="1" x="192" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="PC"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="96" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Single battles NPC"/>
+         </properties>
+      </object>
+      <object id="5" gid="1" x="320" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Double battles NPC"/>
+         </properties>
+      </object>
+      <object id="6" gid="1" x="128" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Single results"/>
+         </properties>
+      </object>
+      <object id="7" gid="1" x="352" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Double results"/>
+         </properties>
+      </object>
+      <object id="8" gid="1" x="224" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Battle recorder"/>
+         </properties>
+      </object>
+   </objectgroup>
+</map>
