@@ -15,7 +15,7 @@ compile:
 	bundle exec ruby tools/eevee/eevee.rb import
 	bundle exec ruby ruby_code/compile_tiled.rb 
 # 	battle animation importer is busted, so we just copy the rxdata
-	cp src/assets/Data/* src/essentials/Data/*	
+	cp src/assets/Data/* src/essentials/Data/.
 
 # copy pictures,audio,etc to essentials folder
 install:

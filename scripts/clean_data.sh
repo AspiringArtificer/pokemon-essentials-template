@@ -19,6 +19,9 @@ pushd "$DIR/$ESSENTIALS_PATH/Data"
 for item in "${arr[@]}"; do
   rm -f $item
 done
+
+rm -f Map*.rxdata
+rm -f Tilesets.rxdata
 rm -f PkmnAnimations.rxdata
 rm -f PluginScripts.rxdata
 rm -f *.dat
