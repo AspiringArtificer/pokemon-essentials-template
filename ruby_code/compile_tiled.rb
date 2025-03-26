@@ -155,9 +155,35 @@ def generate_map_table(tmx, width, height)
 end
 
 def generate_map_events(tmx, events_dir)
-  events = {}
+  events_hash = {}
+  tmx_events_array = tmx.xpath("//objectgroup").detect { |x| x["name"] == "events" }.children
 
-  return events
+  if File.directory?(events_dir)
+    files = Dir.foreach(events_dir).select { |x| File.file?("#{events_dir}/#{x}") }
+    for file in files
+      event = load_ruby(events_dir + file)
+
+      tmx_event = tmx_events_array.detect { |x| x["id"].to_i == event.id }
+      unless tmx_event
+        mapinfo_properties = tmx.xpath("//property").detect { |x| x["name"] == "mapinfo" }.at_xpath("properties").children
+        map_name = (mapinfo_properties.detect { |x| x["name"] == "name" })["value"]
+        raise IndexError.new "#{map_name} doesn't contain event id=#{event.id}"
+      end
+
+      # tmx coordinates take precedence
+      event.x = tmx_event["x"].to_i / 32
+      event.y = (tmx_event["y"].to_i / 32) - 1
+      tmx_event_name = tmx_event.at_xpath("properties").children.detect { |x| x["name"] == "name" }["value"]
+      # names affect event functionality so keep the rb one, but put a warning on mismatch
+      if event.name != tmx_event_name
+        puts "Warning: event names don't match, tmx=#{tmx_event_name}, rb=#{event.name}"
+      end
+
+      events_hash[event.id] = event
+    end
+  end
+
+  return events_hash
 end
 
 def convert_tmx_to_map_data(tmx_path, events_dir)
@@ -234,8 +260,7 @@ def compile_maps(maps_dir, events_dir, output_dir)
 
   maps.each_with_index do |map, index|
     map_index = mapinfos.keys[index]
-    puts mapinfos.values[index].name
-    puts "Saving " + output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rxdata..."
+    puts "Saving #{mapinfos.values[index].name} to #{output_dir}Map#{map_index.to_s.rjust(3, "0")}.rxdata..."
     # save_ruby(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rb", map, name: "Map#{map_index.to_s.rjust(3, "0")}.rb", maps: mapinfos)
     save_rxdata(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rxdata", map)
   end
@@ -249,5 +274,5 @@ end
 
 tiled_dir = ROOT_DIR + "src/tiled/"
 events_dir = ROOT_DIR + "src/events/"
-target_dir = ROOT_DIR + "temp_build/"
+target_dir = ROOT_DIR + "src/essentials/Data/"
 compile_all(tiled_dir, events_dir, target_dir)

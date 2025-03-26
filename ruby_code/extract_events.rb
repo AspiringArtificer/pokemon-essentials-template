@@ -23,12 +23,10 @@ def generate_event_file(data_file, mapinfos, output_dir)
 
   map_data = load_rxdata(data_file)
   map_data.events.each do |key, event|
-    if event.pages.count > 1 || !dumper.objects_equal?(event.pages[0], DEFAULT_PAGE)
-      event_name = event.name.split(",")[0].gsub(/[^0-9A-Za-z ]/, "")
-      FileUtils.mkdir_p(output_dir)
-      output_file = output_dir + "event_#{key} - #{event_name}.rb"
-      File.write(output_file, dumper.event(event, 0))
-    end
+    event_name = event.name.split(",")[0].gsub(/[^0-9A-Za-z ]/, "")
+    FileUtils.mkdir_p(output_dir)
+    output_file = output_dir + "event_#{key} - #{event_name}.rb"
+    File.write(output_file, dumper.event(event, 0))
   end
 end
 
