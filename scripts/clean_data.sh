@@ -24,5 +24,9 @@ rm -f Map*.rxdata
 rm -f Tilesets.rxdata
 rm -f PkmnAnimations.rxdata
 rm -f PluginScripts.rxdata
-rm -f *.dat
+for file in *.dat; do
+  if ! [[ "${file}" == messages_core.dat ]]; then
+    rm -f ${file}
+  fi
+done
 popd
