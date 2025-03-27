@@ -12,8 +12,8 @@ setup:
 
 # compile eevee data files, maps, and events
 compile:
-	bundle exec ruby tools/eevee/eevee.rb import
 	bundle exec ruby ruby_code/compile_tiled.rb 
+	bundle exec ruby tools/eevee/eevee.rb import
 # 	battle animation importer is busted, so we just copy the rxdata
 	cp src/assets/Data/* src/essentials/Data/.
 
