@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Safari Zone"/>
             <property name="parent_id" type="int" value="66"/>
-            <property name="order" type="int" value="64"/>
+            <property name="order" type="int" value="63"/>
             <property name="scroll_x" type="int" value="816"/>
             <property name="scroll_y" type="int" value="547"/>
          </properties>
@@ -15,8 +15,8 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="100"/>
+            <property name="name" value="Safari Zone"/>
+            <property name="volume" type="int" value="80"/>
          </properties>
       </property>
       <property name="autoplay_bgs" type="bool" value="false"/>
@@ -29,7 +29,7 @@
    </properties>
    <tileset firstgid="1" source="../events/events.tsx"/>
    <tileset firstgid="49" source="../tilesets/autotiles/Sea.tsx"/>
-   <tileset firstgid="97" source="../tilesets/autotiles/Still water.tsx"/>
+   <tileset firstgid="97" source="../tilesets/autotiles/Sea without shore.tsx"/>
    <tileset firstgid="145" source="../tilesets/autotiles/Sea deep.tsx"/>
    <tileset firstgid="193" source="../tilesets/autotiles/Sand shore.tsx"/>
    <tileset firstgid="241" source="../tilesets/autotiles/Flowers1.tsx"/>

@@ -6,7 +6,7 @@
       <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
          <properties>
             <property name="name" value="Route 1"/>
-            <property name="order" type="int" value="7"/>
+            <property name="order" type="int" value="6"/>
             <property name="scroll_x" type="int" value="576"/>
             <property name="scroll_y" type="int" value="384"/>
          </properties>
@@ -14,8 +14,8 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="100"/>
+            <property name="name" value="Route 1"/>
+            <property name="volume" type="int" value="80"/>
          </properties>
       </property>
       <property name="autoplay_bgs" type="bool" value="false"/>
@@ -28,7 +28,7 @@
    </properties>
    <tileset firstgid="1" source="../events/events.tsx"/>
    <tileset firstgid="49" source="../tilesets/autotiles/Sea.tsx"/>
-   <tileset firstgid="97" source="../tilesets/autotiles/Still water.tsx"/>
+   <tileset firstgid="97" source="../tilesets/autotiles/Sea without shore.tsx"/>
    <tileset firstgid="145" source="../tilesets/autotiles/Sea deep.tsx"/>
    <tileset firstgid="193" source="../tilesets/autotiles/Sand shore.tsx"/>
    <tileset firstgid="241" source="../tilesets/autotiles/Flowers1.tsx"/>
@@ -45,14 +45,9 @@
       <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1666,0,0,0,0,0,0,0,1665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1666,0,0,0,0,0,0,0,1665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1666,0,0,0,0,0,0,0,1665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1666,0,0,0,0,0,0,0,1665,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,805,806,805,806,805,806,0,0,805,806,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
    </layer>
    <objectgroup id="4" name="events">
-      <object id="1" gid="1" x="352" y="224" width="32" height="32">
+      <object id="5" gid="1" x="320" y="608" width="32" height="32">
          <properties>
-            <property name="name" value="Kurt door"/>
-         </properties>
-      </object>
-      <object id="10" gid="1" x="320" y="352" width="32" height="32">
-         <properties>
-            <property name="name" value="Apricorn tree"/>
+            <property name="name" value="BerryPlant"/>
          </properties>
       </object>
       <object id="11" gid="1" x="832" y="480" width="32" height="32">
@@ -60,32 +55,22 @@
             <property name="name" value="Item"/>
          </properties>
       </object>
-      <object id="2" gid="1" x="288" y="544" width="32" height="32">
-         <properties>
-            <property name="name" value="BerryPlant"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="320" y="544" width="32" height="32">
-         <properties>
-            <property name="name" value="BerryPlant"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="288" y="608" width="32" height="32">
-         <properties>
-            <property name="name" value="BerryPlant"/>
-         </properties>
-      </object>
-      <object id="5" gid="1" x="320" y="608" width="32" height="32">
-         <properties>
-            <property name="name" value="BerryPlant"/>
-         </properties>
-      </object>
       <object id="6" gid="1" x="448" y="544" width="32" height="32">
          <properties>
             <property name="name" value="BerryPlant"/>
          </properties>
       </object>
+      <object id="1" gid="1" x="352" y="224" width="32" height="32">
+         <properties>
+            <property name="name" value="Kurt door"/>
+         </properties>
+      </object>
       <object id="7" gid="1" x="480" y="544" width="32" height="32">
+         <properties>
+            <property name="name" value="BerryPlant"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="288" y="544" width="32" height="32">
          <properties>
             <property name="name" value="BerryPlant"/>
          </properties>
@@ -95,9 +80,24 @@
             <property name="name" value="BerryPlant"/>
          </properties>
       </object>
+      <object id="3" gid="1" x="320" y="544" width="32" height="32">
+         <properties>
+            <property name="name" value="BerryPlant"/>
+         </properties>
+      </object>
       <object id="9" gid="1" x="480" y="608" width="32" height="32">
          <properties>
             <property name="name" value="BerryPlant"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="288" y="608" width="32" height="32">
+         <properties>
+            <property name="name" value="BerryPlant"/>
+         </properties>
+      </object>
+      <object id="10" gid="1" x="320" y="352" width="32" height="32">
+         <properties>
+            <property name="name" value="Apricorn tree"/>
          </properties>
       </object>
    </objectgroup>

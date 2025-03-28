@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Battle Tower arena"/>
             <property name="parent_id" type="int" value="55"/>
-            <property name="order" type="int" value="53"/>
+            <property name="order" type="int" value="52"/>
             <property name="scroll_x" type="int" value="320"/>
             <property name="scroll_y" type="int" value="240"/>
          </properties>
@@ -15,8 +15,8 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="100"/>
+            <property name="name" value="Battle Frontier"/>
+            <property name="volume" type="int" value="80"/>
          </properties>
       </property>
       <property name="autoplay_bgs" type="bool" value="false"/>

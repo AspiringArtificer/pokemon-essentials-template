@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Hall of Fame"/>
             <property name="parent_id" type="int" value="35"/>
-            <property name="order" type="int" value="36"/>
+            <property name="order" type="int" value="35"/>
             <property name="scroll_x" type="int" value="320"/>
             <property name="scroll_y" type="int" value="240"/>
          </properties>
@@ -16,7 +16,7 @@
       <property name="bgm" type="class" propertytype="bga">
          <properties>
             <property name="name" value=""/>
-            <property name="volume" type="int" value="100"/>
+            <property name="volume" type="int" value="80"/>
          </properties>
       </property>
       <property name="autoplay_bgs" type="bool" value="false"/>

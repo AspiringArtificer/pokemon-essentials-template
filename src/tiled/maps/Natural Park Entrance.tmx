@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Natural Park Entrance"/>
             <property name="parent_id" type="int" value="28"/>
-            <property name="order" type="int" value="29"/>
+            <property name="order" type="int" value="28"/>
             <property name="scroll_x" type="int" value="320"/>
             <property name="scroll_y" type="int" value="240"/>
          </properties>
@@ -15,7 +15,7 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
+            <property name="name" value="Natural Park"/>
             <property name="volume" type="int" value="100"/>
          </properties>
       </property>

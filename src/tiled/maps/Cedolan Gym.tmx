@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Cedolan Gym"/>
             <property name="parent_id" type="int" value="7"/>
-            <property name="order" type="int" value="11"/>
+            <property name="order" type="int" value="10"/>
             <property name="scroll_x" type="int" value="320"/>
             <property name="scroll_y" type="int" value="272"/>
          </properties>
@@ -15,7 +15,7 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
+            <property name="name" value="Gym"/>
             <property name="volume" type="int" value="100"/>
          </properties>
       </property>

@@ -7,7 +7,7 @@
          <properties>
             <property name="name" value="Player's house"/>
             <property name="parent_id" type="int" value="2"/>
-            <property name="order" type="int" value="4"/>
+            <property name="order" type="int" value="3"/>
             <property name="scroll_x" type="int" value="496"/>
             <property name="scroll_y" type="int" value="240"/>
          </properties>
@@ -15,8 +15,8 @@
       <property name="autoplay_bgm" type="bool" value="true"/>
       <property name="bgm" type="class" propertytype="bga">
          <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="100"/>
+            <property name="name" value="Lappet Town"/>
+            <property name="volume" type="int" value="80"/>
          </properties>
       </property>
       <property name="autoplay_bgs" type="bool" value="false"/>
@@ -46,54 +46,9 @@
       <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1713,0,0,0,0,0,0,0,0,0,1675,2084,2086,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,0,0,0,0,0,0,0,0,0,1675,2092,2094,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1724,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
    </layer>
    <objectgroup id="4" name="events">
-      <object id="1" gid="1" x="96" y="320" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit"/>
-         </properties>
-      </object>
-      <object id="10" gid="1" x="32" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Warp tile 1"/>
-         </properties>
-      </object>
       <object id="11" gid="1" x="64" y="128" width="32" height="32">
          <properties>
             <property name="name" value="Warp tile 2"/>
-         </properties>
-      </object>
-      <object id="12" gid="1" x="288" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Choices NPC"/>
-         </properties>
-      </object>
-      <object id="13" gid="1" x="320" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Text formatting NPC"/>
-         </properties>
-      </object>
-      <object id="14" gid="1" x="32" y="192" width="32" height="32">
-         <properties>
-            <property name="name" value="Pokémon-checking NPC"/>
-         </properties>
-      </object>
-      <object id="15" gid="1" x="160" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Roaming Pokémon"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="320" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs up"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="896" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs down"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="640" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="PC"/>
          </properties>
       </object>
       <object id="6" gid="1" x="928" y="64" width="32" height="32">
@@ -101,9 +56,29 @@
             <property name="name" value="Trainer, Visual Editor, Terrain Tags"/>
          </properties>
       </object>
+      <object id="1" gid="1" x="96" y="320" width="32" height="32">
+         <properties>
+            <property name="name" value="Exit"/>
+         </properties>
+      </object>
+      <object id="12" gid="1" x="288" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Choices NPC"/>
+         </properties>
+      </object>
       <object id="7" gid="1" x="960" y="64" width="32" height="32">
          <properties>
             <property name="name" value="Debug, badges, screenshots"/>
+         </properties>
+      </object>
+      <object id="2" gid="1" x="320" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Stairs up"/>
+         </properties>
+      </object>
+      <object id="13" gid="1" x="320" y="256" width="32" height="32">
+         <properties>
+            <property name="name" value="Text formatting NPC"/>
          </properties>
       </object>
       <object id="8" gid="1" x="160" y="160" width="32" height="32">
@@ -111,9 +86,34 @@
             <property name="name" value="Pokédex"/>
          </properties>
       </object>
+      <object id="3" gid="1" x="896" y="96" width="32" height="32">
+         <properties>
+            <property name="name" value="Stairs down"/>
+         </properties>
+      </object>
+      <object id="14" gid="1" x="32" y="192" width="32" height="32">
+         <properties>
+            <property name="name" value="Pokémon-checking NPC"/>
+         </properties>
+      </object>
       <object id="9" gid="1" x="224" y="160" width="32" height="32">
          <properties>
             <property name="name" value="Mom"/>
+         </properties>
+      </object>
+      <object id="4" gid="1" x="640" y="64" width="32" height="32">
+         <properties>
+            <property name="name" value="PC"/>
+         </properties>
+      </object>
+      <object id="15" gid="1" x="160" y="64" width="32" height="32">
+         <properties>
+            <property name="name" value="Roaming Pokémon"/>
+         </properties>
+      </object>
+      <object id="10" gid="1" x="32" y="128" width="32" height="32">
+         <properties>
+            <property name="name" value="Warp tile 1"/>
          </properties>
       </object>
    </objectgroup>

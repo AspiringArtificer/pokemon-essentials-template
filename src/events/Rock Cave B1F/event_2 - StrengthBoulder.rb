@@ -3,7 +3,8 @@ event(
   name: "StrengthBoulder",
   x: 11,
   y: 7,
-  page_0: page,
+  page_0: page(
+  ),
   page_1: page(
     switch1: s(57),
     graphic: graphic(
