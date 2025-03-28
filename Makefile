@@ -12,7 +12,7 @@ setup:
 
 # compile eevee data files, maps, and events
 compile:
-	bundle exec ruby ruby_code/compile_tiled.rb 
+	bundle exec ruby tools/decompiler/compile_tiled.rb 
 	bundle exec ruby tools/eevee/eevee.rb import
 # 	battle animation importer is busted, so we just copy the rxdata
 	cp src/data/Data/* src/data/Data/.
@@ -26,11 +26,12 @@ decompile:
 	./scripts/convert_autotiles.sh
 	bundle exec ruby tools/eevee/eevee.rb export
 # FIXME Shouldn't have to do this, but the battle animation import/export is broken
-	cp --update --parents "src/essentials/Data/move2anim.dat" "src/data/Data/."
-	cp --update --parents "src/essentials/Data/PkmnAnimations.rxdata" "src/data/Data/."
-	bundle exec ruby ruby_code/extract_events.rb
-	bundle exec ruby ruby_code/generate_tsx.rb
-	bundle exec ruby ruby_code/generate_tmx.rb
+	mkdir -p "src/data/Data/"
+	cp --update "src/essentials/Data/move2anim.dat" "src/data/Data/."
+	cp --update "src/essentials/Data/PkmnAnimations.rxdata" "src/data/Data/."
+	bundle exec ruby tools/decompiler/extract_events.rb
+	bundle exec ruby tools/decompiler/generate_tsx.rb
+	bundle exec ruby tools/decompiler/generate_tmx.rb
 
 # backup non-github essentials assets and decompile to source if possible
 backup: decompile

@@ -5,7 +5,7 @@ require "nokogiri-pretty" # needed to print file with clean formatting
 RUBY_DIR = __dir__ + "/"
 TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
 
-ROOT_DIR = RUBY_DIR + "../"
+ROOT_DIR = RUBY_DIR + "../../"
 require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to manipulate rpg data
 require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data files
 

@@ -7,7 +7,7 @@ TILE_SIZE = 32
 RUBY_DIR = __dir__ + "/"
 TSX_TEMPLATE = RUBY_DIR + "tileset_template.tsx"
 
-ROOT_DIR = RUBY_DIR + "../"
+ROOT_DIR = RUBY_DIR + "../../"
 require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to manipulate rpg data
 require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data files
 
@@ -112,13 +112,6 @@ def generate_tilesets(source_dir, image_rel, output_dir, autotiles)
   end
   puts "Finished generating tilesets.\n\n"
 end
-
-#test code
-# image = AUTOTILES_INPUT + "Sea.png"
-# tilesets = load_rxdata(TILESETS_DATA)
-# target = RUBY_DIR
-# generate_tsx(image, nil, AUTOTILES_ASSET_DIR, target)
-# puts "next_id=#{next_id}"
 
 generate_tilesets(TILESET_INPUT, TILESET_ASSET_DIR, TILESET_OUTPUT, false)
 generate_tilesets(AUTOTILES_INPUT, AUTOTILES_ASSET_DIR, AUTOTILES_OUTPUT, true)
