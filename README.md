@@ -53,7 +53,7 @@ Currently the essentials animation importer/exporter isn't working correctly on 
 
 Making new maps or events is currently a very manual process. You can use existing files as reference or build out a baseline in RMXP.
 
-RMXP autotiles are compacted in an unusual way. The converter just builds out 48 tile set, but doesn't really replication the behavior in Tiled. This would be done with a modification of the script and/or Tiled's terrain tools in the future. If you really want to use these, for now, you probably want to do it in RMXP.
+RMXP autotiles are compacted in an unusual way. The converter just builds out a 48 tile set, but doesn't really replicate the behavior in Tiled. This could be done with a modification of the script and/or Tiled's terrain tools in the future. If you really want to use these, for now, you probably want to do it in RMXP.
 
 There's a lot of other quality of life issues like only having one "real" tileset per map, not having intellisense or a gui for the events files, etc. However, based on my research as I developed, this can all be overcome with time.
 
