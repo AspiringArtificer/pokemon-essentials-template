@@ -41,11 +41,11 @@ clean:
 	./scripts/clean_data.sh
 
 # remove rxdata and assets
-dist_clean:
+distclean:
 	./scripts/clean_data.sh
 	./scripts/uninstall_assets.sh
 
-# delete sources (useful for decompiling)
+# delete sources (useful for testing decompiles)
 src_clean:
 	rm -rf src/events
 	rm -rf src/data
