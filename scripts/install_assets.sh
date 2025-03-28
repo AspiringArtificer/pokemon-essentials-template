@@ -12,6 +12,8 @@ while [ -L "$SCRIPT_SOURCE" ]; do # resolve $SCRIPT_SOURCE until the file is no 
 done
 DIR=$(cd -P "$(dirname "$SCRIPT_SOURCE")" >/dev/null 2>&1 && pwd)
 
+# Start of Script
+
 # Copy in the asset files
 pushd $DIR/$SOURCE
 readarray -t asset_files < <(git ls-files --others --ignored --exclude-standard)

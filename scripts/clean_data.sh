@@ -11,6 +11,8 @@ while [ -L "$SCRIPT_SOURCE" ]; do # resolve $SCRIPT_SOURCE until the file is no 
 done
 DIR=$(cd -P "$(dirname "$SCRIPT_SOURCE")" >/dev/null 2>&1 && pwd)
 
+# Start of Script
+
 pushd "$DIR/.."
 readarray -t arr < <(yq e '.file_list[]' eevee.yaml)
 popd
