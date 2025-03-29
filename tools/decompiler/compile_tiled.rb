@@ -74,7 +74,7 @@ def convert_tsx_to_tileset(tsx_path)
   return tileset
 end
 
-def compile_tilesets(source_dir, output_dir)
+def compile_tilesets(source_dir, output_dir, verbose)
   puts "Compiling Tilesets..."
   new_tilesets = get_sorted_tilesets(source_dir)
 
@@ -91,7 +91,7 @@ def compile_tilesets(source_dir, output_dir)
 
   FileUtils.mkdir_p(output_dir)
   # save_ruby(output_dir + "Tilesets.rb", tilesets)
-  puts "Saving " + output_dir + "Tilesets.rxdata..."
+  puts "Saving " + output_dir + "Tilesets.rxdata..." if verbose
   save_rxdata(output_dir + "Tilesets.rxdata", tilesets)
   puts "Tilesets compilation complete.\n\n"
 end
@@ -249,30 +249,30 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
   return map, generate_mapinfo(tmx), map_index
 end
 
-def compile_maps(maps_dir, events_dir, output_dir)
+def compile_maps(maps_dir, events_dir, output_dir, verbose)
   puts "Compiling Maps..."
   maps, mapinfos = get_maps_and_info(maps_dir, events_dir)
 
   FileUtils.mkdir_p(output_dir)
-  puts "Saving " + output_dir + "MapInfos.rxdata..."
+  puts "Saving " + output_dir + "MapInfos.rxdata..." if verbose
   # save_ruby(output_dir + "MapInfos.rb", mapinfos.sort.to_h)
   save_rxdata(output_dir + "MapInfos.rxdata", mapinfos.sort.to_h)
 
   maps.each_with_index do |map, index|
     map_index = mapinfos.keys[index]
-    puts "Saving #{mapinfos.values[index].name} to #{output_dir}Map#{map_index.to_s.rjust(3, "0")}.rxdata..."
+    puts "Saving #{mapinfos.values[index].name} to #{output_dir}Map#{map_index.to_s.rjust(3, "0")}.rxdata..." if verbose
     # save_ruby(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rb", map, name: "Map#{map_index.to_s.rjust(3, "0")}.rb", maps: mapinfos)
     save_rxdata(output_dir + "Map#{map_index.to_s.rjust(3, "0")}.rxdata", map)
   end
   puts "Maps compilation complete.\n\n"
 end
 
-def compile_all(tiled_dir, events_dir, output_dir)
-  compile_tilesets(tiled_dir + "tilesets/", output_dir)
-  compile_maps(tiled_dir + "maps/", events_dir, output_dir)
+def compile_all(tiled_dir, events_dir, output_dir, verbose)
+  compile_tilesets(tiled_dir + "tilesets/", output_dir, verbose)
+  compile_maps(tiled_dir + "maps/", events_dir, output_dir, verbose)
 end
 
 tiled_dir = ROOT_DIR + "src/tiled/"
 events_dir = ROOT_DIR + "src/events/"
 target_dir = ROOT_DIR + "src/essentials/Data/"
-compile_all(tiled_dir, events_dir, target_dir)
+compile_all(tiled_dir, events_dir, target_dir, false)
