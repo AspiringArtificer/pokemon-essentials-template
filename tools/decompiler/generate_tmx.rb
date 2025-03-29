@@ -62,10 +62,10 @@ def extract_map_info_properties(mapinfo, properties)
   rpg_mapinfo.add_child "<properties/>"
 
   rpg_mapinfo.at_xpath("properties").add_child "<property name=\"name\" value=\"#{mapinfo.name}\"/>"
+  rpg_mapinfo.at_xpath("properties").add_child "<property name=\"order\" type=\"int\" value=\"#{mapinfo.order}\"/>"
   if mapinfo.parent_id != 0
     rpg_mapinfo.at_xpath("properties").add_child "<property name=\"parent_id\" type=\"int\" value=\"#{mapinfo.parent_id}\"/>"
   end
-  rpg_mapinfo.at_xpath("properties").add_child "<property name=\"order\" type=\"int\" value=\"#{mapinfo.order}\"/>"
   if mapinfo.expanded
     rpg_mapinfo.at_xpath("properties").add_child "<property name=\"expanded\" type=\"bool\" value=\"#{mapinfo.expanded}\"/>"
   end
@@ -141,6 +141,8 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
 
   extract_map_info_properties(mapinfos[map_index], map.at_xpath("properties"))
   extract_map_properties(map_data, map.at_xpath("properties"))
+  sorted_nodes = map.at_xpath("properties").children.sort_by { |x| x.attr("name") }
+  map.at_xpath("properties").children = Nokogiri::XML::NodeSet.new(map.document, sorted_nodes)
   extract_tilesets(map, tilesets[map_data.tileset_id])
   extract_layers(map, map_data)
   extract_events(map, map_data)
@@ -148,8 +150,7 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   output_file = output_dir + map_name + ".tmx"
   FileUtils.mkdir_p(output_dir)
   xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
-  xsl.apply_to(map_file)
-  File.write(output_file, map_file)
+  File.write(output_file, xsl.apply_to(map_file))
 end
 
 # generate Tiled map files for all the Map data files in a directory

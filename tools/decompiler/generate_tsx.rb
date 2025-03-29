@@ -88,8 +88,7 @@ def generate_tsx(image_file, tilesets, tsx_to_image_path, output_dir)
 
       FileUtils.mkdir_p(output_dir)
       xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
-      xsl.apply_to(tileset)
-      File.write(output_dir + File.basename(tileset_data.name.gsub(/[^0-9A-Za-z ]/, ""), ".png") + ".tsx", tileset)
+      File.write(output_dir + File.basename(tileset_data.name.gsub(/[^0-9A-Za-z ]/, ""), ".png") + ".tsx", xsl.apply_to(tileset))
     end
   else
     tileset = Nokogiri::XML(File.open(TSX_TEMPLATE))
@@ -97,8 +96,7 @@ def generate_tsx(image_file, tilesets, tsx_to_image_path, output_dir)
 
     FileUtils.mkdir_p(output_dir)
     xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
-    xsl.apply_to(tileset)
-    File.write(output_dir + File.basename(image_file, ".png") + ".tsx", tileset)
+    File.write(output_dir + File.basename(image_file, ".png") + ".tsx", xsl.apply_to(tileset))
   end
 end
 
