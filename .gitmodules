@@ -1,3 +1,6 @@
 [submodule "src/assets"]
-path = src/assets
-url = git@github.com:AspiringArtificer/pokemon-assets-pet.git
+	path = src/assets
+	url = git@github.com:AspiringArtificer/pokemon-assets-pet.git
+[submodule "src/essentials"]
+	path = src/essentials
+	url = git@github.com:AspiringArtificer/pokemon-essentials.git
