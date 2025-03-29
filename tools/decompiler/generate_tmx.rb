@@ -1,6 +1,5 @@
 require "fileutils" # needed for file operations
 require "nokogiri" # needed to parse/edit xml
-require "nokogiri-pretty" # needed to print file with clean formatting
 
 RUBY_DIR = __dir__ + "/"
 TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
@@ -148,7 +147,9 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
 
   output_file = output_dir + map_name + ".tmx"
   FileUtils.mkdir_p(output_dir)
-  File.write(output_file, map_file.human)
+  xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
+  xsl.apply_to(map_file)
+  File.write(output_file, map_file)
 end
 
 # generate Tiled map files for all the Map data files in a directory

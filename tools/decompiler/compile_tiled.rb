@@ -1,6 +1,5 @@
 require "fileutils" # needed for file operations
 require "nokogiri" # needed to parse/edit xml
-require "nokogiri-pretty" # needed to print file with clean formatting
 require "fastimage" # needed to determine image dimensions
 
 TILE_SIZE = 32

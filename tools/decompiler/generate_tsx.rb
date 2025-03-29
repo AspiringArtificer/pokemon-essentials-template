@@ -1,6 +1,5 @@
 require "fileutils" # needed for file operations
 require "nokogiri" # needed to parse/edit xml
-require "nokogiri-pretty" # needed to print file with clean formatting
 require "fastimage" # needed to determine image dimensions
 
 TILE_SIZE = 32
@@ -88,14 +87,18 @@ def generate_tsx(image_file, tilesets, tsx_to_image_path, output_dir)
       build_tileset_data_properties(tileset, tileset_data)
 
       FileUtils.mkdir_p(output_dir)
-      File.write(output_dir + File.basename(tileset_data.name.gsub(/[^0-9A-Za-z ]/, ""), ".png") + ".tsx", tileset.human)
+      xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
+      xsl.apply_to(tileset)
+      File.write(output_dir + File.basename(tileset_data.name.gsub(/[^0-9A-Za-z ]/, ""), ".png") + ".tsx", tileset)
     end
   else
     tileset = Nokogiri::XML(File.open(TSX_TEMPLATE))
     build_base_tsx_properties(tileset, image_file, tsx_to_image_path)
 
     FileUtils.mkdir_p(output_dir)
-    File.write(output_dir + File.basename(image_file, ".png") + ".tsx", tileset.human)
+    xsl = Nokogiri::XSLT(File.open(RUBY_DIR + "indent.xsl"))
+    xsl.apply_to(tileset)
+    File.write(output_dir + File.basename(image_file, ".png") + ".tsx", tileset)
   end
 end
 
