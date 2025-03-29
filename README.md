@@ -25,14 +25,15 @@ Installation of Python3 and Pip. You may already have this on your machine by de
 
 On your development machine you'll want to do the following things:
 1. Run "make setup". This will set up your local Ruby and Python environments.
-2. Redirect each over the git submodules to your own fork or custom repo. You can edit submodule links in the .gitmodules file, and the submodules are described in the [Submodules](#submodules) section. 
-3. Extract the Essentials zip file into the src/essentials folder. Don't overwrite any existing files.
-4. Run the game at least once, compile the PBS files, and make sure it's working properly.
-5. Run "make backup decompile". This will copy the non-GitHub assets to the src/assets folder, and decompile the Data files to src/data, src/events/, and src/tiled/ folders.
-6. Commit the assets files in that submodule and double check the other source files. Git shouldn't see any changes other than the checksums.csv in src/data.
-7. Back up the src/essentials files to another folder and run "make distclean". This will delete all the files in src/essentials not tracked by that submodule.
-8. Run "make install compile". This will install the assets from src/assets and compile the other src files back into rxdata files.
-9. Run the game in src/essentials, don't forget to hold left-cntrl to compile pbs files. It should run as normal, demonstrating a full compile from source.
+2. Redirect each over the git submodules to your own fork or custom repo. The submodules are described in the [Submodules](#submodules) section.
+3. Make sure you init the submodules. "git submodule update --init --recursive" 
+4. Extract the Essentials zip file into the src/essentials folder. Don't overwrite any existing files.
+5. Run the game at least once, compile the PBS files, and make sure it's working properly.
+6. Run "make backup decompile". This will copy the non-GitHub assets to the src/assets folder, and decompile the Data files to src/data, src/events/, and src/tiled/ folders.
+7. Commit the assets files in that submodule and double check the other source files. Git shouldn't see any changes other than the checksums.csv in src/data.
+8. Back up the src/essentials files to another folder and run "make distclean". This will delete all the files in src/essentials not tracked by that submodule.
+9. Run "make install compile". This will install the assets from src/assets and compile the other src files back into rxdata files.
+10. Run the game in src/essentials, don't forget to hold left-cntrl to compile pbs files. It should run as normal, demonstrating a full compile from source.
 
 
 ### Submodules
