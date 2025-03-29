@@ -91,7 +91,7 @@ def extract_tilesets(map, tileset)
       map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../tilesets/autotiles/#{tileset.autotile_names[gid_index]}.tsx\" />"
     else
       # needed to force tileset alignment
-      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../blank_tileset/blank.tsx\" />"
+      map.add_child "<tileset firstgid=\"#{(gid_index + 1) * 48 + 1}\" source=\"../blank_tileset/blank_#{gid_index}.tsx\" />"
     end
     gid_index += 1
   end
