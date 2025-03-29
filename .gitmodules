@@ -1,9 +1,3 @@
-[submodule "src/essentials"]
-	path = src/essentials
-	url = git@github.com:AspiringArtificer/pokemon-essentials-pet.git
-[submodule "tools/eevee"]
-	path = tools/eevee
-	url = git@github.com:AspiringArtificer/eevee-pet.git
 [submodule "src/assets"]
-	path = src/assets
-	url = git@github.com:AspiringArtificer/pokemon-assets-pet.git
+path = src/assets
+url = git@github.com:AspiringArtificer/pokemon-assets-pet.git
