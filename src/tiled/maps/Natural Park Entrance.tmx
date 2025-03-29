@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="29"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Natural Park Entrance"/>
-            <property name="parent_id" type="int" value="28"/>
-            <property name="order" type="int" value="28"/>
-            <property name="scroll_x" type="int" value="320"/>
-            <property name="scroll_y" type="int" value="240"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Natural Park"/>
-            <property name="volume" type="int" value="100"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Natural Park"/>
+    <property name="volume" type="int" value="100"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
-   <layer id="1" name="z1" width="20" height="15">
-      <data encoding="csv"> 543,2185,2185,2186,2187,2185,2185,2185,2190,2191,2185,2185,543,543,543,543,543,543,543,543,543,2193,2193,2194,2195,2193,2193,2193,2198,2199,2193,2193,543,543,543,543,543,543,543,543,543,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,543,543,543,543,543,543,543,543,543,2222,2213,2222,2222,2222,2222,2222,2222,2222,2223,2213,543,543,543,543,543,543,543,543,543,2222,2213,1196,1197,1197,1197,1197,1197,1198,2231,2213,543,543,543,543,543,543,543,543,543,2222,2213,1204,1205,1205,1205,1205,1205,1206,2213,2213,543,543,543,543,543,543,543,543,543,2222,2213,1212,1213,1213,1213,1213,1213,1214,2213,2213,543,543,543,543,543,543,543,543,543,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,2215,543,543,543,543,543,543,543,543,543,2222,2230,2230,2230,2230,2230,2230,2230,2230,2230,2231,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
-   </layer>
-   <layer id="2" name="z2" width="20" height="15">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1771,0,2009,0,0,0,0,0,2009,0,1771,0,0,0,0,0,0,0,0,0,1779,0,2018,2003,2003,2003,2003,2003,2020,0,1779,0,0,0,0,0,0,0,0,0,0,0,2026,2027,2027,2027,2027,2027,2028,0,0,0,0,0,0,0,0,0,0,1223,1224,0,0,0,0,0,0,0,0,0,1199,1200,0,0,0,0,0,0,0,1231,1232,0,0,0,0,0,0,0,0,0,1207,1208,0,0,0,0,0,0,0,1239,1240,2002,2003,2003,2003,2003,2003,2003,2003,2004,1215,1216,0,0,0,0,0,0,0,0,1771,2026,2027,2027,2027,2027,2027,2027,2027,2028,1771,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="20" height="15">
-      <data encoding="csv"> 0,0,1694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1702,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1710,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="1" gid="1" x="0" y="192" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit left"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="384" y="192" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit right"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="64" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="PC"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="192" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Man"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="29"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="Natural Park Entrance"/>
+    <property name="order" type="int" value="28"/>
+    <property name="parent_id" type="int" value="28"/>
+    <property name="scroll_x" type="int" value="320"/>
+    <property name="scroll_y" type="int" value="240"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+ <layer id="1" name="z1" width="20" height="15">
+  <data encoding="csv"> 543,2185,2185,2186,2187,2185,2185,2185,2190,2191,2185,2185,543,543,543,543,543,543,543,543,543,2193,2193,2194,2195,2193,2193,2193,2198,2199,2193,2193,543,543,543,543,543,543,543,543,543,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,543,543,543,543,543,543,543,543,543,2222,2213,2222,2222,2222,2222,2222,2222,2222,2223,2213,543,543,543,543,543,543,543,543,543,2222,2213,1196,1197,1197,1197,1197,1197,1198,2231,2213,543,543,543,543,543,543,543,543,543,2222,2213,1204,1205,1205,1205,1205,1205,1206,2213,2213,543,543,543,543,543,543,543,543,543,2222,2213,1212,1213,1213,1213,1213,1213,1214,2213,2213,543,543,543,543,543,543,543,543,543,2222,2222,2222,2222,2222,2222,2222,2222,2222,2222,2215,543,543,543,543,543,543,543,543,543,2222,2230,2230,2230,2230,2230,2230,2230,2230,2230,2231,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+ </layer>
+ <layer id="2" name="z2" width="20" height="15">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1771,0,2009,0,0,0,0,0,2009,0,1771,0,0,0,0,0,0,0,0,0,1779,0,2018,2003,2003,2003,2003,2003,2020,0,1779,0,0,0,0,0,0,0,0,0,0,0,2026,2027,2027,2027,2027,2027,2028,0,0,0,0,0,0,0,0,0,0,1223,1224,0,0,0,0,0,0,0,0,0,1199,1200,0,0,0,0,0,0,0,1231,1232,0,0,0,0,0,0,0,0,0,1207,1208,0,0,0,0,0,0,0,1239,1240,2002,2003,2003,2003,2003,2003,2003,2003,2004,1215,1216,0,0,0,0,0,0,0,0,1771,2026,2027,2027,2027,2027,2027,2027,2027,2028,1771,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="20" height="15">
+  <data encoding="csv"> 0,0,1694,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1702,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1710,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="1" gid="1" x="0" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit left"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="384" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit right"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="64" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="192" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Man"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

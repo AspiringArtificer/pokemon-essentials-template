@@ -1,80 +1,80 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="15"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Cedolan Dept. 2F"/>
-            <property name="parent_id" type="int" value="14"/>
-            <property name="order" type="int" value="15"/>
-            <property name="scroll_x" type="int" value="320"/>
-            <property name="scroll_y" type="int" value="272"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Poke Mart"/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Poke Mart"/>
+    <property name="volume" type="int" value="80"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Department Store.tsx"/>
-   <layer id="1" name="z1" width="20" height="17">
-      <data encoding="csv"> 386,387,387,387,387,388,389,390,387,387,387,387,391,385,385,385,385,385,385,385,394,395,395,395,395,396,397,398,395,395,474,475,399,385,385,385,385,385,385,385,394,500,501,403,403,404,413,406,403,403,482,483,399,385,385,385,385,385,385,385,402,508,509,411,411,411,411,411,411,411,490,491,407,385,385,385,385,385,385,385,0,0,0,412,412,412,412,412,412,412,0,0,0,385,385,385,385,385,385,385,430,430,430,431,421,421,421,421,421,421,430,430,430,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,421,438,438,438,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,421,421,421,421,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,423,421,421,423,385,385,385,385,385,385,385,430,430,430,431,421,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,438,438,439,421,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,430,430,430,423,421,421,438,438,439,438,438,439,385,385,385,385,385,385,385,430,438,438,438,439,421,421,421,421,423,421,421,423,385,385,385,385,385,385,385,430,421,421,421,423,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,438,438,438,439,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385 </data>
-   </layer>
-   <layer id="2" name="z2" width="20" height="17">
-      <data encoding="csv"> 0,0,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,443,444,510,0,0,0,0,0,489,442,443,0,0,0,0,0,0,0,0,451,451,452,0,0,0,0,0,0,0,450,451,451,0,0,0,0,0,0,0,459,459,529,0,0,0,0,0,0,0,458,459,459,0,0,0,0,0,0,0,0,0,529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,529,0,0,0,0,575,576,0,575,576,0,0,0,0,0,0,0,0,514,533,532,0,0,0,0,583,584,0,583,584,0,0,0,0,0,0,0,0,538,541,540,0,0,0,0,591,592,0,591,592,0,0,0,0,0,0,0,0,0,613,615,616,0,0,0,599,600,0,599,600,0,0,0,0,0,0,0,0,0,621,623,624,0,0,0,575,576,0,575,576,0,0,0,0,0,0,0,0,0,613,615,616,0,0,0,583,584,0,583,584,0,0,0,0,0,0,0,0,0,621,623,624,0,0,0,591,592,0,591,592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,599,600,0,599,600,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="20" height="17">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,521,0,0,0,0,0,0,0,588,589,590,0,0,0,0,0,0,0,0,0,517,0,0,0,0,0,0,0,596,597,598,0,0,0,0,0,0,0,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="5" gid="1" x="32" y="224" width="32" height="32">
-         <properties>
-            <property name="name" value="Cashier top"/>
-         </properties>
-      </object>
-      <object id="6" gid="1" x="32" y="288" width="32" height="32">
-         <properties>
-            <property name="name" value="Cashier bottom"/>
-         </properties>
-      </object>
-      <object id="1" gid="1" x="192" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Elevator door"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="64" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs down"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="320" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs up"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="128" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Floor sign"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="15"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="Cedolan Dept. 2F"/>
+    <property name="order" type="int" value="15"/>
+    <property name="parent_id" type="int" value="14"/>
+    <property name="scroll_x" type="int" value="320"/>
+    <property name="scroll_y" type="int" value="272"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../blank_tileset/blank_0.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Department Store.tsx"/>
+ <layer id="1" name="z1" width="20" height="17">
+  <data encoding="csv"> 386,387,387,387,387,388,389,390,387,387,387,387,391,385,385,385,385,385,385,385,394,395,395,395,395,396,397,398,395,395,474,475,399,385,385,385,385,385,385,385,394,500,501,403,403,404,413,406,403,403,482,483,399,385,385,385,385,385,385,385,402,508,509,411,411,411,411,411,411,411,490,491,407,385,385,385,385,385,385,385,0,0,0,412,412,412,412,412,412,412,0,0,0,385,385,385,385,385,385,385,430,430,430,431,421,421,421,421,421,421,430,430,430,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,421,438,438,438,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,421,421,421,421,385,385,385,385,385,385,385,430,421,421,431,421,421,421,421,421,423,421,421,423,385,385,385,385,385,385,385,430,430,430,431,421,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,438,438,439,421,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,430,430,430,423,421,421,438,438,439,438,438,439,385,385,385,385,385,385,385,430,438,438,438,439,421,421,421,421,423,421,421,423,385,385,385,385,385,385,385,430,421,421,421,423,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,430,438,438,438,439,421,421,430,430,431,430,430,431,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385,385 </data>
+ </layer>
+ <layer id="2" name="z2" width="20" height="17">
+  <data encoding="csv"> 0,0,0,0,535,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,443,444,510,0,0,0,0,0,489,442,443,0,0,0,0,0,0,0,0,451,451,452,0,0,0,0,0,0,0,450,451,451,0,0,0,0,0,0,0,459,459,529,0,0,0,0,0,0,0,458,459,459,0,0,0,0,0,0,0,0,0,529,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,529,0,0,0,0,575,576,0,575,576,0,0,0,0,0,0,0,0,514,533,532,0,0,0,0,583,584,0,583,584,0,0,0,0,0,0,0,0,538,541,540,0,0,0,0,591,592,0,591,592,0,0,0,0,0,0,0,0,0,613,615,616,0,0,0,599,600,0,599,600,0,0,0,0,0,0,0,0,0,621,623,624,0,0,0,575,576,0,575,576,0,0,0,0,0,0,0,0,0,613,615,616,0,0,0,583,584,0,583,584,0,0,0,0,0,0,0,0,0,621,623,624,0,0,0,591,592,0,591,592,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,599,600,0,599,600,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="20" height="17">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,521,0,0,0,0,0,0,0,588,589,590,0,0,0,0,0,0,0,0,0,517,0,0,0,0,0,0,0,596,597,598,0,0,0,0,0,0,0,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="32" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Cashier top"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="32" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Cashier bottom"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="192" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Elevator door"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="64" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs down"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs up"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="128" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Floor sign"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

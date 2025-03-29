@@ -1,120 +1,120 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="31" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="3"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Player's house"/>
-            <property name="parent_id" type="int" value="2"/>
-            <property name="order" type="int" value="3"/>
-            <property name="scroll_x" type="int" value="496"/>
-            <property name="scroll_y" type="int" value="240"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Lappet Town"/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Lappet Town"/>
+    <property name="volume" type="int" value="80"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
-   <layer id="1" name="z1" width="31" height="15">
-      <data encoding="csv"> 417,417,417,417,417,417,417,417,417,417,417,417,543,543,543,543,543,543,543,543,417,417,417,417,417,417,417,417,417,417,417,425,425,425,425,425,425,425,425,425,425,425,425,543,543,543,543,543,543,543,543,425,425,425,425,425,425,425,425,425,425,425,770,770,770,770,770,770,770,770,770,770,770,770,543,543,543,543,543,543,543,543,770,770,770,770,770,770,770,770,770,770,770,770,761,761,761,761,761,761,761,761,761,770,770,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,770,770,771,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,1178,1178,1178,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,1178,1178,1178,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
-   </layer>
-   <layer id="2" name="z2" width="31" height="15">
-      <data encoding="csv"> 0,0,1531,1532,0,1713,1492,1493,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1505,1506,0,0,0,0,1458,1458,1570,1571,1539,1540,0,1721,1500,1501,0,0,1257,1258,0,0,0,0,0,0,0,0,1905,1907,1557,1513,1514,0,0,1263,0,1466,1466,1578,1579,1547,1548,0,1729,0,0,0,1288,1265,1266,0,0,0,0,0,0,0,0,1937,1939,1565,1521,1522,0,0,1271,1272,1288,0,0,0,0,1169,1170,1170,1170,1170,1171,1296,1273,1274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279,1280,1296,0,0,0,0,1177,1178,1178,1178,1178,1179,0,0,0,0,0,0,0,0,0,0,0,1585,1586,1587,1169,1170,1170,1170,1171,0,0,0,0,0,0,1177,1178,1178,1178,1178,1179,0,0,0,0,0,0,0,0,0,0,0,1593,1594,1595,1177,0,1729,0,1179,0,0,0,1771,0,0,1185,1186,1186,1186,1186,1187,0,0,1771,0,0,0,0,0,0,0,0,1601,1602,1603,1177,0,0,0,1179,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,1185,1186,1186,1186,1187,0,0,0,0,0,1246,1247,1248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="31" height="15">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1713,0,0,0,0,0,0,0,0,0,1675,2084,2086,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,0,0,0,0,0,0,0,0,0,1675,2092,2094,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1724,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="11" gid="1" x="64" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Warp tile 2"/>
-         </properties>
-      </object>
-      <object id="6" gid="1" x="928" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Trainer, Visual Editor, Terrain Tags"/>
-         </properties>
-      </object>
-      <object id="1" gid="1" x="96" y="320" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit"/>
-         </properties>
-      </object>
-      <object id="12" gid="1" x="288" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Choices NPC"/>
-         </properties>
-      </object>
-      <object id="7" gid="1" x="960" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Debug, badges, screenshots"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="320" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs up"/>
-         </properties>
-      </object>
-      <object id="13" gid="1" x="320" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Text formatting NPC"/>
-         </properties>
-      </object>
-      <object id="8" gid="1" x="160" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Pokédex"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="896" y="96" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs down"/>
-         </properties>
-      </object>
-      <object id="14" gid="1" x="32" y="192" width="32" height="32">
-         <properties>
-            <property name="name" value="Pokémon-checking NPC"/>
-         </properties>
-      </object>
-      <object id="9" gid="1" x="224" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Mom"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="640" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="PC"/>
-         </properties>
-      </object>
-      <object id="15" gid="1" x="160" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Roaming Pokémon"/>
-         </properties>
-      </object>
-      <object id="10" gid="1" x="32" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Warp tile 1"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="3"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="Player's house"/>
+    <property name="order" type="int" value="3"/>
+    <property name="parent_id" type="int" value="2"/>
+    <property name="scroll_x" type="int" value="496"/>
+    <property name="scroll_y" type="int" value="240"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+ <layer id="1" name="z1" width="31" height="15">
+  <data encoding="csv"> 417,417,417,417,417,417,417,417,417,417,417,417,543,543,543,543,543,543,543,543,417,417,417,417,417,417,417,417,417,417,417,425,425,425,425,425,425,425,425,425,425,425,425,543,543,543,543,543,543,543,543,425,425,425,425,425,425,425,425,425,425,425,770,770,770,770,770,770,770,770,770,770,770,770,543,543,543,543,543,543,543,543,770,770,770,770,770,770,770,770,770,770,770,770,761,761,761,761,761,761,761,761,761,770,770,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,770,770,771,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,1178,1178,1178,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,1178,1178,1178,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,770,761,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,770,761,761,761,761,761,761,761,761,761,761,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+ </layer>
+ <layer id="2" name="z2" width="31" height="15">
+  <data encoding="csv"> 0,0,1531,1532,0,1713,1492,1493,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1505,1506,0,0,0,0,1458,1458,1570,1571,1539,1540,0,1721,1500,1501,0,0,1257,1258,0,0,0,0,0,0,0,0,1905,1907,1557,1513,1514,0,0,1263,0,1466,1466,1578,1579,1547,1548,0,1729,0,0,0,1288,1265,1266,0,0,0,0,0,0,0,0,1937,1939,1565,1521,1522,0,0,1271,1272,1288,0,0,0,0,1169,1170,1170,1170,1170,1171,1296,1273,1274,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1279,1280,1296,0,0,0,0,1177,1178,1178,1178,1178,1179,0,0,0,0,0,0,0,0,0,0,0,1585,1586,1587,1169,1170,1170,1170,1171,0,0,0,0,0,0,1177,1178,1178,1178,1178,1179,0,0,0,0,0,0,0,0,0,0,0,1593,1594,1595,1177,0,1729,0,1179,0,0,0,1771,0,0,1185,1186,1186,1186,1186,1187,0,0,1771,0,0,0,0,0,0,0,0,1601,1602,1603,1177,0,0,0,1179,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,1185,1186,1186,1186,1187,0,0,0,0,0,1246,1247,1248,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="31" height="15">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1664,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1713,0,0,0,0,0,0,0,0,0,1675,2084,2086,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1721,0,0,0,0,0,0,0,0,0,1675,2092,2094,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1724,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1732,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="11" gid="1" x="64" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Warp tile 2"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="928" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Trainer, Visual Editor, Terrain Tags"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+   </properties>
+  </object>
+  <object id="12" gid="1" x="288" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Choices NPC"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="960" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Debug, badges, screenshots"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs up"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="320" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Text formatting NPC"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="PokÃ©dex"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="896" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs down"/>
+   </properties>
+  </object>
+  <object id="14" gid="1" x="32" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="PokÃ©mon-checking NPC"/>
+   </properties>
+  </object>
+  <object id="9" gid="1" x="224" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Mom"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="640" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+   </properties>
+  </object>
+  <object id="15" gid="1" x="160" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Roaming PokÃ©mon"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="32" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Warp tile 1"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

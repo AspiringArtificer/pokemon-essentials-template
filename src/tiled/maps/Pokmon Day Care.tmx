@@ -1,70 +1,70 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="27"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Pokémon Day Care"/>
-            <property name="parent_id" type="int" value="23"/>
-            <property name="order" type="int" value="26"/>
-            <property name="scroll_x" type="int" value="320"/>
-            <property name="scroll_y" type="int" value="240"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Lerucean Town"/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Lerucean Town"/>
+    <property name="volume" type="int" value="80"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
-   <layer id="1" name="z1" width="20" height="15">
-      <data encoding="csv"> 433,434,434,434,434,434,434,434,434,434,434,435,543,543,543,543,543,543,543,543,441,442,442,442,442,442,442,442,442,442,442,443,543,543,543,543,543,543,543,543,1038,1046,1046,1046,1078,1070,1072,1078,1078,1078,1078,1064,543,543,543,543,543,543,543,543,1056,1055,1055,1055,1061,1193,1194,1194,1194,1194,1195,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1201,1202,1202,1202,1202,1203,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1201,1202,1202,1202,1202,1203,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1209,1210,1210,1210,1210,1211,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1061,1061,1061,1061,1061,1061,1061,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
-   </layer>
-   <layer id="2" name="z2" width="20" height="15">
-      <data encoding="csv"> 0,390,391,392,0,1694,0,0,1494,1494,0,0,0,0,0,0,0,0,0,0,0,398,399,400,2163,1702,0,0,1502,1502,0,0,0,0,0,0,0,0,0,0,449,0,0,0,2171,1710,0,0,0,0,0,451,0,0,0,0,0,0,0,0,2178,2178,2178,2178,2179,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,1672,2132,2134,1672,0,0,0,0,0,0,0,0,0,0,1765,0,0,0,0,0,1672,2140,2142,1672,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,1765,0,0,1246,1247,1248,0,0,0,0,0,1765,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="20" height="15">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="1" gid="1" x="128" y="288" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="160" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="PC"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="128" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Day Care Lady"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="192" y="192" width="32" height="32">
-         <properties>
-            <property name="name" value="Hidden Power checker"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="27"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="PokÃ©mon Day Care"/>
+    <property name="order" type="int" value="26"/>
+    <property name="parent_id" type="int" value="23"/>
+    <property name="scroll_x" type="int" value="320"/>
+    <property name="scroll_y" type="int" value="240"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+ <layer id="1" name="z1" width="20" height="15">
+  <data encoding="csv"> 433,434,434,434,434,434,434,434,434,434,434,435,543,543,543,543,543,543,543,543,441,442,442,442,442,442,442,442,442,442,442,443,543,543,543,543,543,543,543,543,1038,1046,1046,1046,1078,1070,1072,1078,1078,1078,1078,1064,543,543,543,543,543,543,543,543,1056,1055,1055,1055,1061,1193,1194,1194,1194,1194,1195,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1201,1202,1202,1202,1202,1203,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1201,1202,1202,1202,1202,1203,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1209,1210,1210,1210,1210,1211,1061,543,543,543,543,543,543,543,543,1070,1061,1061,1061,1061,1061,1061,1061,1061,1061,1061,1061,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+ </layer>
+ <layer id="2" name="z2" width="20" height="15">
+  <data encoding="csv"> 0,390,391,392,0,1694,0,0,1494,1494,0,0,0,0,0,0,0,0,0,0,0,398,399,400,2163,1702,0,0,1502,1502,0,0,0,0,0,0,0,0,0,0,449,0,0,0,2171,1710,0,0,0,0,0,451,0,0,0,0,0,0,0,0,2178,2178,2178,2178,2179,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,1672,2132,2134,1672,0,0,0,0,0,0,0,0,0,0,1765,0,0,0,0,0,1672,2140,2142,1672,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,0,0,1757,0,0,0,0,0,0,0,0,1765,0,0,1246,1247,1248,0,0,0,0,0,1765,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="20" height="15">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="1" gid="1" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="128" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Day Care Lady"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="192" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="Hidden Power checker"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

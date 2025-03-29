@@ -1,105 +1,105 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="4"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Pokémon Lab"/>
-            <property name="parent_id" type="int" value="2"/>
-            <property name="order" type="int" value="5"/>
-            <property name="scroll_x" type="int" value="320"/>
-            <property name="scroll_y" type="int" value="240"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Lab"/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Lab"/>
+    <property name="volume" type="int" value="80"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
-   <layer id="1" name="z1" width="20" height="15">
-      <data encoding="csv"> 522,522,522,522,522,522,522,522,522,522,522,522,522,543,543,543,543,543,543,543,530,530,530,530,530,530,530,530,530,530,530,530,530,543,543,543,543,543,543,543,657,658,658,658,658,658,658,658,658,658,658,658,658,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,657,658,658,658,658,625,625,625,658,658,658,658,658,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
-   </layer>
-   <layer id="2" name="z2" width="20" height="15">
-      <data encoding="csv"> 1789,0,0,0,0,0,1457,1457,1491,1508,1509,1508,1509,0,0,0,0,0,0,0,1797,1795,1905,1907,1905,1907,1465,1465,1499,1516,1517,1516,1517,0,0,0,0,0,0,0,1805,1803,1937,1946,1937,1946,0,0,0,1524,1525,1524,1525,0,0,0,0,0,0,0,1733,1785,1786,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1733,1793,1794,0,0,0,0,0,2065,2066,2067,0,0,0,0,0,0,0,0,0,0,1801,1802,0,0,0,0,0,2073,2074,2075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1510,1508,1509,1508,1509,0,0,0,1508,1509,1508,1509,1510,0,0,0,0,0,0,0,1518,1516,1517,1516,1517,0,0,0,1516,1517,1516,1517,1518,0,0,0,0,0,0,0,1526,1524,1525,1524,1525,0,0,0,1524,1525,1524,1525,1526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,1779,0,0,0,0,1246,1247,1248,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="20" height="15">
-      <data encoding="csv"> 0,0,0,1845,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1852,1853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="5" gid="1" x="288" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Fire ball"/>
-         </properties>
-      </object>
-      <object id="11" gid="1" x="224" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Wall sign right"/>
-         </properties>
-      </object>
-      <object id="6" gid="1" x="320" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Water ball"/>
-         </properties>
-      </object>
-      <object id="1" gid="1" x="192" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Professor"/>
-         </properties>
-      </object>
-      <object id="12" gid="1" x="128" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Pokédex"/>
-         </properties>
-      </object>
-      <object id="7" gid="1" x="192" y="448" width="32" height="32">
-         <properties>
-            <property name="name" value="Exit"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="160" y="288" width="32" height="32">
-         <properties>
-            <property name="name" value="Turn back, size(3,1)"/>
-         </properties>
-      </object>
-      <object id="13" gid="1" x="96" y="352" width="32" height="32">
-         <properties>
-            <property name="name" value="Dex access"/>
-         </properties>
-      </object>
-      <object id="8" gid="1" x="224" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Controlling event"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="256" y="160" width="32" height="32">
-         <properties>
-            <property name="name" value="Grass ball"/>
-         </properties>
-      </object>
-      <object id="10" gid="1" x="192" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Wall sign left"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="4"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="PokÃ©mon Lab"/>
+    <property name="order" type="int" value="5"/>
+    <property name="parent_id" type="int" value="2"/>
+    <property name="scroll_x" type="int" value="320"/>
+    <property name="scroll_y" type="int" value="240"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../tilesets/autotiles/Fountain2.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Inside.tsx"/>
+ <layer id="1" name="z1" width="20" height="15">
+  <data encoding="csv"> 522,522,522,522,522,522,522,522,522,522,522,522,522,543,543,543,543,543,543,543,530,530,530,530,530,530,530,530,530,530,530,530,530,543,543,543,543,543,543,543,657,658,658,658,658,658,658,658,658,658,658,658,658,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,657,658,658,658,658,625,625,625,658,658,658,658,658,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,635,625,625,625,625,625,625,625,625,625,625,625,625,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543,543 </data>
+ </layer>
+ <layer id="2" name="z2" width="20" height="15">
+  <data encoding="csv"> 1789,0,0,0,0,0,1457,1457,1491,1508,1509,1508,1509,0,0,0,0,0,0,0,1797,1795,1905,1907,1905,1907,1465,1465,1499,1516,1517,1516,1517,0,0,0,0,0,0,0,1805,1803,1937,1946,1937,1946,0,0,0,1524,1525,1524,1525,0,0,0,0,0,0,0,1733,1785,1786,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1733,1793,1794,0,0,0,0,0,2065,2066,2067,0,0,0,0,0,0,0,0,0,0,1801,1802,0,0,0,0,0,2073,2074,2075,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1510,1508,1509,1508,1509,0,0,0,1508,1509,1508,1509,1510,0,0,0,0,0,0,0,1518,1516,1517,1516,1517,0,0,0,1516,1517,1516,1517,1518,0,0,0,0,0,0,0,1526,1524,1525,1524,1525,0,0,0,1524,1525,1524,1525,1526,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,0,0,0,0,1771,0,0,0,0,0,0,0,1779,0,0,0,0,1246,1247,1248,0,0,0,0,1779,0,0,0,0,0,0,0,0,0,0,0,0,1254,1255,1256,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="20" height="15">
+  <data encoding="csv"> 0,0,0,1845,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1852,1853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="288" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Fire ball"/>
+   </properties>
+  </object>
+  <object id="11" gid="1" x="224" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Wall sign right"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="320" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Water ball"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="192" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Professor"/>
+   </properties>
+  </object>
+  <object id="12" gid="1" x="128" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="PokÃ©dex"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="192" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Turn back, size(3,1)"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="96" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Dex access"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="224" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Controlling event"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="256" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Grass ball"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="192" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Wall sign left"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>

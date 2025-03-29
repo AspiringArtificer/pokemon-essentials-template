@@ -1,105 +1,105 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+ <properties>
+  <property name="autoplay_bgm" type="bool" value="true"/>
+  <property name="autoplay_bgs" type="bool" value="false"/>
+  <property name="bgm" type="class" propertytype="bga">
    <properties>
-      <property name="map_index" type="int" value="57"/>
-      <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-         <properties>
-            <property name="name" value="Stadium Cup lobby"/>
-            <property name="parent_id" type="int" value="55"/>
-            <property name="order" type="int" value="51"/>
-            <property name="scroll_x" type="int" value="320"/>
-            <property name="scroll_y" type="int" value="240"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgm" type="bool" value="true"/>
-      <property name="bgm" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value="Battle Frontier"/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
-      <property name="autoplay_bgs" type="bool" value="false"/>
-      <property name="bgs" type="class" propertytype="bga">
-         <properties>
-            <property name="name" value=""/>
-            <property name="volume" type="int" value="80"/>
-         </properties>
-      </property>
+    <property name="name" value="Battle Frontier"/>
+    <property name="volume" type="int" value="80"/>
    </properties>
-   <tileset firstgid="1" source="../events/events.tsx"/>
-   <tileset firstgid="49" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="97" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="145" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="193" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="241" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="289" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="337" source="../blank_tileset/blank.tsx"/>
-   <tileset firstgid="385" source="../tilesets/Trainer Tower.tsx"/>
-   <layer id="1" name="z1" width="20" height="15">
-      <data encoding="csv"> 402,403,404,405,402,385,395,395,395,395,395,395,395,390,402,403,404,405,402,395,409,411,412,413,409,393,395,395,395,395,395,395,395,398,409,411,412,413,409,395,468,458,458,458,458,393,395,395,395,395,395,395,395,398,468,458,458,458,458,395,450,450,452,450,450,393,395,395,395,395,395,395,395,398,450,450,452,450,450,395,468,458,459,466,467,393,395,395,395,395,395,395,395,398,468,458,459,466,467,395,451,441,441,441,441,401,402,402,402,402,402,402,402,406,451,441,441,441,441,395,451,441,441,441,441,409,409,409,409,409,409,409,409,409,451,441,441,441,441,395,451,441,441,441,441,450,450,450,450,468,458,450,450,450,451,441,441,441,441,395,451,430,431,432,441,450,450,450,450,450,450,450,450,450,451,430,431,432,441,395,451,438,439,440,441,448,468,458,458,458,458,458,458,458,459,438,439,440,441,395,451,441,441,441,441,441,441,441,430,431,432,441,441,441,441,441,441,441,441,395,451,441,441,441,441,441,441,441,438,439,440,441,441,441,441,441,441,441,441,395,451,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395 </data>
-   </layer>
-   <layer id="2" name="z2" width="20" height="15">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,475,507,0,505,475,0,0,0,0,0,0,0,0,0,475,507,0,505,475,0,499,515,0,513,499,0,0,0,0,0,0,0,0,0,499,515,0,513,499,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,419,420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,410,480,486,487,427,428,488,480,410,0,0,0,0,0,0,0,0,0,0,0,426,490,494,495,506,475,496,492,426,0,0,0,0,0,0,0,0,0,0,0,434,498,499,499,514,499,499,500,434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,577,578,579,0,415,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0,585,586,587,0,423,0,423,0,0,0,0,0,0,0,0,0,0,0,0,0,593,594,595,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <layer id="3" name="z3" width="20" height="15">
-      <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,511,0,0,0,0,0,0,0,0,0,0,0,0,0,511,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,527,502,0,0,0,0,0,502,504,0,0,0,0,0,0,0,0,0,0,0,535,510,0,0,0,0,0,510,512,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,0,520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
-   </layer>
-   <objectgroup id="4" name="events">
-      <object id="5" gid="1" x="128" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Singles results"/>
-         </properties>
-      </object>
-      <object id="11" gid="1" x="288" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Nurse"/>
-         </properties>
-      </object>
-      <object id="6" gid="1" x="576" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Doubles results"/>
-         </properties>
-      </object>
-      <object id="1" gid="1" x="544" y="384" width="32" height="32">
-         <properties>
-            <property name="name" value="Stairs to Battle Tower"/>
-         </properties>
-      </object>
-      <object id="7" gid="1" x="416" y="288" width="32" height="32">
-         <properties>
-            <property name="name" value="Battle recorder"/>
-         </properties>
-      </object>
-      <object id="2" gid="1" x="160" y="288" width="32" height="32">
-         <properties>
-            <property name="name" value="PC"/>
-         </properties>
-      </object>
-      <object id="8" gid="1" x="64" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Elevator door singles"/>
-         </properties>
-      </object>
-      <object id="3" gid="1" x="64" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Single battles NPC"/>
-         </properties>
-      </object>
-      <object id="9" gid="1" x="512" y="64" width="32" height="32">
-         <properties>
-            <property name="name" value="Elevator door doubles"/>
-         </properties>
-      </object>
-      <object id="4" gid="1" x="512" y="128" width="32" height="32">
-         <properties>
-            <property name="name" value="Double battles NPC"/>
-         </properties>
-      </object>
-      <object id="10" gid="1" x="224" y="256" width="32" height="32">
-         <properties>
-            <property name="name" value="Healing balls"/>
-         </properties>
-      </object>
-   </objectgroup>
+  </property>
+  <property name="bgs" type="class" propertytype="bga">
+   <properties>
+    <property name="name" value=""/>
+    <property name="volume" type="int" value="80"/>
+   </properties>
+  </property>
+  <property name="map_index" type="int" value="57"/>
+  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+   <properties>
+    <property name="name" value="Stadium Cup lobby"/>
+    <property name="order" type="int" value="51"/>
+    <property name="parent_id" type="int" value="55"/>
+    <property name="scroll_x" type="int" value="320"/>
+    <property name="scroll_y" type="int" value="240"/>
+   </properties>
+  </property>
+ </properties>
+ <tileset firstgid="1" source="../events/events.tsx"/>
+ <tileset firstgid="49" source="../blank_tileset/blank_0.tsx"/>
+ <tileset firstgid="97" source="../blank_tileset/blank_1.tsx"/>
+ <tileset firstgid="145" source="../blank_tileset/blank_2.tsx"/>
+ <tileset firstgid="193" source="../blank_tileset/blank_3.tsx"/>
+ <tileset firstgid="241" source="../blank_tileset/blank_4.tsx"/>
+ <tileset firstgid="289" source="../blank_tileset/blank_5.tsx"/>
+ <tileset firstgid="337" source="../blank_tileset/blank_6.tsx"/>
+ <tileset firstgid="385" source="../tilesets/Trainer Tower.tsx"/>
+ <layer id="1" name="z1" width="20" height="15">
+  <data encoding="csv"> 402,403,404,405,402,385,395,395,395,395,395,395,395,390,402,403,404,405,402,395,409,411,412,413,409,393,395,395,395,395,395,395,395,398,409,411,412,413,409,395,468,458,458,458,458,393,395,395,395,395,395,395,395,398,468,458,458,458,458,395,450,450,452,450,450,393,395,395,395,395,395,395,395,398,450,450,452,450,450,395,468,458,459,466,467,393,395,395,395,395,395,395,395,398,468,458,459,466,467,395,451,441,441,441,441,401,402,402,402,402,402,402,402,406,451,441,441,441,441,395,451,441,441,441,441,409,409,409,409,409,409,409,409,409,451,441,441,441,441,395,451,441,441,441,441,450,450,450,450,468,458,450,450,450,451,441,441,441,441,395,451,430,431,432,441,450,450,450,450,450,450,450,450,450,451,430,431,432,441,395,451,438,439,440,441,448,468,458,458,458,458,458,458,458,459,438,439,440,441,395,451,441,441,441,441,441,441,441,430,431,432,441,441,441,441,441,441,441,441,395,451,441,441,441,441,441,441,441,438,439,440,441,441,441,441,441,441,441,441,395,451,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,441,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395,395 </data>
+ </layer>
+ <layer id="2" name="z2" width="20" height="15">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,475,507,0,505,475,0,0,0,0,0,0,0,0,0,475,507,0,505,475,0,499,515,0,513,499,0,0,0,0,0,0,0,0,0,499,515,0,513,499,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,419,420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,410,480,486,487,427,428,488,480,410,0,0,0,0,0,0,0,0,0,0,0,426,490,494,495,506,475,496,492,426,0,0,0,0,0,0,0,0,0,0,0,434,498,499,499,514,499,499,500,434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,577,578,579,0,415,0,415,0,0,0,0,0,0,0,0,0,0,0,0,0,585,586,587,0,423,0,423,0,0,0,0,0,0,0,0,0,0,0,0,0,593,594,595,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <layer id="3" name="z3" width="20" height="15">
+  <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,511,0,0,0,0,0,0,0,0,0,0,0,0,0,511,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,527,502,0,0,0,0,0,502,504,0,0,0,0,0,0,0,0,0,0,0,535,510,0,0,0,0,0,510,512,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,0,520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
+ </layer>
+ <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="128" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Singles results"/>
+   </properties>
+  </object>
+  <object id="11" gid="1" x="288" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Nurse"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="576" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Doubles results"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="544" y="384" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs to Battle Tower"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="416" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Battle recorder"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="64" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Elevator door singles"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="64" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Single battles NPC"/>
+   </properties>
+  </object>
+  <object id="9" gid="1" x="512" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Elevator door doubles"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="512" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Double battles NPC"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="224" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Healing balls"/>
+   </properties>
+  </object>
+ </objectgroup>
 </map>
