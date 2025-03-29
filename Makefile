@@ -34,7 +34,7 @@ decompile:
 	bundle exec ruby tools/decompiler/generate_tmx.rb
 
 # backup non-github essentials assets and decompile to source if possible
-backup: decompile
+backup:
 	./scripts/extract_assets.sh
 
 # clean out the essentials Data folder
