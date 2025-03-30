@@ -202,7 +202,7 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
     map.encounter_step = encounter_step["value"].to_i
   end
 
-  bgm_object = tsx.xpath("//property").detect { |x| x["name"] == "bgm" }
+  bgm_object = tmx.xpath("//property").detect { |x| x["name"] == "bgm" }
   if bgm_object
     bgm_properties = bgm_object.at_xpath("properties").children
     bgm_name = bgm_properties.detect { |x| x["name"] == "name" }
@@ -219,7 +219,7 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
     end
   end
 
-  bgs_object = tsx.xpath("//property").detect { |x| x["name"] == "bgs" }
+  bgs_object = tmx.xpath("//property").detect { |x| x["name"] == "bgs" }
   if bgs_object
     bgs_properties = bgs_object.at_xpath("properties").children
     bgs_name = bgs_properties.detect { |x| x["name"] == "name" }
