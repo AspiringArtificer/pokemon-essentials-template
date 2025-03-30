@@ -24,15 +24,15 @@ Installation of Python3 and Pip. You may already have this on your machine by de
 ### Local Setup
 
 On your development machine you'll want to do the following things:
-1. Run "make setup". This will set up your local Ruby and Python environments.
-2. Redirect each over the git submodules to your own fork or custom repo. The submodules are described in the [Submodules](#submodules) section.
-3. Make sure you init the submodules. "git submodule update --init --recursive" 
+1. Redirect each over the git submodules to your own fork or custom repo. The submodules are described in the [Submodules](#submodules) section.
+2. Make sure you init the submodules. "git submodule update --init --recursive"
+3. Run "make setup". This will set up your local Ruby and Python environments.
 4. Extract the Essentials zip file into the src/essentials folder. Don't overwrite any existing files.
 5. Run the game at least once, compile the PBS files, and make sure it's working properly.
 6. Run "make backup decompile". This will copy the non-GitHub assets to the src/assets folder, and decompile the Data files to src/data, src/events/, and src/tiled/ folders.
-7. Commit the assets files in that submodule and double check the other source files. Git shouldn't see any changes other than the checksums.csv in src/data.
+7. Commit the assets files in that submodule and double check the other source files. Git shouldn't see any changes if you're using the example project.
 8. Back up the src/essentials files to another folder and run "make distclean". This will delete all the files in src/essentials not tracked by that submodule.
-9. Run "make install compile". This will install the assets from src/assets and compile the other src files back into rxdata files.
+9.  Run "make install compile". This will install the assets from src/assets and compile the other src files back into rxdata files.
 10. Run the game in src/essentials, don't forget to hold left-cntrl to compile pbs files. It should run as normal, demonstrating a full compile from source.
 
 
@@ -42,6 +42,13 @@ src/essentials -- This points to a fork of the pokemon-essentials Github project
 src/assets -- This points to a private repo containing the various assets from Pokemon Essentials v21.1 that can't be stored in the public pokemon-essentials repo.
 
 tools/eevee -- This points to a fork of the eevee Github project. This tool is used to extract rxdata files into .rb files that can be version controlled and are human readable.
+
+### Existing Projects
+If you're converting an existing project, the local setup setup instructions should be compatible, with a few exceptions:
+* If you change the fundamental functionality of the essentials project, particularly around maps/events, things will likely break.
+* You'll need to be careful on managing the files as the template repo is set up for the demo project.
+* The autotiles converter only supports single tile and 3x4 tilesets, it's okay if it's animated.
+* There's probably some other things, so user beware.
 
 ## Development
 After you confirm that the repo is set up properly, you should be (technically) fully capable of making an essentials game without ever opening RMXP.
