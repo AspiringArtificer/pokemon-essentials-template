@@ -5,3 +5,5 @@ DataBackup/
 .bundle/
 
 *.tiled-session
+src/data/checksums.csv
+Gemfile.lock
