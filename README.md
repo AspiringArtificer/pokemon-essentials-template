@@ -57,6 +57,9 @@ After you confirm that the repo is set up properly, you should be (technically) 
 * To edit event details, aside from location, edit the specific files in src/events. Note that the events here do contain location info, but during compilation, the map data take precedence.
 * You can edit pretty much everything else in the essentials debug menus.
 
+### Adding Maps
+There's an extension in the tiled project to create a RMXP compatible map. You can access it under "File > New RPG Map...". This will open a dialog to generate a new map base that can compile into a RMXP map.
+
 ## Notable Missing Features
 Currently the essentials animation importer/exporter isn't working correctly on main, so those data files aren't decompiled.
 

@@ -194,8 +194,14 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
   tsx = Nokogiri::XML(File.open(tileset_file)).root
 
   map.tileset_id = tsx.xpath("//property").detect { |x| x["name"] == "id" }["value"].to_i
-  map.autoplay_bgm = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgm" }["value"] == "true"
-  map.autoplay_bgs = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgs" }["value"] == "true"
+  autoplay_bgm = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgm" }
+  if autoplay_bgm
+    map.autoplay_bgm = autoplay_bgm["value"] == "true"
+  end
+  autoplay_bgs = tmx.xpath("//property").detect { |x| x["name"] == "autoplay_bgs" }
+  if autoplay_bgs
+    map.autoplay_bgs = autoplay_bgs["value"] == "true"
+  end
   # TODO add encounter_list?
   encounter_step = tmx.xpath("//property").detect { |x| x["name"] == "encounter_step" }
   if encounter_step
