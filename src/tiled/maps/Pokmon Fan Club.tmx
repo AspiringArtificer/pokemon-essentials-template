@@ -2,28 +2,32 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Lerucean Town"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="26"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Pokémon Fan Club"/>
-    <property name="order" type="int" value="25"/>
-    <property name="parent_id" type="int" value="23"/>
-    <property name="scroll_x" type="int" value="320"/>
-    <property name="scroll_y" type="int" value="240"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Lerucean Town"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="26"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Pokémon Fan Club"/>
+      <property name="order" type="int" value="25"/>
+      <property name="parent_id" type="int" value="23"/>
+      <property name="scroll_x" type="int" value="320"/>
+      <property name="scroll_y" type="int" value="240"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -46,34 +50,14 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="5" gid="1" x="96" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Trade - Advanced"/>
-   </properties>
-  </object>
-  <object id="6" gid="1" x="256" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Gift Pokémon - Basic"/>
-   </properties>
-  </object>
   <object id="1" gid="1" x="160" y="384" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
    </properties>
   </object>
-  <object id="7" gid="1" x="224" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Gift egg"/>
-   </properties>
-  </object>
   <object id="2" gid="1" x="64" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Trader - Basic"/>
-   </properties>
-  </object>
-  <object id="8" gid="1" x="192" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Pokémon ball - Advanced"/>
    </properties>
   </object>
   <object id="3" gid="1" x="160" y="256" width="32" height="32">
@@ -84,6 +68,26 @@
   <object id="4" gid="1" x="288" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Gift Pokémon - Advanced"/>
+   </properties>
+  </object>
+  <object id="5" gid="1" x="96" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Trade - Advanced"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="256" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Gift Pokémon - Basic"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="224" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Gift egg"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="192" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Pokémon ball - Advanced"/>
    </properties>
   </object>
  </objectgroup>

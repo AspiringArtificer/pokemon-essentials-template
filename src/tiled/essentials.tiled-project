@@ -101,6 +101,62 @@
         {
             "color": "#ffa0a0a4",
             "drawFill": true,
+            "id": 5,
+            "members": [
+                {
+                    "name": "autoplay_bgm",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "autoplay_bgs",
+                    "type": "bool",
+                    "value": false
+                },
+                {
+                    "name": "bgm",
+                    "propertyType": "bga",
+                    "type": "class",
+                    "value": {
+                    }
+                },
+                {
+                    "name": "bgs",
+                    "propertyType": "bga",
+                    "type": "class",
+                    "value": {
+                    }
+                },
+                {
+                    "name": "map_index",
+                    "type": "int",
+                    "value": 0
+                },
+                {
+                    "name": "mapinfo",
+                    "propertyType": "rpg_mapinfo",
+                    "type": "class",
+                    "value": {
+                    }
+                }
+            ],
+            "name": "rpg_map",
+            "type": "class",
+            "useAs": [
+                "property",
+                "map",
+                "layer",
+                "object",
+                "tile",
+                "tileset",
+                "wangcolor",
+                "wangset",
+                "project"
+            ]
+        },
+        {
+            "color": "#ffa0a0a4",
+            "drawFill": true,
             "id": 4,
             "members": [
                 {

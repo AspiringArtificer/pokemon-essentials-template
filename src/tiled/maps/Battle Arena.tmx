@@ -2,29 +2,33 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Battle Frontier"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="60"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Battle Arena"/>
-    <property name="order" type="int" value="55"/>
-    <property name="parent_id" type="int" value="52"/>
-    <property name="expanded" type="bool" value="true"/>
-    <property name="scroll_x" type="int" value="320"/>
-    <property name="scroll_y" type="int" value="240"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Battle Frontier"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="60"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Battle Arena"/>
+      <property name="order" type="int" value="55"/>
+      <property name="parent_id" type="int" value="52"/>
+      <property name="expanded" type="bool" value="true"/>
+      <property name="scroll_x" type="int" value="320"/>
+      <property name="scroll_y" type="int" value="240"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -47,11 +51,6 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1968,0,1966,1860,0,1696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1868,0,1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="5" gid="1" x="288" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Battle recorder"/>
-   </properties>
-  </object>
   <object id="1" gid="1" x="160" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
@@ -70,6 +69,11 @@
   <object id="4" gid="1" x="224" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Results"/>
+   </properties>
+  </object>
+  <object id="5" gid="1" x="288" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Battle recorder"/>
    </properties>
   </object>
  </objectgroup>

@@ -2,28 +2,32 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="17" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Poke Mart"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="15"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Cedolan Dept. 2F"/>
-    <property name="order" type="int" value="15"/>
-    <property name="parent_id" type="int" value="14"/>
-    <property name="scroll_x" type="int" value="320"/>
-    <property name="scroll_y" type="int" value="272"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Poke Mart"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="15"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Cedolan Dept. 2F"/>
+      <property name="order" type="int" value="15"/>
+      <property name="parent_id" type="int" value="14"/>
+      <property name="scroll_x" type="int" value="320"/>
+      <property name="scroll_y" type="int" value="272"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -46,16 +50,6 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,521,0,0,0,0,0,0,0,588,589,590,0,0,0,0,0,0,0,0,0,517,0,0,0,0,0,0,0,596,597,598,0,0,0,0,0,0,0,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="5" gid="1" x="32" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Cashier top"/>
-   </properties>
-  </object>
-  <object id="6" gid="1" x="32" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Cashier bottom"/>
-   </properties>
-  </object>
   <object id="1" gid="1" x="192" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Elevator door"/>
@@ -74,6 +68,16 @@
   <object id="4" gid="1" x="128" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Floor sign"/>
+   </properties>
+  </object>
+  <object id="5" gid="1" x="32" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Cashier top"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="32" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Cashier bottom"/>
    </properties>
   </object>
  </objectgroup>

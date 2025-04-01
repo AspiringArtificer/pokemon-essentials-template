@@ -2,27 +2,31 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="32" height="24" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Tiall"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="75"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Tiall Region"/>
-    <property name="order" type="int" value="69"/>
-    <property name="scroll_x" type="int" value="512"/>
-    <property name="scroll_y" type="int" value="384"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Tiall"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="75"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Tiall Region"/>
+      <property name="order" type="int" value="69"/>
+      <property name="scroll_x" type="int" value="512"/>
+      <property name="scroll_y" type="int" value="384"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>

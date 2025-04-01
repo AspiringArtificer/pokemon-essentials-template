@@ -2,28 +2,32 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Cedolan City"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="11"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Pokémon Institute"/>
-    <property name="order" type="int" value="11"/>
-    <property name="parent_id" type="int" value="7"/>
-    <property name="scroll_x" type="int" value="320"/>
-    <property name="scroll_y" type="int" value="240"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Cedolan City"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="11"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Pokémon Institute"/>
+      <property name="order" type="int" value="11"/>
+      <property name="parent_id" type="int" value="7"/>
+      <property name="scroll_x" type="int" value="320"/>
+      <property name="scroll_y" type="int" value="240"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -46,11 +50,6 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1857,1858,1861,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1865,1866,1869,0,0,1873,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1881,1876,0,0,0,1725,0,0,0,0,0,0,0,0,0,1857,1858,1861,0,0,1872,1884,0,0,0,0,1733,0,0,0,0,0,0,0,0,1865,1866,1869,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="5" gid="1" x="352" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Old Amber"/>
-   </properties>
-  </object>
   <object id="1" gid="1" x="224" y="352" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
@@ -69,6 +68,11 @@
   <object id="4" gid="1" x="160" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Fossil combiner"/>
+   </properties>
+  </object>
+  <object id="5" gid="1" x="352" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Old Amber"/>
    </properties>
   </object>
  </objectgroup>

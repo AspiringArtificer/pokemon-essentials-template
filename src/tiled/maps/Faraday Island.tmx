@@ -2,27 +2,31 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="29" height="31" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Islands"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="73"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Faraday Island"/>
-    <property name="order" type="int" value="68"/>
-    <property name="scroll_x" type="int" value="464"/>
-    <property name="scroll_y" type="int" value="524"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Islands"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="73"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Faraday Island"/>
+      <property name="order" type="int" value="68"/>
+      <property name="scroll_x" type="int" value="464"/>
+      <property name="scroll_y" type="int" value="524"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -55,14 +59,14 @@
     <property name="name" value="Exit middle"/>
    </properties>
   </object>
-  <object id="8" gid="1" x="448" y="416" width="32" height="32">
-   <properties>
-    <property name="name" value="Mew"/>
-   </properties>
-  </object>
   <object id="3" gid="1" x="480" y="800" width="32" height="32">
    <properties>
     <property name="name" value="Exit right"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="448" y="416" width="32" height="32">
+   <properties>
+    <property name="name" value="Mew"/>
    </properties>
   </object>
  </objectgroup>

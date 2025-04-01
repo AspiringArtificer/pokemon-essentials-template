@@ -2,27 +2,31 @@
 
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="36" height="138" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
  <properties>
-  <property name="autoplay_bgm" type="bool" value="true"/>
-  <property name="autoplay_bgs" type="bool" value="false"/>
-  <property name="bgm" type="class" propertytype="bga">
+  <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>
-    <property name="name" value="Bicycle"/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="bgs" type="class" propertytype="bga">
-   <properties>
-    <property name="name" value=""/>
-    <property name="volume" type="int" value="80"/>
-   </properties>
-  </property>
-  <property name="map_index" type="int" value="41"/>
-  <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
-   <properties>
-    <property name="name" value="Route 5"/>
-    <property name="order" type="int" value="39"/>
-    <property name="scroll_x" type="int" value="576"/>
-    <property name="scroll_y" type="int" value="468"/>
+    <property name="autoplay_bgm" type="bool" value="true"/>
+    <property name="autoplay_bgs" type="bool" value="false"/>
+    <property name="bgm" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value="Bicycle"/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="bgs" type="class" propertytype="bga">
+     <properties>
+      <property name="name" value=""/>
+      <property name="volume" type="int" value="80"/>
+     </properties>
+    </property>
+    <property name="map_index" type="int" value="41"/>
+    <property name="mapinfo" type="class" propertytype="rpg_mapinfo">
+     <properties>
+      <property name="name" value="Route 5"/>
+      <property name="order" type="int" value="39"/>
+      <property name="scroll_x" type="int" value="576"/>
+      <property name="scroll_y" type="int" value="468"/>
+     </properties>
+    </property>
    </properties>
   </property>
  </properties>
@@ -45,52 +49,7 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1409,1410,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1411,1412,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1417,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1420,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1657,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1658,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,323,325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,323,325,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,329,327,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,329,327,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="9" gid="1" x="256" y="1344" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="47" gid="1" x="864" y="1984" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="85" gid="1" x="256" y="3168" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="28" gid="1" x="640" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="66" gid="1" x="864" y="2048" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="76" gid="1" x="256" y="3744" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="19" gid="1" x="256" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="57" gid="1" x="256" y="2048" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="95" gid="1" x="864" y="3648" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="38" gid="1" x="256" y="1984" width="32" height="32">
+  <object id="1" gid="1" x="256" y="64" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
@@ -100,114 +59,9 @@
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="48" gid="1" x="864" y="2144" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="86" gid="1" x="256" y="3328" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="29" gid="1" x="864" y="448" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="67" gid="1" x="864" y="2208" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="20" gid="1" x="256" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="58" gid="1" x="256" y="2208" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="96" gid="1" x="864" y="3808" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="1" gid="1" x="256" y="64" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="39" gid="1" x="256" y="2144" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="77" gid="1" x="864" y="2944" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="87" gid="1" x="256" y="3488" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="30" gid="1" x="864" y="608" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="68" gid="1" x="864" y="2368" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
   <object id="11" gid="1" x="640" y="224" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="49" gid="1" x="864" y="2304" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="21" gid="1" x="256" y="448" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="59" gid="1" x="256" y="2368" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="256" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="40" gid="1" x="256" y="2304" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="78" gid="1" x="864" y="3104" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="31" gid="1" x="864" y="768" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="69" gid="1" x="864" y="2528" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
    </properties>
   </object>
   <object id="12" gid="1" x="864" y="384" width="32" height="32">
@@ -215,137 +69,12 @@
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="50" gid="1" x="864" y="2464" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="88" gid="1" x="256" y="3648" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="256" y="384" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="41" gid="1" x="256" y="2464" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="79" gid="1" x="864" y="3264" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="22" gid="1" x="256" y="608" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="60" gid="1" x="256" y="2528" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="32" gid="1" x="864" y="928" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="70" gid="1" x="864" y="2688" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
   <object id="13" gid="1" x="864" y="544" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="51" gid="1" x="864" y="2624" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="89" gid="1" x="256" y="3808" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="256" y="544" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="42" gid="1" x="256" y="2624" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="80" gid="1" x="864" y="3424" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="23" gid="1" x="256" y="768" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="61" gid="1" x="256" y="2688" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
   <object id="14" gid="1" x="864" y="704" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="52" gid="1" x="864" y="2784" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="90" gid="1" x="864" y="2848" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="33" gid="1" x="864" y="1088" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="71" gid="1" x="256" y="2944" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="43" gid="1" x="256" y="2784" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="81" gid="1" x="864" y="3584" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="24" gid="1" x="256" y="928" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="62" gid="1" x="864" y="1408" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="256" y="704" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
@@ -355,112 +84,7 @@
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="53" gid="1" x="256" y="1408" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="91" gid="1" x="864" y="3008" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="34" gid="1" x="864" y="1248" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="72" gid="1" x="256" y="3104" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="82" gid="1" x="864" y="3744" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="25" gid="1" x="256" y="1088" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="63" gid="1" x="864" y="1568" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="6" gid="1" x="256" y="864" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="44" gid="1" x="864" y="1504" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="92" gid="1" x="864" y="3168" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="73" gid="1" x="256" y="3264" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="54" gid="1" x="256" y="1568" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="35" gid="1" x="256" y="1504" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
   <object id="16" gid="1" x="864" y="1024" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="83" gid="1" x="256" y="2848" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="26" gid="1" x="256" y="1248" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="64" gid="1" x="864" y="1728" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="7" gid="1" x="256" y="1024" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="45" gid="1" x="864" y="1664" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="93" gid="1" x="864" y="3328" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="74" gid="1" x="256" y="3424" width="32" height="32">
-   <properties>
-    <property name="name" value="OutdoorLight"/>
-   </properties>
-  </object>
-  <object id="36" gid="1" x="256" y="1664" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
@@ -470,29 +94,54 @@
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="55" gid="1" x="256" y="1728" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="84" gid="1" x="256" y="3008" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="65" gid="1" x="864" y="1888" width="32" height="32">
-   <properties>
-    <property name="name" value="Shadow"/>
-   </properties>
-  </object>
-  <object id="8" gid="1" x="256" y="1184" width="32" height="32">
+  <object id="18" gid="1" x="864" y="1344" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="46" gid="1" x="864" y="1824" width="32" height="32">
+  <object id="19" gid="1" x="256" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="256" y="224" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="20" gid="1" x="256" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="21" gid="1" x="256" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="22" gid="1" x="256" y="608" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="23" gid="1" x="256" y="768" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="24" gid="1" x="256" y="928" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="25" gid="1" x="256" y="1088" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="26" gid="1" x="256" y="1248" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
    </properties>
   </object>
   <object id="27" gid="1" x="640" y="128" width="32" height="32">
@@ -500,12 +149,52 @@
     <property name="name" value="Shadow"/>
    </properties>
   </object>
-  <object id="94" gid="1" x="864" y="3488" width="32" height="32">
+  <object id="28" gid="1" x="640" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Shadow"/>
    </properties>
   </object>
-  <object id="75" gid="1" x="256" y="3584" width="32" height="32">
+  <object id="29" gid="1" x="864" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="256" y="384" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="30" gid="1" x="864" y="608" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="31" gid="1" x="864" y="768" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="32" gid="1" x="864" y="928" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="33" gid="1" x="864" y="1088" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="34" gid="1" x="864" y="1248" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="35" gid="1" x="256" y="1504" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="36" gid="1" x="256" y="1664" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
@@ -515,12 +204,327 @@
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
-  <object id="18" gid="1" x="864" y="1344" width="32" height="32">
+  <object id="38" gid="1" x="256" y="1984" width="32" height="32">
    <properties>
     <property name="name" value="OutdoorLight"/>
    </properties>
   </object>
+  <object id="39" gid="1" x="256" y="2144" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="256" y="544" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="40" gid="1" x="256" y="2304" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="41" gid="1" x="256" y="2464" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="42" gid="1" x="256" y="2624" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="43" gid="1" x="256" y="2784" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="44" gid="1" x="864" y="1504" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="45" gid="1" x="864" y="1664" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="46" gid="1" x="864" y="1824" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="47" gid="1" x="864" y="1984" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="48" gid="1" x="864" y="2144" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="49" gid="1" x="864" y="2304" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="5" gid="1" x="256" y="704" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="50" gid="1" x="864" y="2464" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="51" gid="1" x="864" y="2624" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="52" gid="1" x="864" y="2784" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="53" gid="1" x="256" y="1408" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="54" gid="1" x="256" y="1568" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="55" gid="1" x="256" y="1728" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
   <object id="56" gid="1" x="256" y="1888" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="57" gid="1" x="256" y="2048" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="58" gid="1" x="256" y="2208" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="59" gid="1" x="256" y="2368" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="6" gid="1" x="256" y="864" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="60" gid="1" x="256" y="2528" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="61" gid="1" x="256" y="2688" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="62" gid="1" x="864" y="1408" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="63" gid="1" x="864" y="1568" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="64" gid="1" x="864" y="1728" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="65" gid="1" x="864" y="1888" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="66" gid="1" x="864" y="2048" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="67" gid="1" x="864" y="2208" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="68" gid="1" x="864" y="2368" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="69" gid="1" x="864" y="2528" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="7" gid="1" x="256" y="1024" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="70" gid="1" x="864" y="2688" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="71" gid="1" x="256" y="2944" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="72" gid="1" x="256" y="3104" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="73" gid="1" x="256" y="3264" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="74" gid="1" x="256" y="3424" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="75" gid="1" x="256" y="3584" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="76" gid="1" x="256" y="3744" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="77" gid="1" x="864" y="2944" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="78" gid="1" x="864" y="3104" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="79" gid="1" x="864" y="3264" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="8" gid="1" x="256" y="1184" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="80" gid="1" x="864" y="3424" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="81" gid="1" x="864" y="3584" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="82" gid="1" x="864" y="3744" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="83" gid="1" x="256" y="2848" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="84" gid="1" x="256" y="3008" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="85" gid="1" x="256" y="3168" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="86" gid="1" x="256" y="3328" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="87" gid="1" x="256" y="3488" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="88" gid="1" x="256" y="3648" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="89" gid="1" x="256" y="3808" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="9" gid="1" x="256" y="1344" width="32" height="32">
+   <properties>
+    <property name="name" value="OutdoorLight"/>
+   </properties>
+  </object>
+  <object id="90" gid="1" x="864" y="2848" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="91" gid="1" x="864" y="3008" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="92" gid="1" x="864" y="3168" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="93" gid="1" x="864" y="3328" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="94" gid="1" x="864" y="3488" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="95" gid="1" x="864" y="3648" width="32" height="32">
+   <properties>
+    <property name="name" value="Shadow"/>
+   </properties>
+  </object>
+  <object id="96" gid="1" x="864" y="3808" width="32" height="32">
    <properties>
     <property name="name" value="Shadow"/>
    </properties>

@@ -30,7 +30,13 @@ def setup_core_info(map, data_file, map_data, mapinfos)
   unless map.at_xpath("properties")
     map.add_child "<properties/>"
   end
-  map.at_xpath("properties").add_child "<property name=\"map_index\" type=\"int\" value=\"#{map_index}\"/>"
+
+  properties = map.at_xpath("properties")
+  properties.add_child "<property name=\"rpg_properties\" type=\"class\" propertytype=\"rpg_map\"/>"
+  properties.at_xpath("property").add_child "<properties/>"
+  rpg_properties = properties.at_xpath("property").at_xpath("properties")
+
+  rpg_properties.add_child "<property name=\"map_index\" type=\"int\" value=\"#{map_index}\"/>"
 
   return map_name, map_index
 end
@@ -139,10 +145,11 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   # add core map details
   map_name, map_index = setup_core_info(map, data_file, map_data, mapinfos)
 
-  extract_map_info_properties(mapinfos[map_index], map.at_xpath("properties"))
-  extract_map_properties(map_data, map.at_xpath("properties"))
-  sorted_nodes = map.at_xpath("properties").children.sort_by { |x| x.attr("name") }
-  map.at_xpath("properties").children = Nokogiri::XML::NodeSet.new(map.document, sorted_nodes)
+  rpg_properties = map.at_xpath("properties").at_xpath("property").at_xpath("properties")
+  extract_map_info_properties(mapinfos[map_index], rpg_properties)
+  extract_map_properties(map_data, rpg_properties)
+  sorted_nodes = rpg_properties.children.sort_by { |x| x.attr("name") }
+  rpg_properties.children = Nokogiri::XML::NodeSet.new(map.document, sorted_nodes)
   extract_tilesets(map, tilesets[map_data.tileset_id])
   extract_layers(map, map_data)
   extract_events(map, map_data)
