@@ -60,10 +60,10 @@ After you confirm that the repo is set up properly, you should be (technically) 
 ### Adding Maps
 There's an extension in the tiled project to create a RMXP compatible map. You can access it under "File > New RPG Map...". This will open a dialog to generate a new map base that can compile into a RMXP map.
 
+Adding events to maps can be done with the event tileset, but the source file will need to be manually created.
+
 ## Notable Missing Features
 Currently the essentials animation importer/exporter isn't working correctly on main, so those data files aren't decompiled.
-
-Making new maps or events is currently a very manual process. You can use existing files as reference or build out a baseline in RMXP.
 
 RMXP autotiles are compacted in an unusual way. The converter just builds out a 48 tile set, but doesn't really replicate the behavior in Tiled. This could be done with a modification of the script and/or Tiled's terrain tools in the future. If you really want to use these, for now, you probably want to do it in RMXP.
 
