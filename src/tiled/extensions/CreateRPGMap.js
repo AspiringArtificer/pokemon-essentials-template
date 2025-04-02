@@ -40,14 +40,27 @@ var createRPGMap = tiled.registerAction("CreateRPGMap", function(action) {
 	dialog.addHeading("Tileset", true);
 	let tsetInput = dialog.addFilePicker("Tileset:");
 	tsetInput.filter = "Tilesets (*.tsx)";
-	dialog.addNewRow();
+	if(project)
+	{
+		if(project.property("CreateRPGMap_tsetPath"))
+		{
+			let path = project.property("CreateRPGMap_tsetPath");
+			path = FileInfo.joinPaths(FileInfo.path(project.fileName), path);
+			path = FileInfo.cleanPath(path);
+			tsetInput.fileName = path;
+		}
+		else
+			tsetInput.fileName = FileInfo.path(project.fileName);
+
+	}
 	dialog.addNewRow();
 
 	// Get Map Size
+	dialog.addHeading("Map Size", true);
 	let mapWidthInput = dialog.addNumberInput("Map width:");
 	mapWidthInput.decimals = 0;
-	mapWidthInput.minimum = 1;
-	let mapWidth = 1;
+	mapWidthInput.minimum = 20;
+	let mapWidth = 20;
 	mapWidthInput.valueChanged.connect(function(number) {mapWidth = number});
 	if(project && project.property("CreateRPGMap_mapWidth") > 0)
 		mapWidthInput.value = project.property("CreateRPGMap_mapWidth");
@@ -56,8 +69,8 @@ var createRPGMap = tiled.registerAction("CreateRPGMap", function(action) {
 
 	let mapHeightInput = dialog.addNumberInput("Map height:");
 	mapHeightInput.decimals = 0;
-	mapHeightInput.minimum = 1;
-	let mapHeight = 1;
+	mapHeightInput.minimum = 15;
+	let mapHeight = 15;
 	mapHeightInput.valueChanged.connect(function(number) {mapHeight = number});
 	if(project && project.property("CreateRPGMap_mapHeight") > 0)
 		mapHeightInput.value = project.property("CreateRPGMap_mapHeight");
@@ -137,7 +150,21 @@ var createRPGMap = tiled.registerAction("CreateRPGMap", function(action) {
 	map.addLayer(new ObjectGroup("events"));
 
 	// Prompt to save Map
-	let saveLocation = tiled.promptSaveFile(FileInfo.path(tset)+"/../", "Tiled Map files (*.tmx *.xml)", "Save Map As");
+	let mapPath = FileInfo.path(tset)+"/../";
+	if(project)
+		{
+			if(project.property("CreateRPGMap_mapPath"))
+			{
+				let path = project.property("CreateRPGMap_mapPath");
+				path = FileInfo.joinPaths(FileInfo.path(project.fileName), path);
+				path = FileInfo.cleanPath(path);
+				mapPath = path;
+			}
+			else
+				mapPath = FileInfo.path(project.fileName);
+	
+	}
+	let saveLocation = tiled.promptSaveFile(mapPath, "Tiled Map files (*.tmx *.xml)", "Save Map As");
 	if(saveLocation && saveLocation != "") {
 		let format = tiled.mapFormatForFile(saveLocation);
 		if(!format) {
@@ -147,9 +174,12 @@ var createRPGMap = tiled.registerAction("CreateRPGMap", function(action) {
 		format.write(map, saveLocation);
 		//Save properties:
 		if(project) {
+			let projectPath = FileInfo.path(project.fileName)
 			project.setProperty("CreateRPGMap_MapIndex", mapIndex+1);
 			project.setProperty("CreateRPGMap_mapWidth", mapWidth);
 			project.setProperty("CreateRPGMap_mapHeight", mapHeight);
+			project.setProperty("CreateRPGMap_tsetPath", FileInfo.relativePath(projectPath, tset));
+			project.setProperty("CreateRPGMap_mapPath", FileInfo.relativePath(projectPath, FileInfo.path(saveLocation)));
 		}
 		tiled.open(saveLocation);
 	} //else, the user cancelled. Do nothing.
