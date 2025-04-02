@@ -30,7 +30,6 @@ decompile:
 	cp --update "src/essentials/Data/move2anim.dat" "src/data/Data/."
 	cp --update "src/essentials/Data/PkmnAnimations.rxdata" "src/data/Data/."
 	rm -rf src/events src/tiled/maps src/tiled/tilesets
-	bundle exec ruby tools/decompiler/extract_events.rb
 	bundle exec ruby tools/decompiler/generate_tsx.rb
 	bundle exec ruby tools/decompiler/generate_tmx.rb
 

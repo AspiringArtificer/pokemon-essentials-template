@@ -1,15 +1,13 @@
 require "fileutils" # needed for file operations
 require "nokogiri" # needed to parse/edit xml
+require_relative "extract_events"
 
-RUBY_DIR = __dir__ + "/"
 TMS_TEMPLATE = RUBY_DIR + "map_template.tmx"
 
-ROOT_DIR = RUBY_DIR + "../../"
 require_relative ROOT_DIR + "tools/eevee/rmxp/rgss" # needed to manipulate rpg data
 require_relative ROOT_DIR + "tools/eevee/src/common"  # needed to load ruby data files
 
 TILESETS_DATA = ROOT_DIR + "src/essentials/Data/Tilesets.rxdata"
-MAPINFOS = ROOT_DIR + "src/essentials/Data/MapInfos.rxdata"
 EVENT_GID = 1
 
 def setup_core_info(map, data_file, map_data, mapinfos)
@@ -119,7 +117,7 @@ def extract_layers(map, map_data)
   end
 end
 
-def extract_events(map, map_data)
+def extract_events(map, map_data, output_dir)
 
   # add object layer for events
   events_info = "id=\"#{map["nextlayerid"]}\" name=\"events\""
@@ -128,15 +126,20 @@ def extract_events(map, map_data)
   object_group = map.at_xpath("objectgroup")
 
   map_data.events.each do |key, event|
+    # Create a ruby source file for the event code
+    source_path = generate_event_file(key, event, output_dir)
+    source_path.slice!(ROOT_DIR)
+
     # Tiled places events by pixel and uses bottom-left index, rmpx places by tile with top-left index
     obj_info = "id=\"#{event.id}\" gid=\"#{EVENT_GID}\" x=\"#{event.x * 32}\" y=\"#{(event.y + 1) * 32}\" width=\"32\" height=\"32\""
     properties = "<property name=\"name\" value=\"#{event.name}\"/>"
+    properties += "<property name=\"source_path\" value=\"#{source_path}\"/>"
     object_group.add_child "<object #{obj_info}><properties>#{properties}</properties></object>"
   end
 end
 
 # generate a Tiled tmx map file based on the ruby map data files
-def generate_tmx(data_file, tilesets, mapinfos, output_dir)
+def generate_tmx(data_file, tilesets, mapinfos, output_dir, events_dir)
   # extract data
   map_data = load_rxdata(data_file)
   map_file = Nokogiri::XML(File.open(TMS_TEMPLATE))
@@ -152,7 +155,7 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
   rpg_properties.children = Nokogiri::XML::NodeSet.new(map.document, sorted_nodes)
   extract_tilesets(map, tilesets[map_data.tileset_id])
   extract_layers(map, map_data)
-  extract_events(map, map_data)
+  extract_events(map, map_data, events_dir + map_name + "/")
 
   output_file = output_dir + map_name + ".tmx"
   FileUtils.mkdir_p(output_dir)
@@ -161,7 +164,7 @@ def generate_tmx(data_file, tilesets, mapinfos, output_dir)
 end
 
 # generate Tiled map files for all the Map data files in a directory
-def generate_maps(source_dir, output_dir)
+def generate_maps(source_dir, output_dir, events_dir)
   puts "Generating maps..."
   tileset = load_rxdata(TILESETS_DATA)
   mapinfo = load_rxdata(MAPINFOS)
@@ -170,7 +173,7 @@ def generate_maps(source_dir, output_dir)
   data_dir.each_child do |data_file|
     if data_file.include? "Map" and not(data_file.include? "Infos")
       puts "Generating tmx from #{data_file}..."
-      generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir)
+      generate_tmx(source_dir + data_file, tileset, mapinfo, output_dir, events_dir)
     end
   end
   puts "Finished generating maps.\n\n"
@@ -179,4 +182,5 @@ end
 # generate maps for default dirs
 src_data = ROOT_DIR + "src/essentials/Data/"
 target_dir = ROOT_DIR + "src/tiled/maps/"
-generate_maps(src_data, target_dir)
+events_dir = ROOT_DIR + "src/events/"
+generate_maps(src_data, target_dir, events_dir)
