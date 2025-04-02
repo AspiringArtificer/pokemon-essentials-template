@@ -52,11 +52,13 @@
   <object id="1" gid="1" x="0" y="32" width="32" height="32">
    <properties>
     <property name="name" value="Intro"/>
+    <property name="source_path" value="src/events/Intro/event_1 - Intro.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="0" y="480" width="32" height="32">
    <properties>
     <property name="name" value="Quick start intro"/>
+    <property name="source_path" value="src/events/Intro/event_2 - Quick start intro.rb"/>
    </properties>
   </object>
  </objectgroup>

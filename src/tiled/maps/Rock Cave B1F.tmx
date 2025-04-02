@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="320" y="416" width="32" height="32">
    <properties>
     <property name="name" value="Ladder"/>
+    <property name="source_path" value="src/events/Rock Cave B1F/event_1 - Ladder.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="352" y="256" width="32" height="32">
    <properties>
     <property name="name" value="StrengthBoulder"/>
+    <property name="source_path" value="src/events/Rock Cave B1F/event_2 - StrengthBoulder.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="448" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Sign"/>
+    <property name="source_path" value="src/events/Rock Cave B1F/event_3 - Sign.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="672" y="416" width="32" height="32">
    <properties>
     <property name="name" value="NPC"/>
+    <property name="source_path" value="src/events/Rock Cave B1F/event_4 - NPC.rb"/>
    </properties>
   </object>
  </objectgroup>

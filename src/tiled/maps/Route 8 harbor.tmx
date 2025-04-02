@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="256" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Door"/>
+    <property name="source_path" value="src/events/Route 8 harbor/event_1 - Door.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="256" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Sailor"/>
+    <property name="source_path" value="src/events/Route 8 harbor/event_2 - Sailor.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="192" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Aurora Ticket NPC"/>
+    <property name="source_path" value="src/events/Route 8 harbor/event_3 - Aurora Ticket NPC.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="320" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Old Sea Map NPC"/>
+    <property name="source_path" value="src/events/Route 8 harbor/event_4 - Old Sea Map NPC.rb"/>
    </properties>
   </object>
  </objectgroup>

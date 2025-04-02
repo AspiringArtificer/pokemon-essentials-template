@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="0" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Exit left"/>
+    <property name="source_path" value="src/events/Natural Park Entrance/event_1 - Exit left.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="384" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Exit right"/>
+    <property name="source_path" value="src/events/Natural Park Entrance/event_2 - Exit right.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="64" y="64" width="32" height="32">
    <properties>
     <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Natural Park Entrance/event_3 - PC.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="192" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Man"/>
+    <property name="source_path" value="src/events/Natural Park Entrance/event_4 - Man.rb"/>
    </properties>
   </object>
  </objectgroup>

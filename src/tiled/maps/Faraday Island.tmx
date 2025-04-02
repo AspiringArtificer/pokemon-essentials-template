@@ -52,21 +52,25 @@
   <object id="1" gid="1" x="416" y="800" width="32" height="32">
    <properties>
     <property name="name" value="Exit left"/>
+    <property name="source_path" value="src/events/Faraday Island/event_1 - Exit left.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="448" y="800" width="32" height="32">
    <properties>
     <property name="name" value="Exit middle"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="480" y="800" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit right"/>
+    <property name="source_path" value="src/events/Faraday Island/event_2 - Exit middle.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="448" y="416" width="32" height="32">
    <properties>
     <property name="name" value="Mew"/>
+    <property name="source_path" value="src/events/Faraday Island/event_8 - Mew.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="480" y="800" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit right"/>
+    <property name="source_path" value="src/events/Faraday Island/event_3 - Exit right.rb"/>
    </properties>
   </object>
  </objectgroup>

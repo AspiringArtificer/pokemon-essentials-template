@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="256" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Home door"/>
+    <property name="source_path" value="src/events/Lappet Town/event_1 - Home door.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="576" y="448" width="32" height="32">
    <properties>
     <property name="name" value="Lab door"/>
+    <property name="source_path" value="src/events/Lappet Town/event_2 - Lab door.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="384" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Door explainer"/>
+    <property name="source_path" value="src/events/Lappet Town/event_3 - Door explainer.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="544" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Next door"/>
+    <property name="source_path" value="src/events/Lappet Town/event_4 - Next door.rb"/>
    </properties>
   </object>
  </objectgroup>

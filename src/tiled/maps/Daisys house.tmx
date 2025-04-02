@@ -50,34 +50,40 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1675,2084,2086,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1675,2092,2094,1676,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="96" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="160" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Daisy"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="32" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Dr Footstep"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="64" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Effort ribbon giver"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="96" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Contest ribbon giver"/>
+    <property name="source_path" value="src/events/Daisys house/event_5 - Contest ribbon giver.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="256" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Stats judge"/>
+    <property name="source_path" value="src/events/Daisys house/event_6 - Stats judge.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="96" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Daisys house/event_1 - Exit.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Daisy"/>
+    <property name="source_path" value="src/events/Daisys house/event_2 - Daisy.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="32" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Dr Footstep"/>
+    <property name="source_path" value="src/events/Daisys house/event_3 - Dr Footstep.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="64" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Effort ribbon giver"/>
+    <property name="source_path" value="src/events/Daisys house/event_4 - Effort ribbon giver.rb"/>
    </properties>
   </object>
  </objectgroup>

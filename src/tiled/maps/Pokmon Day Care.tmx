@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="128" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Pokmon Day Care/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="160" y="64" width="32" height="32">
    <properties>
     <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Pokmon Day Care/event_2 - PC.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="128" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Day Care Lady"/>
+    <property name="source_path" value="src/events/Pokmon Day Care/event_3 - Day Care Lady.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="192" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Hidden Power checker"/>
+    <property name="source_path" value="src/events/Pokmon Day Care/event_4 - Hidden Power checker.rb"/>
    </properties>
   </object>
  </objectgroup>

@@ -50,39 +50,46 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="160" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="160" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Man contest"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="160" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Man regular"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="64" y="192" width="32" height="32">
-   <properties>
-    <property name="name" value="Contestant 1"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="96" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Contestant 2"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_5 - Contestant 2.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="224" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Contestant 3"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_6 - Contestant 3.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="160" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="256" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Contestant 4"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_7 - Contestant 4.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Man contest"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_2 - Man contest.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="160" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Man regular"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_3 - Man regular.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="64" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="Contestant 1"/>
+    <property name="source_path" value="src/events/Natural Park Pavillion/event_4 - Contestant 1.rb"/>
    </properties>
   </object>
  </objectgroup>

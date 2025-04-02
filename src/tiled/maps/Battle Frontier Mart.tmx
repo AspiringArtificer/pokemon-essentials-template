@@ -50,34 +50,40 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,453,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,461,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="128" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="64" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Mart"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="32" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Questionnaire"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="96" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Deliveryman"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="256" y="224" width="32" height="32">
    <properties>
     <property name="name" value="BP shop bottom"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_5 - BP shop bottom.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="256" y="192" width="32" height="32">
    <properties>
     <property name="name" value="BP shop top"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_6 - BP shop top.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="128" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_1 - Exit.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="64" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Mart"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_2 - Mart.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="32" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Questionnaire"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_3 - Questionnaire.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="96" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Deliveryman"/>
+    <property name="source_path" value="src/events/Battle Frontier Mart/event_4 - Deliveryman.rb"/>
    </properties>
   </object>
  </objectgroup>

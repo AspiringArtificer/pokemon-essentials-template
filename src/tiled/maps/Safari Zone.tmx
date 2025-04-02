@@ -53,16 +53,19 @@
   <object id="1" gid="1" x="768" y="928" width="32" height="32">
    <properties>
     <property name="name" value="Exit left"/>
+    <property name="source_path" value="src/events/Safari Zone/event_1 - Exit left.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="800" y="928" width="32" height="32">
    <properties>
     <property name="name" value="Exit middle"/>
+    <property name="source_path" value="src/events/Safari Zone/event_2 - Exit middle.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="832" y="928" width="32" height="32">
    <properties>
     <property name="name" value="Exit right"/>
+    <property name="source_path" value="src/events/Safari Zone/event_3 - Exit right.rb"/>
    </properties>
   </object>
  </objectgroup>

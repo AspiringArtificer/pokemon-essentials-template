@@ -50,44 +50,52 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,607,0,0,0,0,0,607,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,615,0,0,0,0,0,615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="416" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Nurse"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="352" y="576" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="544" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="PC"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="352" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Healing balls"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="608" y="512" width="32" height="32">
    <properties>
     <property name="name" value="Bill"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_5 - Bill.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="608" y="320" width="32" height="32">
    <properties>
     <property name="name" value="Town Map, size(2,1)"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_6 - Town Map.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="416" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Nurse"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_1 - Nurse.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="352" y="576" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_2 - Exit.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="0" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Mart"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_8 - Mart.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="544" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_3 - PC.rb"/>
    </properties>
   </object>
   <object id="9" gid="1" x="128" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Door"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_9 - Door.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="352" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Healing balls"/>
+    <property name="source_path" value="src/events/Pokmon League entrance/event_4 - Healing balls.rb"/>
    </properties>
   </object>
  </objectgroup>

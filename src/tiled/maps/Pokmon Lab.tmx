@@ -50,59 +50,70 @@
   <data encoding="csv"> 0,0,0,1845,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1852,1853,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="192" y="128" width="32" height="32">
+  <object id="5" gid="1" x="288" y="160" width="32" height="32">
    <properties>
-    <property name="name" value="Professor"/>
-   </properties>
-  </object>
-  <object id="10" gid="1" x="192" y="64" width="32" height="32">
-   <properties>
-    <property name="name" value="Wall sign left"/>
+    <property name="name" value="Fire ball"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_5 - Fire ball.rb"/>
    </properties>
   </object>
   <object id="11" gid="1" x="224" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Wall sign right"/>
-   </properties>
-  </object>
-  <object id="12" gid="1" x="128" y="64" width="32" height="32">
-   <properties>
-    <property name="name" value="Pokédex"/>
-   </properties>
-  </object>
-  <object id="13" gid="1" x="96" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Dex access"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="160" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Turn back, size(3,1)"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="256" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Grass ball"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="288" y="160" width="32" height="32">
-   <properties>
-    <property name="name" value="Fire ball"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_11 - Wall sign right.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="320" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Water ball"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_6 - Water ball.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="192" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Professor"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_1 - Professor.rb"/>
+   </properties>
+  </object>
+  <object id="12" gid="1" x="128" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Pokédex"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_12 - Pokdex.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="192" y="448" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_7 - Exit.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Turn back, size(3,1)"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_2 - Turn back.rb"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="96" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Dex access"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_13 - Dex access.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="224" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Controlling event"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_8 - Controlling event.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="256" y="160" width="32" height="32">
+   <properties>
+    <property name="name" value="Grass ball"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_4 - Grass ball.rb"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="192" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Wall sign left"/>
+    <property name="source_path" value="src/events/Pokmon Lab/event_10 - Wall sign left.rb"/>
    </properties>
   </object>
  </objectgroup>

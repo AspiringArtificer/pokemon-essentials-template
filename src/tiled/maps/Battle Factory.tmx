@@ -51,44 +51,52 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1860,0,1694,1696,0,0,0,1860,0,0,0,0,0,0,0,0,0,0,0,0,1868,0,1702,1704,0,0,0,1868,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1710,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="192" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit left"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="224" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit right"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="192" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="PC"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="96" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Single battles NPC"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="320" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Double battles NPC"/>
+    <property name="source_path" value="src/events/Battle Factory/event_5 - Double battles NPC.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="128" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Single results"/>
+    <property name="source_path" value="src/events/Battle Factory/event_6 - Single results.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="192" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit left"/>
+    <property name="source_path" value="src/events/Battle Factory/event_1 - Exit left.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="352" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Double results"/>
+    <property name="source_path" value="src/events/Battle Factory/event_7 - Double results.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="224" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit right"/>
+    <property name="source_path" value="src/events/Battle Factory/event_2 - Exit right.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="224" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Battle recorder"/>
+    <property name="source_path" value="src/events/Battle Factory/event_8 - Battle recorder.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="192" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Battle Factory/event_3 - PC.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="96" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Single battles NPC"/>
+    <property name="source_path" value="src/events/Battle Factory/event_4 - Single battles NPC.rb"/>
    </properties>
   </object>
  </objectgroup>

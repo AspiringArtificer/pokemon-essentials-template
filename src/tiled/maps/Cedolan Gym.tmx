@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="192" y="512" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Cedolan Gym/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="224" y="416" width="32" height="32">
    <properties>
     <property name="name" value="Gym Guy"/>
+    <property name="source_path" value="src/events/Cedolan Gym/event_2 - Gym Guy.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="192" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Brock"/>
+    <property name="source_path" value="src/events/Cedolan Gym/event_3 - Brock.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="96" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(3)"/>
+    <property name="source_path" value="src/events/Cedolan Gym/event_4 - Trainer3.rb"/>
    </properties>
   </object>
  </objectgroup>

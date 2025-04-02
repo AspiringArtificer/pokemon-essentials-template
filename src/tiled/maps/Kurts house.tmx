@@ -53,11 +53,13 @@
   <object id="1" gid="1" x="192" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Kurts house/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="224" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Kurt"/>
+    <property name="source_path" value="src/events/Kurts house/event_2 - Kurt.rb"/>
    </properties>
   </object>
  </objectgroup>

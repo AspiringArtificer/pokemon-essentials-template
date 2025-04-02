@@ -50,29 +50,34 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2101,0,2103,0,0,0,0,0,2101,0,2103,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="64" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Move Tutor"/>
+    <property name="source_path" value="src/events/Cedolan City Condo/event_5 - Move Tutor.rb"/>
+   </properties>
+  </object>
   <object id="1" gid="1" x="192" y="352" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Cedolan City Condo/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="192" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Move Deleter"/>
+    <property name="source_path" value="src/events/Cedolan City Condo/event_2 - Move Deleter.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="160" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Move Relearner"/>
+    <property name="source_path" value="src/events/Cedolan City Condo/event_3 - Move Relearner.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="320" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Name Rater"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="64" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Move Tutor"/>
+    <property name="source_path" value="src/events/Cedolan City Condo/event_4 - Name Rater.rb"/>
    </properties>
   </object>
  </objectgroup>

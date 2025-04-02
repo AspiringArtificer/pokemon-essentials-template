@@ -53,16 +53,19 @@
   <object id="1" gid="1" x="192" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Door"/>
+    <property name="source_path" value="src/events/Pokmon League room 1/event_1 - Door.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="192" y="416" width="32" height="32">
    <properties>
     <property name="name" value="Entrance"/>
+    <property name="source_path" value="src/events/Pokmon League room 1/event_2 - Entrance.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="192" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Champion"/>
+    <property name="source_path" value="src/events/Pokmon League room 1/event_3 - Champion.rb"/>
    </properties>
   </object>
  </objectgroup>

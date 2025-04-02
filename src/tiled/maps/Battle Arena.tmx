@@ -51,29 +51,34 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1968,0,1966,1860,0,1696,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1868,0,1704,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="288" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Battle recorder"/>
+    <property name="source_path" value="src/events/Battle Arena/event_5 - Battle recorder.rb"/>
+   </properties>
+  </object>
   <object id="1" gid="1" x="160" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Battle Arena/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="32" y="128" width="32" height="32">
    <properties>
     <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Battle Arena/event_2 - PC.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="160" y="128" width="32" height="32">
    <properties>
     <property name="name" value="NPC"/>
+    <property name="source_path" value="src/events/Battle Arena/event_3 - NPC.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="224" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Results"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="288" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Battle recorder"/>
+    <property name="source_path" value="src/events/Battle Arena/event_4 - Results.rb"/>
    </properties>
   </object>
  </objectgroup>

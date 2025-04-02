@@ -53,6 +53,7 @@
   <object id="1" gid="1" x="64" y="448" width="32" height="32">
    <properties>
     <property name="name" value="Hall of Fame autorun"/>
+    <property name="source_path" value="src/events/Hall of Fame/event_1 - Hall of Fame autorun.rb"/>
    </properties>
   </object>
  </objectgroup>

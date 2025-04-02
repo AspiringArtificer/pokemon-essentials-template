@@ -50,29 +50,34 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,536,0,536,0,0,0,0,0,0,0,0,546,546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,554,554,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,547,546,0,547,546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,555,554,0,555,554,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,548,546,0,547,546,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,556,554,0,555,554,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="320" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Cashier"/>
+    <property name="source_path" value="src/events/Cedolan Dept 3F/event_5 - Cashier.rb"/>
+   </properties>
+  </object>
   <object id="1" gid="1" x="192" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Elevator door"/>
+    <property name="source_path" value="src/events/Cedolan Dept 3F/event_1 - Elevator door.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="320" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Stairs down"/>
+    <property name="source_path" value="src/events/Cedolan Dept 3F/event_2 - Stairs down.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="64" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Stairs up"/>
+    <property name="source_path" value="src/events/Cedolan Dept 3F/event_3 - Stairs up.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="256" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Floor sign"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="320" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Cashier"/>
+    <property name="source_path" value="src/events/Cedolan Dept 3F/event_4 - Floor sign.rb"/>
    </properties>
   </object>
  </objectgroup>

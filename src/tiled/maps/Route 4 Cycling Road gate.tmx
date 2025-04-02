@@ -53,16 +53,19 @@
   <object id="1" gid="1" x="192" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Counter(6)"/>
+    <property name="source_path" value="src/events/Route 4 Cycling Road gate/event_1 - Counter6.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="0" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Exit north left"/>
+    <property name="source_path" value="src/events/Route 4 Cycling Road gate/event_3 - Exit north left.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="384" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Exit north right"/>
+    <property name="source_path" value="src/events/Route 4 Cycling Road gate/event_4 - Exit north right.rb"/>
    </properties>
   </object>
  </objectgroup>

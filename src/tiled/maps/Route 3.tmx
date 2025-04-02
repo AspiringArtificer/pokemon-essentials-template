@@ -49,154 +49,184 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,813,814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,813,814,1116,1116,1116,1116,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,805,806,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,805,806,805,806,805,806,805,806,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,0,0,0,0,0,0,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,805,806,805,806,805,806,805,806,0,0,0,0,805,806,805,806,805,806,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,813,814,813,814,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="544" y="480" width="32" height="32">
-   <properties>
-    <property name="name" value="CutTree"/>
-   </properties>
-  </object>
-  <object id="10" gid="1" x="416" y="576" width="32" height="32">
+  <object id="5" gid="1" x="224" y="480" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(2)"/>
-   </properties>
-  </object>
-  <object id="11" gid="1" x="448" y="448" width="32" height="32">
-   <properties>
-    <property name="name" value="Double trainer F"/>
-   </properties>
-  </object>
-  <object id="12" gid="1" x="480" y="448" width="32" height="32">
-   <properties>
-    <property name="name" value="Double trainer M"/>
-   </properties>
-  </object>
-  <object id="13" gid="1" x="960" y="544" width="32" height="32">
-   <properties>
-    <property name="name" value="May initial reflection"/>
-   </properties>
-  </object>
-  <object id="14" gid="1" x="576" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Rival"/>
-   </properties>
-  </object>
-  <object id="15" gid="1" x="704" y="448" width="32" height="32">
-   <properties>
-    <property name="name" value="Rival controller size(2,1)"/>
-   </properties>
-  </object>
-  <object id="16" gid="1" x="32" y="576" width="32" height="32">
-   <properties>
-    <property name="name" value="Remove follower size(1,4)"/>
-   </properties>
-  </object>
-  <object id="17" gid="1" x="1760" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Cave entrance"/>
-   </properties>
-  </object>
-  <object id="18" gid="1" x="1536" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="19" gid="1" x="1536" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="704" y="672" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="20" gid="1" x="1536" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="21" gid="1" x="1536" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="22" gid="1" x="1632" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="SmashRock"/>
-   </properties>
-  </object>
-  <object id="23" gid="1" x="1632" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="SmashRock"/>
-   </properties>
-  </object>
-  <object id="24" gid="1" x="1408" y="480" width="32" height="32">
-   <properties>
-    <property name="name" value="CutTree"/>
-   </properties>
-  </object>
-  <object id="25" gid="1" x="1536" y="1984" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="26" gid="1" x="1568" y="1984" width="32" height="32">
-   <properties>
-    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_5 - Trainer2.rb"/>
    </properties>
   </object>
   <object id="27" gid="1" x="1600" y="1984" width="32" height="32">
    <properties>
     <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_27 - HeadbuttTree.rb"/>
    </properties>
   </object>
-  <object id="28" gid="1" x="1440" y="1440" width="32" height="32">
+  <object id="16" gid="1" x="32" y="576" width="32" height="32">
    <properties>
-    <property name="name" value="Invisible Kecleon"/>
+    <property name="name" value="Remove follower size(1,4)"/>
+    <property name="source_path" value="src/events/Route 3/event_16 - Remove follower size1.rb"/>
    </properties>
   </object>
-  <object id="29" gid="1" x="1632" y="1024" width="32" height="32">
+  <object id="11" gid="1" x="448" y="448" width="32" height="32">
    <properties>
-    <property name="name" value="CutTree"/>
+    <property name="name" value="Double trainer F"/>
+    <property name="source_path" value="src/events/Route 3/event_11 - Double trainer F.rb"/>
    </properties>
   </object>
-  <object id="3" gid="1" x="704" y="704" width="32" height="32">
+  <object id="22" gid="1" x="1632" y="256" width="32" height="32">
    <properties>
-    <property name="name" value="HeadbuttTree"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="160" y="480" width="32" height="32">
-   <properties>
-    <property name="name" value="Trainer(2)"/>
+    <property name="name" value="SmashRock"/>
+    <property name="source_path" value="src/events/Route 3/event_22 - SmashRock.rb"/>
    </properties>
   </object>
   <object id="44" gid="1" x="96" y="512" width="32" height="32">
    <properties>
     <property name="name" value="May west reflection"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="224" y="480" width="32" height="32">
-   <properties>
-    <property name="name" value="Trainer(2)"/>
+    <property name="source_path" value="src/events/Route 3/event_44 - May west reflection.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="224" y="576" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(2)"/>
+    <property name="source_path" value="src/events/Route 3/event_6 - Trainer2.rb"/>
+   </properties>
+  </object>
+  <object id="17" gid="1" x="1760" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Cave entrance"/>
+    <property name="source_path" value="src/events/Route 3/event_17 - Cave entrance.rb"/>
+   </properties>
+  </object>
+  <object id="28" gid="1" x="1440" y="1440" width="32" height="32">
+   <properties>
+    <property name="name" value="Invisible Kecleon"/>
+    <property name="source_path" value="src/events/Route 3/event_28 - Invisible Kecleon.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="544" y="480" width="32" height="32">
+   <properties>
+    <property name="name" value="CutTree"/>
+    <property name="source_path" value="src/events/Route 3/event_1 - CutTree.rb"/>
+   </properties>
+  </object>
+  <object id="12" gid="1" x="480" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Double trainer M"/>
+    <property name="source_path" value="src/events/Route 3/event_12 - Double trainer M.rb"/>
+   </properties>
+  </object>
+  <object id="23" gid="1" x="1632" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="SmashRock"/>
+    <property name="source_path" value="src/events/Route 3/event_23 - SmashRock.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="320" y="448" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(1)"/>
+    <property name="source_path" value="src/events/Route 3/event_7 - Trainer1.rb"/>
+   </properties>
+  </object>
+  <object id="18" gid="1" x="1536" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_18 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="29" gid="1" x="1632" y="1024" width="32" height="32">
+   <properties>
+    <property name="name" value="CutTree"/>
+    <property name="source_path" value="src/events/Route 3/event_29 - CutTree.rb"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="960" y="544" width="32" height="32">
+   <properties>
+    <property name="name" value="May initial reflection"/>
+    <property name="source_path" value="src/events/Route 3/event_13 - May initial reflection.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="704" y="672" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_2 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="24" gid="1" x="1408" y="480" width="32" height="32">
+   <properties>
+    <property name="name" value="CutTree"/>
+    <property name="source_path" value="src/events/Route 3/event_24 - CutTree.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="288" y="480" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(1)"/>
+    <property name="source_path" value="src/events/Route 3/event_8 - Trainer1.rb"/>
+   </properties>
+  </object>
+  <object id="19" gid="1" x="1536" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_19 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="14" gid="1" x="576" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Rival"/>
+    <property name="source_path" value="src/events/Route 3/event_14 - Rival.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="704" y="704" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_3 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="25" gid="1" x="1536" y="1984" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_25 - HeadbuttTree.rb"/>
    </properties>
   </object>
   <object id="9" gid="1" x="352" y="480" width="32" height="32">
    <properties>
     <property name="name" value="Trainer(1)"/>
+    <property name="source_path" value="src/events/Route 3/event_9 - Trainer1.rb"/>
+   </properties>
+  </object>
+  <object id="20" gid="1" x="1536" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_20 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="15" gid="1" x="704" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Rival controller size(2,1)"/>
+    <property name="source_path" value="src/events/Route 3/event_15 - Rival controller size2.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="160" y="480" width="32" height="32">
+   <properties>
+    <property name="name" value="Trainer(2)"/>
+    <property name="source_path" value="src/events/Route 3/event_4 - Trainer2.rb"/>
+   </properties>
+  </object>
+  <object id="26" gid="1" x="1568" y="1984" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_26 - HeadbuttTree.rb"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="416" y="576" width="32" height="32">
+   <properties>
+    <property name="name" value="Trainer(2)"/>
+    <property name="source_path" value="src/events/Route 3/event_10 - Trainer2.rb"/>
+   </properties>
+  </object>
+  <object id="21" gid="1" x="1536" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="HeadbuttTree"/>
+    <property name="source_path" value="src/events/Route 3/event_21 - HeadbuttTree.rb"/>
    </properties>
   </object>
  </objectgroup>

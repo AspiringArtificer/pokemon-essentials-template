@@ -52,16 +52,19 @@
   <object id="1" gid="1" x="832" y="224" width="32" height="32">
    <properties>
     <property name="name" value="North door left"/>
+    <property name="source_path" value="src/events/Natural Park/event_1 - North door left.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="864" y="224" width="32" height="32">
    <properties>
     <property name="name" value="North door right"/>
+    <property name="source_path" value="src/events/Natural Park/event_2 - North door right.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="224" y="800" width="32" height="32">
    <properties>
     <property name="name" value="Bug Contest door"/>
+    <property name="source_path" value="src/events/Natural Park/event_3 - Bug Contest door.rb"/>
    </properties>
   </object>
  </objectgroup>

@@ -50,34 +50,40 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,521,0,0,0,0,0,0,0,588,589,590,0,0,0,0,0,0,0,0,0,517,0,0,0,0,0,0,0,596,597,598,0,0,0,0,0,0,0,0,0,525,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="192" y="64" width="32" height="32">
-   <properties>
-    <property name="name" value="Elevator door"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="320" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Stairs down"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="64" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Stairs up"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="256" y="64" width="32" height="32">
-   <properties>
-    <property name="name" value="Floor sign"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="32" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Cashier top"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_5 - Cashier top.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="32" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Cashier bottom"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_6 - Cashier bottom.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="192" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Elevator door"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_1 - Elevator door.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="320" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs down"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_2 - Stairs down.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="64" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs up"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_3 - Stairs up.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="256" y="64" width="32" height="32">
+   <properties>
+    <property name="name" value="Floor sign"/>
+    <property name="source_path" value="src/events/Cedolan Dept 5F/event_4 - Floor sign.rb"/>
    </properties>
   </object>
  </objectgroup>

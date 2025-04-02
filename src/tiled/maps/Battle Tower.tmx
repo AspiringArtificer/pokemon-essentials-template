@@ -51,64 +51,76 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,0,0,0,0,0,0,0,0,503,0,0,0,0,0,511,0,0,0,0,0,0,0,0,0,0,0,0,0,511,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,519,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,527,502,0,0,0,0,0,502,504,0,0,0,0,0,0,0,0,0,0,0,535,510,0,0,0,0,0,510,512,0,0,0,0,0,0,0,0,0,0,0,543,0,0,0,0,0,0,0,520,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="288" y="448" width="32" height="32">
+  <object id="5" gid="1" x="128" y="128" width="32" height="32">
    <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="10" gid="1" x="224" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Healing balls"/>
+    <property name="name" value="Singles results"/>
+    <property name="source_path" value="src/events/Battle Tower/event_5 - Singles results.rb"/>
    </properties>
   </object>
   <object id="11" gid="1" x="288" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Nurse"/>
-   </properties>
-  </object>
-  <object id="13" gid="1" x="544" y="384" width="32" height="32">
-   <properties>
-    <property name="name" value="Stairs to Stadium Cup"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="160" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="PC"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="64" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Single battles NPC"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="512" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Double battles NPC"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="128" y="128" width="32" height="32">
-   <properties>
-    <property name="name" value="Singles results"/>
+    <property name="source_path" value="src/events/Battle Tower/event_11 - Nurse.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="576" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Doubles results"/>
+    <property name="source_path" value="src/events/Battle Tower/event_6 - Doubles results.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="288" y="448" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Battle Tower/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="416" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Battle recorder"/>
+    <property name="source_path" value="src/events/Battle Tower/event_7 - Battle recorder.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="160" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Battle Tower/event_2 - PC.rb"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="544" y="384" width="32" height="32">
+   <properties>
+    <property name="name" value="Stairs to Stadium Cup"/>
+    <property name="source_path" value="src/events/Battle Tower/event_13 - Stairs to Stadium Cup.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="64" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Elevator door singles"/>
+    <property name="source_path" value="src/events/Battle Tower/event_8 - Elevator door singles.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="64" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Single battles NPC"/>
+    <property name="source_path" value="src/events/Battle Tower/event_3 - Single battles NPC.rb"/>
    </properties>
   </object>
   <object id="9" gid="1" x="512" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Elevator door doubles"/>
+    <property name="source_path" value="src/events/Battle Tower/event_9 - Elevator door doubles.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="512" y="128" width="32" height="32">
+   <properties>
+    <property name="name" value="Double battles NPC"/>
+    <property name="source_path" value="src/events/Battle Tower/event_4 - Double battles NPC.rb"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="224" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Healing balls"/>
+    <property name="source_path" value="src/events/Battle Tower/event_10 - Healing balls.rb"/>
    </properties>
   </object>
  </objectgroup>

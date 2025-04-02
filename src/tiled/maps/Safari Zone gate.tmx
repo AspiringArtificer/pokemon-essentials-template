@@ -53,11 +53,13 @@
   <object id="1" gid="1" x="128" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Safari Zone gate/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="224" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Counter(4)"/>
+    <property name="source_path" value="src/events/Safari Zone gate/event_2 - Counter4.rb"/>
    </properties>
   </object>
  </objectgroup>

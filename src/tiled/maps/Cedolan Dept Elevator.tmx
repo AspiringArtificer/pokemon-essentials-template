@@ -50,29 +50,34 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Wall right"/>
+    <property name="source_path" value="src/events/Cedolan Dept Elevator/event_5 - Wall right.rb"/>
+   </properties>
+  </object>
   <object id="1" gid="1" x="64" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Cedolan Dept Elevator/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="0" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Controls"/>
+    <property name="source_path" value="src/events/Cedolan Dept Elevator/event_2 - Controls.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="32" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Wall left"/>
+    <property name="source_path" value="src/events/Cedolan Dept Elevator/event_3 - Wall left.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="64" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Wall middle"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="96" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Wall right"/>
+    <property name="source_path" value="src/events/Cedolan Dept Elevator/event_4 - Wall middle.rb"/>
    </properties>
   </object>
  </objectgroup>

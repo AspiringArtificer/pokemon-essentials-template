@@ -50,29 +50,34 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1857,1858,1861,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1865,1866,1869,0,0,1873,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1881,1876,0,0,0,1725,0,0,0,0,0,0,0,0,0,1857,1858,1861,0,0,1872,1884,0,0,0,0,1733,0,0,0,0,0,0,0,0,1865,1866,1869,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
+  <object id="5" gid="1" x="352" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Old Amber"/>
+    <property name="source_path" value="src/events/Pokmon Institute/event_5 - Old Amber.rb"/>
+   </properties>
+  </object>
   <object id="1" gid="1" x="224" y="352" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Pokmon Institute/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="320" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Fossil reviver"/>
+    <property name="source_path" value="src/events/Pokmon Institute/event_2 - Fossil reviver.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="32" y="64" width="32" height="32">
    <properties>
     <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Pokmon Institute/event_3 - PC.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="160" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Fossil combiner"/>
-   </properties>
-  </object>
-  <object id="5" gid="1" x="352" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Old Amber"/>
+    <property name="source_path" value="src/events/Pokmon Institute/event_4 - Fossil combiner.rb"/>
    </properties>
   </object>
  </objectgroup>

@@ -50,44 +50,52 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="160" y="384" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="64" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Trader - Basic"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="160" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Pokémon ball - Basic"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="288" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Gift Pokémon - Advanced"/>
-   </properties>
-  </object>
   <object id="5" gid="1" x="96" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Trade - Advanced"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_5 - Trade  Advanced.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="256" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Gift Pokémon - Basic"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_6 - Gift Pokmon  Basic.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="160" y="384" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="224" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Gift egg"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_7 - Gift egg.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="64" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Trader - Basic"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_2 - Trader  Basic.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="192" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Pokémon ball - Advanced"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_8 - Pokmon ball  Advanced.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="160" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Pokémon ball - Basic"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_3 - Pokmon ball  Basic.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="288" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Gift Pokémon - Advanced"/>
+    <property name="source_path" value="src/events/Pokmon Fan Club/event_4 - Gift Pokmon  Advanced.rb"/>
    </properties>
   </object>
  </objectgroup>

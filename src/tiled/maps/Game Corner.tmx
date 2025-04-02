@@ -50,159 +50,190 @@
   <data encoding="csv"> 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,616,570,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,537,538,539,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,615,599,0,0,0,599,615,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0 </data>
  </layer>
  <objectgroup id="4" name="events">
-  <object id="1" gid="1" x="0" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 1"/>
-   </properties>
-  </object>
-  <object id="10" gid="1" x="160" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 10"/>
-   </properties>
-  </object>
-  <object id="11" gid="1" x="192" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 11"/>
-   </properties>
-  </object>
-  <object id="12" gid="1" x="192" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 12"/>
-   </properties>
-  </object>
-  <object id="13" gid="1" x="192" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 13"/>
-   </properties>
-  </object>
-  <object id="14" gid="1" x="192" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 14"/>
-   </properties>
-  </object>
-  <object id="15" gid="1" x="192" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 15"/>
-   </properties>
-  </object>
-  <object id="16" gid="1" x="352" y="352" width="32" height="32">
-   <properties>
-    <property name="name" value="Voltorb Flip"/>
-   </properties>
-  </object>
-  <object id="17" gid="1" x="288" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Lottery"/>
-   </properties>
-  </object>
-  <object id="18" gid="1" x="352" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Voltorb Flip man"/>
-   </properties>
-  </object>
-  <object id="19" gid="1" x="128" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Coin seller"/>
-   </properties>
-  </object>
-  <object id="2" gid="1" x="0" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 2"/>
-   </properties>
-  </object>
-  <object id="20" gid="1" x="288" y="480" width="32" height="32">
-   <properties>
-    <property name="name" value="Exit"/>
-   </properties>
-  </object>
-  <object id="21" gid="1" x="96" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Coin Case giver"/>
-   </properties>
-  </object>
-  <object id="22" gid="1" x="416" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Triple Triad explainer"/>
-   </properties>
-  </object>
-  <object id="23" gid="1" x="448" y="96" width="32" height="32">
-   <properties>
-    <property name="name" value="Triple Triad card shop"/>
-   </properties>
-  </object>
-  <object id="24" gid="1" x="512" y="192" width="32" height="32">
-   <properties>
-    <property name="name" value="Triple Triad duel"/>
-   </properties>
-  </object>
-  <object id="25" gid="1" x="512" y="224" width="32" height="32">
-   <properties>
-    <property name="name" value="Triple Triad duel with rules"/>
-   </properties>
-  </object>
-  <object id="26" gid="1" x="512" y="256" width="32" height="32">
-   <properties>
-    <property name="name" value="Triple Triad duel with deck"/>
-   </properties>
-  </object>
   <object id="27" gid="1" x="512" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Triple Triad duel with prize"/>
-   </properties>
-  </object>
-  <object id="28" gid="1" x="64" y="768" width="32" height="32">
-   <properties>
-    <property name="name" value="Prize vendor left"/>
-   </properties>
-  </object>
-  <object id="29" gid="1" x="128" y="768" width="32" height="32">
-   <properties>
-    <property name="name" value="Prize vendor middle"/>
-   </properties>
-  </object>
-  <object id="3" gid="1" x="0" y="288" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 3"/>
-   </properties>
-  </object>
-  <object id="30" gid="1" x="192" y="768" width="32" height="32">
-   <properties>
-    <property name="name" value="Prize vendor right"/>
-   </properties>
-  </object>
-  <object id="31" gid="1" x="128" y="992" width="32" height="32">
-   <properties>
-    <property name="name" value="Shop exit"/>
-   </properties>
-  </object>
-  <object id="4" gid="1" x="0" y="320" width="32" height="32">
-   <properties>
-    <property name="name" value="Slot Machine 4"/>
+    <property name="source_path" value="src/events/Game Corner/event_27 - Triple Triad duel with prize.rb"/>
    </properties>
   </object>
   <object id="5" gid="1" x="0" y="352" width="32" height="32">
    <properties>
     <property name="name" value="Slot Machine 5"/>
+    <property name="source_path" value="src/events/Game Corner/event_5 - Slot Machine 5.rb"/>
+   </properties>
+  </object>
+  <object id="16" gid="1" x="352" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Voltorb Flip"/>
+    <property name="source_path" value="src/events/Game Corner/event_16 - Voltorb Flip.rb"/>
+   </properties>
+  </object>
+  <object id="22" gid="1" x="416" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Triple Triad explainer"/>
+    <property name="source_path" value="src/events/Game Corner/event_22 - Triple Triad explainer.rb"/>
+   </properties>
+  </object>
+  <object id="11" gid="1" x="192" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 11"/>
+    <property name="source_path" value="src/events/Game Corner/event_11 - Slot Machine 11.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="160" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Slot Machine 6"/>
+    <property name="source_path" value="src/events/Game Corner/event_6 - Slot Machine 6.rb"/>
+   </properties>
+  </object>
+  <object id="17" gid="1" x="288" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Lottery"/>
+    <property name="source_path" value="src/events/Game Corner/event_17 - Lottery.rb"/>
+   </properties>
+  </object>
+  <object id="28" gid="1" x="64" y="768" width="32" height="32">
+   <properties>
+    <property name="name" value="Prize vendor left"/>
+    <property name="source_path" value="src/events/Game Corner/event_28 - Prize vendor left.rb"/>
+   </properties>
+  </object>
+  <object id="23" gid="1" x="448" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Triple Triad card shop"/>
+    <property name="source_path" value="src/events/Game Corner/event_23 - Triple Triad card shop.rb"/>
+   </properties>
+  </object>
+  <object id="1" gid="1" x="0" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 1"/>
+    <property name="source_path" value="src/events/Game Corner/event_1 - Slot Machine 1.rb"/>
+   </properties>
+  </object>
+  <object id="12" gid="1" x="192" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 12"/>
+    <property name="source_path" value="src/events/Game Corner/event_12 - Slot Machine 12.rb"/>
+   </properties>
+  </object>
+  <object id="29" gid="1" x="128" y="768" width="32" height="32">
+   <properties>
+    <property name="name" value="Prize vendor middle"/>
+    <property name="source_path" value="src/events/Game Corner/event_29 - Prize vendor middle.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="160" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Slot Machine 7"/>
+    <property name="source_path" value="src/events/Game Corner/event_7 - Slot Machine 7.rb"/>
+   </properties>
+  </object>
+  <object id="18" gid="1" x="352" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Voltorb Flip man"/>
+    <property name="source_path" value="src/events/Game Corner/event_18 - Voltorb Flip man.rb"/>
+   </properties>
+  </object>
+  <object id="24" gid="1" x="512" y="192" width="32" height="32">
+   <properties>
+    <property name="name" value="Triple Triad duel"/>
+    <property name="source_path" value="src/events/Game Corner/event_24 - Triple Triad duel.rb"/>
+   </properties>
+  </object>
+  <object id="2" gid="1" x="0" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 2"/>
+    <property name="source_path" value="src/events/Game Corner/event_2 - Slot Machine 2.rb"/>
+   </properties>
+  </object>
+  <object id="13" gid="1" x="192" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 13"/>
+    <property name="source_path" value="src/events/Game Corner/event_13 - Slot Machine 13.rb"/>
+   </properties>
+  </object>
+  <object id="30" gid="1" x="192" y="768" width="32" height="32">
+   <properties>
+    <property name="name" value="Prize vendor right"/>
+    <property name="source_path" value="src/events/Game Corner/event_30 - Prize vendor right.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="160" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Slot Machine 8"/>
+    <property name="source_path" value="src/events/Game Corner/event_8 - Slot Machine 8.rb"/>
+   </properties>
+  </object>
+  <object id="19" gid="1" x="128" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Coin seller"/>
+    <property name="source_path" value="src/events/Game Corner/event_19 - Coin seller.rb"/>
+   </properties>
+  </object>
+  <object id="3" gid="1" x="0" y="288" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 3"/>
+    <property name="source_path" value="src/events/Game Corner/event_3 - Slot Machine 3.rb"/>
+   </properties>
+  </object>
+  <object id="14" gid="1" x="192" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 14"/>
+    <property name="source_path" value="src/events/Game Corner/event_14 - Slot Machine 14.rb"/>
+   </properties>
+  </object>
+  <object id="25" gid="1" x="512" y="224" width="32" height="32">
+   <properties>
+    <property name="name" value="Triple Triad duel with rules"/>
+    <property name="source_path" value="src/events/Game Corner/event_25 - Triple Triad duel with rules.rb"/>
+   </properties>
+  </object>
+  <object id="31" gid="1" x="128" y="992" width="32" height="32">
+   <properties>
+    <property name="name" value="Shop exit"/>
+    <property name="source_path" value="src/events/Game Corner/event_31 - Shop exit.rb"/>
    </properties>
   </object>
   <object id="9" gid="1" x="160" y="320" width="32" height="32">
    <properties>
     <property name="name" value="Slot Machine 9"/>
+    <property name="source_path" value="src/events/Game Corner/event_9 - Slot Machine 9.rb"/>
+   </properties>
+  </object>
+  <object id="20" gid="1" x="288" y="480" width="32" height="32">
+   <properties>
+    <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Game Corner/event_20 - Exit.rb"/>
+   </properties>
+  </object>
+  <object id="26" gid="1" x="512" y="256" width="32" height="32">
+   <properties>
+    <property name="name" value="Triple Triad duel with deck"/>
+    <property name="source_path" value="src/events/Game Corner/event_26 - Triple Triad duel with deck.rb"/>
+   </properties>
+  </object>
+  <object id="4" gid="1" x="0" y="320" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 4"/>
+    <property name="source_path" value="src/events/Game Corner/event_4 - Slot Machine 4.rb"/>
+   </properties>
+  </object>
+  <object id="15" gid="1" x="192" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 15"/>
+    <property name="source_path" value="src/events/Game Corner/event_15 - Slot Machine 15.rb"/>
+   </properties>
+  </object>
+  <object id="21" gid="1" x="96" y="96" width="32" height="32">
+   <properties>
+    <property name="name" value="Coin Case giver"/>
+    <property name="source_path" value="src/events/Game Corner/event_21 - Coin Case giver.rb"/>
+   </properties>
+  </object>
+  <object id="10" gid="1" x="160" y="352" width="32" height="32">
+   <properties>
+    <property name="name" value="Slot Machine 10"/>
+    <property name="source_path" value="src/events/Game Corner/event_10 - Slot Machine 10.rb"/>
    </properties>
   </object>
  </objectgroup>

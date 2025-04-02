@@ -53,21 +53,25 @@
   <object id="1" gid="1" x="128" y="288" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Lerucean Town Mart/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="64" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Mart"/>
+    <property name="source_path" value="src/events/Lerucean Town Mart/event_2 - Mart.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="32" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Questionnaire"/>
+    <property name="source_path" value="src/events/Lerucean Town Mart/event_3 - Questionnaire.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="96" y="224" width="32" height="32">
    <properties>
     <property name="name" value="Deliveryman"/>
+    <property name="source_path" value="src/events/Lerucean Town Mart/event_4 - Deliveryman.rb"/>
    </properties>
   </object>
  </objectgroup>

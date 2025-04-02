@@ -53,6 +53,7 @@
   <object id="1" gid="1" x="992" y="320" width="32" height="32">
    <properties>
     <property name="name" value="Gate entrance"/>
+    <property name="source_path" value="src/events/Route 6 Cycling Road/event_1 - Gate entrance.rb"/>
    </properties>
   </object>
  </objectgroup>

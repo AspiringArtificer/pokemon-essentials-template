@@ -52,6 +52,7 @@
   <object id="1" gid="1" x="448" y="384" width="32" height="32">
    <properties>
     <property name="name" value="Warp NPC"/>
+    <property name="source_path" value="src/events/Tiall Region/event_1 - Warp NPC.rb"/>
    </properties>
   </object>
  </objectgroup>

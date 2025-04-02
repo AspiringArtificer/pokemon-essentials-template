@@ -53,71 +53,85 @@
   <object id="11" gid="1" x="64" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Warp tile 2"/>
+    <property name="source_path" value="src/events/Players house/event_11 - Warp tile 2.rb"/>
    </properties>
   </object>
   <object id="6" gid="1" x="928" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Trainer, Visual Editor, Terrain Tags"/>
+    <property name="source_path" value="src/events/Players house/event_6 - Trainer.rb"/>
    </properties>
   </object>
   <object id="1" gid="1" x="96" y="320" width="32" height="32">
    <properties>
     <property name="name" value="Exit"/>
+    <property name="source_path" value="src/events/Players house/event_1 - Exit.rb"/>
    </properties>
   </object>
   <object id="12" gid="1" x="288" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Choices NPC"/>
+    <property name="source_path" value="src/events/Players house/event_12 - Choices NPC.rb"/>
    </properties>
   </object>
   <object id="7" gid="1" x="960" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Debug, badges, screenshots"/>
+    <property name="source_path" value="src/events/Players house/event_7 - Debug.rb"/>
    </properties>
   </object>
   <object id="2" gid="1" x="320" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Stairs up"/>
+    <property name="source_path" value="src/events/Players house/event_2 - Stairs up.rb"/>
    </properties>
   </object>
   <object id="13" gid="1" x="320" y="256" width="32" height="32">
    <properties>
     <property name="name" value="Text formatting NPC"/>
+    <property name="source_path" value="src/events/Players house/event_13 - Text formatting NPC.rb"/>
    </properties>
   </object>
   <object id="8" gid="1" x="160" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Pokédex"/>
+    <property name="source_path" value="src/events/Players house/event_8 - Pokdex.rb"/>
    </properties>
   </object>
   <object id="3" gid="1" x="896" y="96" width="32" height="32">
    <properties>
     <property name="name" value="Stairs down"/>
+    <property name="source_path" value="src/events/Players house/event_3 - Stairs down.rb"/>
    </properties>
   </object>
   <object id="14" gid="1" x="32" y="192" width="32" height="32">
    <properties>
     <property name="name" value="Pokémon-checking NPC"/>
+    <property name="source_path" value="src/events/Players house/event_14 - Pokmonchecking NPC.rb"/>
    </properties>
   </object>
   <object id="9" gid="1" x="224" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Mom"/>
+    <property name="source_path" value="src/events/Players house/event_9 - Mom.rb"/>
    </properties>
   </object>
   <object id="4" gid="1" x="640" y="64" width="32" height="32">
    <properties>
     <property name="name" value="PC"/>
+    <property name="source_path" value="src/events/Players house/event_4 - PC.rb"/>
    </properties>
   </object>
   <object id="15" gid="1" x="160" y="64" width="32" height="32">
    <properties>
     <property name="name" value="Roaming Pokémon"/>
+    <property name="source_path" value="src/events/Players house/event_15 - Roaming Pokmon.rb"/>
    </properties>
   </object>
   <object id="10" gid="1" x="32" y="128" width="32" height="32">
    <properties>
     <property name="name" value="Warp tile 1"/>
+    <property name="source_path" value="src/events/Players house/event_10 - Warp tile 1.rb"/>
    </properties>
   </object>
  </objectgroup>

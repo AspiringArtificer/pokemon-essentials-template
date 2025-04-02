@@ -53,6 +53,7 @@
   <object id="1" gid="1" x="128" y="160" width="32" height="32">
    <properties>
     <property name="name" value="Guide"/>
+    <property name="source_path" value="src/events/Battle Factory corridor/event_1 - Guide.rb"/>
    </properties>
   </object>
  </objectgroup>
