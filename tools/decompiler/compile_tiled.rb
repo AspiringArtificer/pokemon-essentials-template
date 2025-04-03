@@ -95,14 +95,14 @@ def compile_tilesets(source_dir, output_dir, verbose)
   puts "Tilesets compilation complete.\n\n"
 end
 
-def get_maps_and_info(source_dir, events_dir)
+def get_maps_and_info(source_dir)
   files = Dir.foreach(source_dir).select { |x| File.file?("#{source_dir}/#{x}") }
 
   maps = []
   mapinfos = {}
   for file in files
     if File.extname(file) == ".tmx"
-      map, mapinfo, map_index = convert_tmx_to_map_data(source_dir + file, events_dir + File.basename(file, ".tmx") + "/")
+      map, mapinfo, map_index = convert_tmx_to_map_data(source_dir + file)
       maps.append(map)
       mapinfos[map_index] = mapinfo
     end
@@ -153,31 +153,29 @@ def generate_map_table(tmx, width, height)
   return map_table
 end
 
-def generate_map_events(tmx, events_dir)
+def generate_map_events(tmx)
   events_hash = {}
-  tmx_events_array = tmx.xpath("//objectgroup").detect { |x| x["name"] == "events" }.children
+  if tmx.xpath("//objectgroup").detect { |x| x["name"] == "events" }
+    tmx_events_array = tmx.xpath("//objectgroup").detect { |x| x["name"] == "events" }.children
+  else
+    return events_hash
+  end
 
-  if File.directory?(events_dir)
-    files = Dir.foreach(events_dir).select { |x| File.file?("#{events_dir}/#{x}") }
-    for file in files
-      event = load_ruby(events_dir + file)
+  for tmx_event in tmx_events_array
 
-      tmx_event = tmx_events_array.detect { |x| x["id"].to_i == event.id }
-      unless tmx_event
-        mapinfo_properties = tmx.xpath("//property").detect { |x| x["name"] == "mapinfo" }.at_xpath("properties").children
-        map_name = (mapinfo_properties.detect { |x| x["name"] == "name" })["value"]
-        raise IndexError.new "#{map_name} doesn't contain event id=#{event.id}"
-      end
-
+    # Nokogiri is populating empty children for some reason
+    if tmx_event.at_xpath("properties")
+      event_path = tmx_event.at_xpath("properties").children.detect { |x| x["name"] == "source_path" }["value"]
+      event = load_ruby(ROOT_DIR + event_path)
       # tmx coordinates take precedence
       event.x = tmx_event["x"].to_i / 32
       event.y = (tmx_event["y"].to_i / 32) - 1
+
       tmx_event_name = tmx_event.at_xpath("properties").children.detect { |x| x["name"] == "name" }["value"]
       # names affect event functionality so keep the rb one, but put a warning on mismatch
       if event.name != tmx_event_name
         puts "Warning: event names don't match, tmx=#{tmx_event_name}, rb=#{event.name}"
       end
-
       events_hash[event.id] = event
     end
   end
@@ -185,7 +183,7 @@ def generate_map_events(tmx, events_dir)
   return events_hash
 end
 
-def convert_tmx_to_map_data(tmx_path, events_dir)
+def convert_tmx_to_map_data(tmx_path)
   tmx = Nokogiri::XML(File.open(tmx_path)).root
   map = RPG::Map.new(tmx["width"].to_i, tmx["height"].to_i)
   map_folder = File.dirname(tmx_path) + "/"
@@ -243,7 +241,7 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
   end
 
   map.data = generate_map_table(tmx, map.width, map.height)
-  map.events = generate_map_events(tmx, events_dir)
+  map.events = generate_map_events(tmx)
 
   tmx_map_index = tmx.xpath("//property").detect { |x| x["name"] == "map_index" }
   unless tmx_map_index
@@ -254,9 +252,9 @@ def convert_tmx_to_map_data(tmx_path, events_dir)
   return map, generate_mapinfo(tmx), map_index
 end
 
-def compile_maps(maps_dir, events_dir, output_dir, verbose)
+def compile_maps(maps_dir, output_dir, verbose)
   puts "Compiling Maps..."
-  maps, mapinfos = get_maps_and_info(maps_dir, events_dir)
+  maps, mapinfos = get_maps_and_info(maps_dir)
 
   FileUtils.mkdir_p(output_dir)
   puts "Saving " + output_dir + "MapInfos.rxdata..." if verbose
@@ -272,12 +270,11 @@ def compile_maps(maps_dir, events_dir, output_dir, verbose)
   puts "Maps compilation complete.\n\n"
 end
 
-def compile_all(tiled_dir, events_dir, output_dir, verbose)
+def compile_all(tiled_dir, output_dir, verbose)
   compile_tilesets(tiled_dir + "tilesets/", output_dir, verbose)
-  compile_maps(tiled_dir + "maps/", events_dir, output_dir, verbose)
+  compile_maps(tiled_dir + "maps/", output_dir, verbose)
 end
 
 tiled_dir = ROOT_DIR + "src/tiled/"
-events_dir = ROOT_DIR + "src/events/"
 target_dir = ROOT_DIR + "src/essentials/Data/"
-compile_all(tiled_dir, events_dir, target_dir, false)
+compile_all(tiled_dir, target_dir, false)
