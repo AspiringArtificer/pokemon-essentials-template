@@ -60,20 +60,21 @@ After you confirm that the repo is set up properly, you should be (technically) 
 ### Adding Maps
 There's an extension in the tiled project to create a RMXP compatible map. You can access it under "File > New RPG Map...". This will open a dialog to generate a new map base that can compile into a RMXP map.
 
-Adding events to maps can be done with the event tileset, but the source file will need to be manually created.
+![New RPG Map Menu Item](docs/NewRPGMap.png)
+
+Adding events to maps can be done with the custom event tool. You can also just use the event tileset and create the source file manually.
+
+![New RPG Event Tool](docs/NewRPGEvent.png)
+
 
 ## Notable Missing Features
 Currently the essentials animation importer/exporter isn't working correctly on main, so those data files aren't decompiled.
 
 RMXP autotiles are compacted in an unusual way. The converter just builds out a 48 tile set, but doesn't really replicate the behavior in Tiled. This could be done with a modification of the script and/or Tiled's terrain tools in the future. If you really want to use these, for now, you probably want to do it in RMXP.
 
-There's a lot of other quality of life issues like only having one "real" tileset per map, not having intellisense or a gui for the events files, etc. However, based on my research as I developed, this can all be overcome with time.
+There's a lot of other quality of life issues like only having one "real" tileset per map, not having intellisense or a gui for the events files, etc.
 
 ## Tips
-It's recommended that you install an IDE like vscode to edit the source files.
-
-On WSL, you can run "Powershell.exe" from the terminal to open a Powershell session. This lets you run 'Game.exe "debug"' directly from environments like vscode.
+On WSL, you can run "Powershell.exe" from the terminal to open a Powershell session. This lets you run 'Game.exe "debug"' directly from environments like vscode. There are a few scripts in the project root that use this feature.
 
 Windows can access WSL files, but it's usually as a network drive. I set a symoblic link in my WSL home directory to a "projects" directory in an external drive for my development. This helped to make Windows and Linux play nice.
-
-Commit your changes to git often and with a detailed description.
