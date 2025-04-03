@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="42" height="41" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="1">
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="42" height="41" tilewidth="32" tileheight="32" infinite="0" nextlayerid="5" nextobjectid="12">
  <properties>
   <property name="rpg_properties" type="class" propertytype="rpg_map">
    <properties>

@@ -123,6 +123,7 @@ def extract_events(map, map_data, output_dir)
   events_info = "id=\"#{map["nextlayerid"]}\" name=\"events\""
   map.add_child "<objectgroup #{events_info}>"
   map["nextlayerid"] = map["nextlayerid"].to_i + 1
+  map["nextobjectid"] = map_data.events.length + 1 # RMXP Event ids are 1 indexed
   object_group = map.at_xpath("objectgroup")
 
   map_data.events.each do |key, event|
