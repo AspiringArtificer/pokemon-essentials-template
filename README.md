@@ -47,6 +47,8 @@ src/assets -- This points to a private repo containing the various assets from P
 
 tools/eevee -- This points to a fork of the eevee Github project. This tool is used to extract rxdata files into .rb files that can be version controlled and are human readable.
 
+src/mkxp-z -- This points to a fork of the mkxp-z source, the binary that pokemon-essentials runs on in place of the original rmxp engine. You can use this to build the Game.exe directly for Linux, Windows, or MacOS. Currently, this is all done in the submodule with no real project integration.
+
 ### Existing Projects
 If you're converting an existing project, the local setup setup instructions should be compatible, with a few exceptions:
 * If you change the fundamental functionality of the essentials project, particularly around maps/events, things will likely break.

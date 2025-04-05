@@ -7,3 +7,5 @@
 [submodule "tools/eevee"]
 	path = tools/eevee
 	url = git@github.com:AspiringArtificer/eevee.git
+[submodule "src/mkxp-z"]
+	path = src/mkxp-z
