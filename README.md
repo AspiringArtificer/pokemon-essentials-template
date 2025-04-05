@@ -15,10 +15,14 @@ The project has following goals:
 You can copy this repo as is into a new repo using GitHub's template feature. After that, you'll want to clone it to your development machine for setup.
 
 ### Prerequisites
-A Unix compatible OS. You can run Linux, Mac(probably), or WSL on Windows(recommended). This repo was develop with Ubuntu 22.04 running on WSL2 on Windows 10.
-An installation of [Tiled](https://www.mapeditor.org/). (I used the windows version for my WSL setup.)
+A Unix compatible OS. You can run Linux, Mac(probably), or WSL on Windows(recommended). This repo was developed with Ubuntu 22.04 running on WSL2 on Windows 10.
+
+An installation of [Tiled](https://www.mapeditor.org/). (The repo was developed with the Windows version.)
+
 Download the Pokemon Essentials v21.1 zip file. This contains assets missing from the GitHub repo. You'll have to find this on your own.
+
 Installation of Ruby and Bundler. You may already have this on your machine by default.
+
 Installation of Python3 and Pip. You may already have this on your machine by default.
 
 ### Local Setup
