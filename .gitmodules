@@ -9,3 +9,4 @@
 	url = git@github.com:AspiringArtificer/eevee.git
 [submodule "src/mkxp-z"]
 	path = src/mkxp-z
+	url = git@github.com:AspiringArtificer/mkxp-z.git
