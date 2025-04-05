@@ -37,7 +37,7 @@ On your development machine you'll want to do the following things:
 7. Commit the assets files in that submodule and double check the other source files. Git shouldn't see any changes if you're using the example project.
 8. Back up the src/essentials files to another folder and run "make distclean". This will delete all the files in src/essentials not tracked by that submodule.
 9.  Run "make install compile". This will install the assets from src/assets and compile the other src files back into rxdata files.
-10. Run the game in src/essentials, don't forget to hold left-cntrl to compile pbs files. It should run as normal, demonstrating a full compile from source.
+10. Run the game in src/essentials, don't forget to hold left-ctrl to compile pbs files. It should run as normal, demonstrating a full compile from source.
 
 
 ### Submodules
@@ -47,7 +47,7 @@ src/assets -- This points to a private repo containing the various assets from P
 
 tools/eevee -- This points to a fork of the eevee Github project. This tool is used to extract rxdata files into .rb files that can be version controlled and are human readable.
 
-src/mkxp-z -- This points to a fork of the mkxp-z source, the binary that pokemon-essentials runs on in place of the original rmxp engine. You can use this to build the Game.exe directly for Linux, Windows, or MacOS. Currently, this is all done in the submodule with no real project integration.
+src/mkxp-z -- This points to a fork of the mkxp-z source, the binary that pokemon-essentials runs on in place of the original rmxp engine. You can use this to build the Game.exe directly for Linux, Windows, or MacOS. Currently, this is all done in the submodule with no real project integration. Technically, you could set this up to cross-compile from Linux/Mac to Windows to do 100% of development on a single OS, but I've just used WSL at this point for simplicity.
 
 ### Existing Projects
 If you're converting an existing project, the local setup setup instructions should be compatible, with a few exceptions:
@@ -60,7 +60,7 @@ If you're converting an existing project, the local setup setup instructions sho
 After you confirm that the repo is set up properly, you should be (technically) fully capable of making an essentials game without ever opening RMXP.
 
 * To edit maps, including event locations, you can open the tiled project in src/tiled.
-* To edit event details, aside from location, edit the specific files in src/events. Note that the events here do contain location info, but during compilation, the map data take precedence.
+* To edit event details, aside from location, edit the specific files in src/events. Note that the events here do contain location info (for eevee compatibility), but during compilation, the map data takes precedence.
 * You can edit pretty much everything else in the essentials debug menus.
 
 ### Adding Maps
